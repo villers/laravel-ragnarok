@@ -51,6 +51,8 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'userid' => 'required|string|max:255|unique:login',
             'email' => 'required|string|email|max:255|unique:login',
+            'birthdate' => 'required|date',
+            'sex' => 'required|in:M,F',
             'password' => 'required|string|min:6|confirmed',
         ]);
     }
@@ -67,8 +69,8 @@ class RegisterController extends Controller
             'userid' => $data['userid'],
             'email' => $data['email'],
             'user_pass' => md5($data['password']),
-            'sex' => 'M',
-            'birthdate' => Carbon::now(),
+            'sex' => $data['sex'],
+            'birthdate' => $data['birthdate'],
         ]);
     }
 }

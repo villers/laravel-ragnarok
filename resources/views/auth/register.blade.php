@@ -38,6 +38,35 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{ $errors->has('sex') ? ' has-error' : '' }}">
+                            <label for="sex" class="col-md-4 control-label">Sexe</label>
+
+                            <div class="col-md-6">
+                                <label class="radio-inline"><input type="radio" name="sex" value="M" checked>Masculin</label>
+                                <label class="radio-inline"><input type="radio" name="sex" value="F">Féminin</label>
+
+                                @if ($errors->has('sex'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('sex') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('birthdate') ? ' has-error' : '' }}">
+                            <label for="birthdate" class="col-md-4 control-label">Date de naissance</label>
+
+                            <div class="col-md-6">
+                                <input id="birthdate" type="date" class="form-control" name="birthdate" value="{{ old('birthdate') }}" required>
+
+                                @if ($errors->has('birthdate'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('birthdate') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
 
