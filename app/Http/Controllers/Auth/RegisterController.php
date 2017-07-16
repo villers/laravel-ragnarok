@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Models\Login;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -71,6 +72,7 @@ class RegisterController extends Controller
             'user_pass' => md5($data['password']),
             'sex' => $data['sex'],
             'birthdate' => $data['birthdate'],
+            'last_ip' => Request::ip(),
         ]);
     }
 }
