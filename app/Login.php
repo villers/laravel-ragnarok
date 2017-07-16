@@ -10,6 +10,7 @@ class Login extends Authenticatable
     use Notifiable;
 
     protected $table = 'login';
+    protected $primaryKey = 'account_id';
 
     /**
      * The attributes that are mass assignable.
@@ -28,4 +29,19 @@ class Login extends Authenticatable
     protected $hidden = [
         'user_pass',
     ];
+
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['user_pass'] = md5($value);
+    }
+
+    public function getAuthPassword()
+    {
+        return $this->user_pass;
+    }
+
+    public function getAuthIdentifierName()
+    {
+        return 'userid';
+    }
 }
