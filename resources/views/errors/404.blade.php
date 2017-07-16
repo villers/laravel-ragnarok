@@ -11,8 +11,7 @@
                 </div>
             </div>
 
-
-
+            <img style="display: block; margin: 0 auto; width: 25%" src="{{asset('img/404.png')}}" alt="">
         </div>
     </div>
 @endsection
