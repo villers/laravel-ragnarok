@@ -178,6 +178,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Model Generator
+         */
+        Reliese\Coders\CodersServiceProvider::class
     ],
 
     /*
