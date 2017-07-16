@@ -10,7 +10,7 @@ class MD5Hasher implements Illuminate\Contracts\Hashing\Hasher
      */
     public function make($value, array $options = array())
     {
-        return $value;
+        return md5($value);
     }
     /**
      * Check the given plain value against a hash.
