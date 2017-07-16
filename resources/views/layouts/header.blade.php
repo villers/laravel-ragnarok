@@ -1,10 +1,3 @@
-<?php
-$server = [
-    'isUp' => true,
-    'nbOnline' => 1,
-    'onlinePeak' => 2
-]
-?>
 <!-- Navigation
     ==========================================-->
 <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
@@ -73,22 +66,22 @@ $server = [
                         <span class="col-sm-6">Status</span>
 
                         <span class="col-sm-6">
-                        <span class="circle <?php echo $server['isUp'] ? 'bg-green' : 'bg-red';?>"
-                              title="<?php echo $server['isUp'] ? 'EN LIGNE' : 'HORS LIGNE';?>"></span>
-                    </span>
+                            <span class="circle {{$server['is_server_up'] ? 'bg-green' : 'bg-red'}}"
+                              title="{{$server['is_server_up'] ? 'EN LIGNE' : 'HORS LIGNE'}}"></span>
+                        </span>
 
                     </div>
 
                     <div class="col-sm-12" style="padding: 0;">
                         <span class="col-sm-6">Online</span>
-                        <span class="col-sm-6" style="color:#2fef2f;"><?php echo $server['nbOnline']; ?></span>
+                        <span class="col-sm-6" style="color:#2fef2f;">{{$server['get_nb_online']['nbOnline']}}</span>
                     </div>
 
                     <div class="col-sm-12" style="padding: 0;">
                         <span class="col-sm-6">Record</span>
-                        <span class="col-sm-6" style="color: #fcac45;"><?php echo $server['onlinePeak']; ?></span>
+                        <span class="col-sm-6" style="color: #fcac45;">{{$server['get_nb_online']['nbMax']}}</span>
                     </div>
-                    <a style="margin-left: 13px; margin-top: 5px;" class="btn btn-primary btn-xs" href="/users/listplayers">
+                    <a style="margin-left: 13px; margin-top: 5px;" class="btn btn-primary btn-xs" href="{{url('/onlines')}}">
                         Qui est en ligne ?
                     </a>
                 </div>

@@ -203,4 +203,10 @@ class Char extends Eloquent
 		'hotkey_rowshift',
 		'clan_id'
 	];
+
+    public function guild()
+    {
+        return $this->belongsTo('App\Models\Guild', 'guild_id', 'guild_id');
+    }
+
 }

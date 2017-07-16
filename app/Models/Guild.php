@@ -47,7 +47,6 @@ class Guild extends Eloquent
 		'skill_point' => 'int',
 		'emblem_len' => 'int',
 		'emblem_id' => 'int',
-		'emblem_data' => 'boolean'
 	];
 
 	protected $fillable = [
@@ -66,4 +65,12 @@ class Guild extends Eloquent
 		'emblem_id',
 		'emblem_data'
 	];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\hasMany
+     */
+    public function members()
+    {
+        return $this->hasMany('App\Models\GuildMember', 'guild_id', 'guild_id');
+    }
 }

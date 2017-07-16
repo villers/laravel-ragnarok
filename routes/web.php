@@ -16,3 +16,5 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/staff', 'HomeController@staff')->name('staff');
+Route::get('/onlines', 'HomeController@online')->name('online');
+Route::get('/emblem/{id}', 'HomeController@emblem')->name('emblem');

@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use App\Lib\Ragnarok\Server;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\View;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -23,7 +25,13 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $server = new Server();
+
+        // inject var to layout
+        View::share('server', [
+            'is_server_up' => $server->is_server_up(),
+            'get_nb_online' => $server->get_nb_online()
+        ]);
 
         parent::boot();
     }

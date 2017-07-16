@@ -62,4 +62,9 @@ class GuildMember extends Eloquent
 		'position',
 		'name'
 	];
+
+    public function char()
+    {
+        return $this->belongsTo('App\Models\Char', 'char_id', 'char_id');
+    }
 }
