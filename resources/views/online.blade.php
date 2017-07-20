@@ -29,7 +29,7 @@
                             <td>
                                 @if($char->guild)
                                     {{$char->guild->name}} &nbsp;
-                                    <img src="{{url('/emblem/'. $char->guild->guild_id)}}" alt="*" />
+                                    <img src="{{route('emblem', $char->guild->guild_id)}}" alt="{{$char->guild->name}}" />
                                 @else
                                     -
                                 @endif

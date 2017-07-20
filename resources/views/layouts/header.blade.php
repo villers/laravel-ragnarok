@@ -20,14 +20,14 @@
 
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="{{ url('/') }}#tf-about" class="page-scroll">Actualités</a>
+                    <a href="{{ route('home') }}#tf-about" class="page-scroll">Actualités</a>
                 </li>
                 <li>
-                    <a href="{{ url('/') }}#tf-team" class="page-scroll">Informations</a>
+                    <a href="{{ route('home') }}#tf-team" class="page-scroll">Informations</a>
                 </li>
 
                 <li>
-                    <a href="{{ url('/staff') }}">Staff</a>
+                    <a href="{{ route('staff') }}">Staff</a>
                 </li>
 
                 @if (Auth::guest())
@@ -40,6 +40,7 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ route('user.password') }}">Changer mon mot de passe</a></li>
                             <li>
                                 <a href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
@@ -81,7 +82,7 @@
                         <span class="col-sm-6">Record</span>
                         <span class="col-sm-6" style="color: #fcac45;">{{$server['get_nb_online']['nbMax']}}</span>
                     </div>
-                    <a style="margin-left: 13px; margin-top: 5px;" class="btn btn-primary btn-xs" href="{{url('/onlines')}}">
+                    <a style="margin-left: 13px; margin-top: 5px;" class="btn btn-primary btn-xs" href="{{route('onlines')}}">
                         Qui est en ligne ?
                     </a>
                 </div>

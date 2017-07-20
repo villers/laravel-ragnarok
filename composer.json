@@ -18,8 +18,7 @@
     "autoload": {
         "classmap": [
             "database",
-            "app/Lib",
-            "app/Ragnarok"
+            "app/Lib"
         ],
         "psr-4": {
             "App\\": "app/"

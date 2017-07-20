@@ -136,7 +136,6 @@ return [
     */
 
     'providers' => [
-
         /*
          * Laravel Framework Service Providers...
          */
@@ -181,7 +180,7 @@ return [
         /*
          * Model Generator
          */
-        Reliese\Coders\CodersServiceProvider::class
+        Reliese\Coders\CodersServiceProvider::class,
     ],
 
     /*
