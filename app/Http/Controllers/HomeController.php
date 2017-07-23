@@ -26,7 +26,9 @@ class HomeController extends Controller
      */
     public function news()
     {
-        $news = News::orderBy('created_at', 'desc')->paginate(5);
+        $news = News::orderBy('created_at', 'desc')
+            ->orderByDesc('created_at')
+            ->paginate(5);
 
         return view('news', compact('news'));
     }

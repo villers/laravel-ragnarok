@@ -10,7 +10,9 @@ use App\Models\News;
 class NewsController extends Controller
 {
     public function index() {
-        $news = News::orderBy('created_at', 'desc')->paginate(5);
+        $news = News::orderBy('created_at', 'desc')
+            ->orderByDesc('created_at')
+            ->paginate(5);
 
         return view('admin.news.index', compact('news'));
     }

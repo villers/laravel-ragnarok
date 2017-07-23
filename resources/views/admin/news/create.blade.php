@@ -27,7 +27,20 @@
 @endsection
 
 @section('script')
+
+    <!-- CKEditor init -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.11/ckeditor.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.11/adapters/jquery.js"></script>
     <script>
         $('.navbar-default').addClass('on');
+        var route_prefix = "{{ url(config('lfm.prefix')) }}";
+
+        $('textarea[name=body]').ckeditor({
+            height: 100,
+            filebrowserImageBrowseUrl: route_prefix + '?type=Images',
+            filebrowserImageUploadUrl: route_prefix + '/upload?type=Images&_token={{csrf_token()}}',
+            filebrowserBrowseUrl: route_prefix + '?type=Files',
+            filebrowserUploadUrl: route_prefix + '/upload?type=Files&_token={{csrf_token()}}'
+        });
     </script>
 @endsection

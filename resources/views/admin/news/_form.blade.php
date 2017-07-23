@@ -7,13 +7,12 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('body', 'Text:') !!}
     {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
 </div>
 
 <div class="form-group">
     {!! Form::label('created_at', 'Publish date:') !!}
-    {!! Form::input('date', 'created_at', isset($news) ? $news->created_at->format('Y-m-d') : date('Y-m-d') , ['class' => 'form-control']) !!}
+    {!! Form::input('text', 'created_at', isset($news) ? $news->created_at : Carbon::now() , ['class' => 'form-control']) !!}
 </div>
 
 <div class="form-group">

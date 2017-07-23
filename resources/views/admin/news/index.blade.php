@@ -29,7 +29,7 @@
                             {{link_to_route('news.show', $newsItem->title, ['id' => $newsItem->id])}}
                         </h2>
                         <hr>
-                        {!! nl2br(e($newsItem->body)) !!}
+                        {!! str_limit(strip_tags($newsItem->body)) !!}
                         <hr>
                         @if($newsItem->category)
                             <h6>Category: <b>{{ $newsItem->category->title }}</b></h6>
