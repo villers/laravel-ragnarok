@@ -5,15 +5,15 @@
     <div id="tf-team">
         <div class="container">
             <div class="section-title center text-center">
-                <h2>Editer<strong> une news</strong></h2>
+                <h2>Editer<strong> une catégorie</strong></h2>
                 <div class="line">
                     <hr>
                 </div>
             </div>
 
-            {!! Form::model($news, ['method' => 'patch', 'route' => ['news.update', $news->id]]) !!}
+            {!! Form::model($category, ['method' => 'patch', 'route' => ['category.update', $category->id]]) !!}
 
-            @include('admin.news._form', ['submitButtonText' => 'Update news item'])
+            @include('admin.category._form', ['submitButtonText' => 'Update category'])
 
             {!! Form::close() !!}
 

@@ -5,15 +5,17 @@
     <div id="tf-team">
         <div class="container">
             <div class="section-title center text-center">
-                <h2>Editer<strong> une news</strong></h2>
+                <h2>Créer <strong>une catégorie</strong></h2>
                 <div class="line">
                     <hr>
                 </div>
             </div>
 
-            {!! Form::model($news, ['method' => 'patch', 'route' => ['news.update', $news->id]]) !!}
+            <hr/>
 
-            @include('admin.news._form', ['submitButtonText' => 'Update news item'])
+            {!! Form::open(['route' => 'category.store']) !!}
+
+            @include('admin.category._form', ['submitButtonText' => 'Créer une catégorie'])
 
             {!! Form::close() !!}
 

@@ -21,15 +21,7 @@
     {!! Form::select('category_id', $categories, isset($news) ? $news->category->id : null, ['class' => 'form-control']) !!}
 </div>
 
-@unless(empty($allTags))
-    <div class="form-group">
-        {!! Form::label('tags[]', 'Tags (use Ctrl+Click to select multiple tags):') !!}
-
-        {!! Form::select('tags[]', $allTags, $tags, ['multiple' => 'multiple', 'class' => 'form-control']) !!}
-    </div>
-@endunless
-
 <div class="form-group">
     {!! Form::button($submitButtonText, ['type' => 'submit', 'class' => 'btn btn-success']) !!}
-    {!! Form::button('Cancel', ['onclick' => 'location="/"', 'class' => 'btn btn-danger']) !!}
+    {{link_to_route('news.index', 'Cancel', [], ['class' => 'btn btn-danger'])}}
 </div>

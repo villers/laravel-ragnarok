@@ -5,18 +5,16 @@
     <div id="tf-team">
         <div class="container">
             <div class="section-title center text-center">
-                <h2>Editer<strong> une news</strong></h2>
+                <h2>Administration<strong></strong></h2>
                 <div class="line">
                     <hr>
                 </div>
             </div>
 
-            {!! Form::model($news, ['method' => 'patch', 'route' => ['news.update', $news->id]]) !!}
-
-            @include('admin.news._form', ['submitButtonText' => 'Update news item'])
-
-            {!! Form::close() !!}
-
+            <div class="form-group">
+                {{link_to_route('news.index', 'Manage News', [], ['class' => 'btn btn-primary'])}}
+                {{link_to_route('category.index', 'Manage Catégorie', [], ['class' => 'btn btn-primary'])}}
+            </div>
         </div>
     </div>
 @endsection

@@ -1,20 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
+    <br><br>
+    <div id="tf-team">
+        <div class="container">
+            <div class="section-title center text-center">
+                <h2>Créer <strong>une news</strong></h2>
+                <div class="line">
+                    <hr>
+                </div>
+            </div>
 
-    <h2>Create news item</h2>
+            @unless (count($categories))
+                <div class="alert alert-danger">
+                    {{link_to_route('category.create', 'Créer une catégorie')}} first.
+                </div>
+            @endunless
 
-    <hr/>
+            {!! Form::open(['route' => 'news.store']) !!}
 
-    @unless (count($categories))
-        <div class="alert alert-danger">
-            Please <a href="/category/create">create a category</a> first.
+            @include('admin.news._form', ['submitButtonText' => 'Create'])
+
+            {!! Form::close() !!}
         </div>
-    @endunless
+    </div>
+@endsection
 
-    {!! Form::open(['url' => '/news']) !!}
-
-    @include('news._form', ['submitButtonText' => 'Create'])
-
-    {!! Form::close() !!}
-@stop
+@section('script')
+    <script>
+        $('.navbar-default').addClass('on');
+    </script>
+@endsection

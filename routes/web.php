@@ -32,10 +32,20 @@ Route::middleware(['auth'])->prefix('user')->group(function() {
 
 
 Route::middleware(['admin'])->prefix('admin')->namespace('Admin')->group(function() {
-    Route::get('/', 'NewsController@index');
-    Route::resource('news', 'NewsController');
-    Route::get('news/{news}/delete', 'NewsController@destroy');
+    /*
+     * Admin
+     */
+    Route::get('/', 'AdminController@index')->name('admin.index');
 
+    /*
+     * News
+     */
+    Route::resource('news', 'NewsController');
+    Route::get('news/{news}/delete', 'NewsController@destroy')->name('news.destroy');
+
+    /*
+     * Category
+     */
     Route::resource('category', 'CategoryController');
-    Route::get('category/{category}/delete', 'CategoryController@destroy');
+    Route::get('category/{category}/delete', 'CategoryController@destroy')->name('category.destroy');
 });
