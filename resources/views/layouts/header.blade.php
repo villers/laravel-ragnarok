@@ -26,13 +26,9 @@
                     <a href="{{ route('home') }}#tf-team" class="page-scroll">Informations</a>
                 </li>
 
-                <li>
-                    <a href="{{ route('staff') }}">Staff</a>
-                </li>
-
                 @if (Auth::guest())
-                    <li><a href="{{ route('login') }}">Se connecter</a></li>
-                    <li><a href="{{ route('register') }}">S'inscrire</a></li>
+                    <li>{{link_to_route('login', 'Se connecter')}}</li>
+                    <li>{{link_to_route('register', 'S\'inscrire')}}</li>
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -40,8 +36,17 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ route('user.chars') }}">Mes personnages</a></li>
-                            <li><a href="{{ route('user.password') }}">Changer mon mot de passe</a></li>
+                            <li>{{link_to_route('user.chars', 'Mes personnages')}}</li>
+                            <li>{{link_to_route('user.password', 'Changer mon mot de passe')}}</li>
+
+                            @if (Auth::user()->isAdmin())
+                                <li class="divider"></li>
+                                <li>{{link_to_route('admin.index', 'Administration')}}</li>
+                                <li>{{link_to_route('news.index', 'Gestion des News')}}</li>
+                                <li>{{link_to_route('category.index', 'Gestion des Catégories')}}</li>
+                            @endif
+
+                            <li class="divider"></li>
                             <li>
                                 <a href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
@@ -69,7 +74,7 @@
 
                         <span class="col-sm-6">
                             <span class="circle {{$server['is_server_up'] ? 'bg-green' : 'bg-red'}}"
-                              title="{{$server['is_server_up'] ? 'EN LIGNE' : 'HORS LIGNE'}}"></span>
+                                  title="{{$server['is_server_up'] ? 'EN LIGNE' : 'HORS LIGNE'}}"></span>
                         </span>
 
                     </div>

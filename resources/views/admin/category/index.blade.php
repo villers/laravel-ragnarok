@@ -12,7 +12,8 @@
             </div>
 
             <div class="form-group">
-                {{link_to_route('category.create', 'Add new category', [], ['class' => 'btn btn-success'])}}
+                {{link_to_route('admin.index', '<<', [], ['class' => 'btn btn-primary'])}}
+                {{link_to_route('category.create', 'Créer une categorie', [], ['class' => 'btn btn-success'])}}
             </div>
 
             <ul class="list-group">
@@ -23,7 +24,6 @@
                             {{link_to_route('category.destroy', 'Supprimer', ['id' => $category->id], ['onclick' => 'return confirm(\'Are you sure you want to delete it?\')'])}}
                         </div>
                         <h4>{{ $category->title }}</h4>
-
                     </li>
                 @endforeach
             </ul>

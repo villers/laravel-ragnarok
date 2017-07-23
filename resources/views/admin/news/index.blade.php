@@ -12,7 +12,8 @@
             </div>
 
             <div class="form-group">
-                {{link_to_route('news.create', 'Créer une News', [], ['class' => 'btn btn-success'])}}
+                {{link_to_route('admin.index', '<<', [], ['class' => 'btn btn-primary'])}}
+                {{link_to_route('news.create', 'Créer une news', [], ['class' => 'btn btn-success'])}}
             </div>
 
             @unless (Route::currentRouteName())

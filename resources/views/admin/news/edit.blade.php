@@ -13,7 +13,7 @@
 
             {!! Form::model($news, ['method' => 'patch', 'route' => ['news.update', $news->id]]) !!}
 
-            @include('admin.news._form', ['submitButtonText' => 'Update news item'])
+            @include('admin.news._form', ['submitButtonText' => 'Valider'])
 
             {!! Form::close() !!}
 

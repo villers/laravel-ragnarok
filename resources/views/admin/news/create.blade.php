@@ -19,7 +19,7 @@
 
             {!! Form::open(['route' => 'news.store']) !!}
 
-            @include('admin.news._form', ['submitButtonText' => 'Create'])
+            @include('admin.news._form', ['submitButtonText' => 'Valider'])
 
             {!! Form::close() !!}
         </div>

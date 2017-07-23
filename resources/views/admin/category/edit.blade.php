@@ -13,7 +13,7 @@
 
             {!! Form::model($category, ['method' => 'patch', 'route' => ['category.update', $category->id]]) !!}
 
-            @include('admin.category._form', ['submitButtonText' => 'Update category'])
+            @include('admin.category._form', ['submitButtonText' => 'Valider'])
 
             {!! Form::close() !!}
 

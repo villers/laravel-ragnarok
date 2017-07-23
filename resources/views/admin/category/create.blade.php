@@ -15,7 +15,7 @@
 
             {!! Form::open(['route' => 'category.store']) !!}
 
-            @include('admin.category._form', ['submitButtonText' => 'Créer une catégorie'])
+            @include('admin.category._form', ['submitButtonText' => 'Valider'])
 
             {!! Form::close() !!}
 
