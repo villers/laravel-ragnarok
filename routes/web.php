@@ -21,7 +21,21 @@ Route::get('/emblem/{id}', 'HomeController@emblem')->name('emblem');
 
 Route::middleware(['auth'])->prefix('user')->group(function() {
     Route::get('/', 'UserController@index')->name('user.index');
+
     Route::get('password', 'UserController@changePassword')->name('user.password');
     Route::post('password', 'UserController@postChangePassword')->name('user.post.password');
+
+    Route::get('chars', 'UserController@chars')->name('user.chars');
+    Route::post('chars', 'UserController@postResetChars')->name('user.post.reset.chars');
 });
 
+
+
+Route::middleware(['admin'])->prefix('admin')->namespace('Admin')->group(function() {
+    Route::get('/', 'NewsController@index');
+    Route::resource('news', 'NewsController');
+    Route::get('news/{news}/delete', 'NewsController@destroy');
+
+    Route::resource('category', 'CategoryController');
+    Route::get('category/{category}/delete', 'CategoryController@destroy');
+});

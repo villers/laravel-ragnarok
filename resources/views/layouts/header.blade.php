@@ -40,6 +40,7 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ route('user.chars') }}">Mes personnages</a></li>
                             <li><a href="{{ route('user.password') }}">Changer mon mot de passe</a></li>
                             <li>
                                 <a href="{{ route('logout') }}"

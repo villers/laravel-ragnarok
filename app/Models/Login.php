@@ -97,4 +97,17 @@ class Login extends Authenticatable
     {
         return 'userid';
     }
+
+    public function isAdmin() {
+
+        return $this->group_id === 99;
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\hasMany
+     */
+    public function char()
+    {
+        return $this->hasMany('App\Models\Char', 'char_id', 'char_id');
+    }
 }

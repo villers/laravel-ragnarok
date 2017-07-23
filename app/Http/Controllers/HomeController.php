@@ -39,8 +39,6 @@ class HomeController extends Controller
             ->with('guild')
             ->get();
 
-
-
         return view('online', compact('chars'));
     }
 
