@@ -19,13 +19,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="{{ route('home') }}#tf-about" class="page-scroll">Actualités</a>
-                </li>
-                <li>
-                    <a href="{{ route('home') }}#tf-team" class="page-scroll">Informations</a>
-                </li>
-
+                <li>{{link_to_route('news', 'Actualités')}}</li>
+                <li>{{link_to_route('informations', 'Informations')}}</li>
                 @if (Auth::guest())
                     <li>{{link_to_route('login', 'Se connecter')}}</li>
                     <li>{{link_to_route('register', 'S\'inscrire')}}</li>

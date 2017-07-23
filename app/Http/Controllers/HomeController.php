@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Lib\Ragnarok\Emblem;
 use App\Models\Char;
 use App\Models\Guild;
+use App\Models\News;
 
 class HomeController extends Controller
 {
@@ -16,6 +17,28 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    /**
+     * Show the news.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function news()
+    {
+        $news = News::orderBy('created_at', 'desc')->paginate(5);
+
+        return view('news', compact('news'));
+    }
+
+    /**
+     * Show the news.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function informations()
+    {
+        return view('informations');
     }
 
     /**

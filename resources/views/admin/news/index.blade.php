@@ -16,12 +16,6 @@
                 {{link_to_route('news.create', 'Créer une news', [], ['class' => 'btn btn-success'])}}
             </div>
 
-            @unless (Route::currentRouteName())
-                <div class="text-center">
-                    {{@$news->links()}}
-                </div>
-            @endunless
-
             <ul class="list-group">
                 @foreach($news as $newsItem)
                     <li class="list-group-item">
@@ -44,11 +38,9 @@
                 @endforeach
             </ul>
 
-            @unless (Route::currentRouteName())
-                <div class="text-center">
-                    {{@$news->links()}}
-                </div>
-            @endunless
+            <div class="text-center">
+                {{@$news->links()}}
+            </div>
         </div>
     </div>
 @endsection
