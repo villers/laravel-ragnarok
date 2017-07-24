@@ -1,6 +1,5 @@
 @include('errors.list')
 
-{!! Form::open(['url' => '/news']) !!}
 <div class="form-group">
     {!! Form::label('title', 'Title:') !!}
     {!! Form::text('title', null, ['class' => 'form-control']) !!}
@@ -22,5 +21,5 @@
 
 <div class="form-group">
     {!! Form::button($submitButtonText, ['type' => 'submit', 'class' => 'btn btn-success']) !!}
-    {{link_to_route('news.index', 'Cancel', [], ['class' => 'btn btn-danger'])}}
+    {{link_to_route('admin.news.index', 'Cancel', [], ['class' => 'btn btn-danger'])}}
 </div>

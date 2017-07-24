@@ -13,7 +13,7 @@
 
             <hr/>
 
-            {!! Form::open(['route' => 'category.store']) !!}
+            {!! Form::open(['route' => 'admin.category.store']) !!}
 
             @include('admin.category._form', ['submitButtonText' => 'Valider'])
 

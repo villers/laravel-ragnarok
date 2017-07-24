@@ -11,7 +11,7 @@
                 </div>
             </div>
 
-            {!! Form::model($news, ['method' => 'patch', 'route' => ['news.update', $news->id]]) !!}
+            {!! Form::model($news, ['method' => 'patch', 'route' => ['admin.news.update', $news->id]]) !!}
 
             @include('admin.news._form', ['submitButtonText' => 'Valider'])
 

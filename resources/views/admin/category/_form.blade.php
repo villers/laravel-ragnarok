@@ -8,5 +8,5 @@
 
 <div class="form-group">
     {!! Form::submit($submitButtonText, ['class'=>'btn btn-success']) !!}
-    {{link_to_route('category.index', 'Cancel', [], ['class' => 'btn btn-danger'])}}
+    {{link_to_route('admin.category.index', 'Cancel', [], ['class' => 'btn btn-danger'])}}
 </div>

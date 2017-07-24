@@ -37,8 +37,8 @@
                             @if (Auth::user()->isAdmin())
                                 <li class="divider"></li>
                                 <li>{{link_to_route('admin.index', 'Administration')}}</li>
-                                <li>{{link_to_route('news.index', 'Gestion des News')}}</li>
-                                <li>{{link_to_route('category.index', 'Gestion des Catégories')}}</li>
+                                <li>{{link_to_route('admin.news.index', 'Gestion des News')}}</li>
+                                <li>{{link_to_route('admin.category.index', 'Gestion des Catégories')}}</li>
                             @endif
 
                             <li class="divider"></li>

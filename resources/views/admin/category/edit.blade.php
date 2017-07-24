@@ -11,7 +11,7 @@
                 </div>
             </div>
 
-            {!! Form::model($category, ['method' => 'patch', 'route' => ['category.update', $category->id]]) !!}
+            {!! Form::model($category, ['method' => 'patch', 'route' => ['admin.category.update', $category->id]]) !!}
 
             @include('admin.category._form', ['submitButtonText' => 'Valider'])
 

@@ -13,11 +13,11 @@
 
             @unless (count($categories))
                 <div class="alert alert-danger">
-                    {{link_to_route('category.create', 'Créer une catégorie')}} first.
+                    {{link_to_route('admin.category.create', 'Créer une catégorie')}} first.
                 </div>
             @endunless
 
-            {!! Form::open(['route' => 'news.store']) !!}
+            {!! Form::open(['route' => 'admin.news.store']) !!}
 
             @include('admin.news._form', ['submitButtonText' => 'Valider'])
 
@@ -34,6 +34,8 @@
     <script>
         $('.navbar-default').addClass('on');
         var route_prefix = "{{ url(config('lfm.prefix')) }}";
+
+        CKEDITOR.config.extraPlugins = 'justify';
 
         $('textarea[name=body]').ckeditor({
             height: 100,

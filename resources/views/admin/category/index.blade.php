@@ -13,15 +13,15 @@
 
             <div class="form-group">
                 {{link_to_route('admin.index', '<<', [], ['class' => 'btn btn-primary'])}}
-                {{link_to_route('category.create', 'Créer une categorie', [], ['class' => 'btn btn-success'])}}
+                {{link_to_route('admin.category.create', 'Créer une categorie', [], ['class' => 'btn btn-success'])}}
             </div>
 
             <ul class="list-group">
                 @foreach($categories as $category)
                     <li class="list-group-item">
                         <div class="pull-right">
-                            {{link_to_route('category.edit', 'Éditer', ['id' => $category->id])}}<br>
-                            {{link_to_route('category.destroy', 'Supprimer', ['id' => $category->id], ['onclick' => 'return confirm(\'Are you sure you want to delete it?\')'])}}
+                            {{link_to_route('admin.category.edit', 'Éditer', ['id' => $category->id])}}<br>
+                            {{link_to_route('admin.category.destroy', 'Supprimer', ['id' => $category->id], ['onclick' => 'return confirm(\'Are you sure you want to delete it?\')'])}}
                         </div>
                         <h4>{{ $category->title }}</h4>
                     </li>

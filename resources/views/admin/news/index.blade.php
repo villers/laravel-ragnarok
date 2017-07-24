@@ -13,7 +13,7 @@
 
             <div class="form-group">
                 {{link_to_route('admin.index', '<<', [], ['class' => 'btn btn-primary'])}}
-                {{link_to_route('news.create', 'Créer une news', [], ['class' => 'btn btn-success'])}}
+                {{link_to_route('admin.news.create', 'Créer une news', [], ['class' => 'btn btn-success'])}}
             </div>
 
             <ul class="list-group">
@@ -23,10 +23,10 @@
                             <b>{{ $newsItem->created_at->format('Y-m-d') }}</b>
                             |
 
-                            [ {{link_to_route('news.edit', 'Éditer', ['id' => $newsItem->id])}} | {{link_to_route('news.destroy', 'Supprimer', ['id' => $newsItem->id], ['onclick' => 'return confirm(\'Are you sure you want to delete it?\')'])}} ]
+                            [ {{link_to_route('admin.news.edit', 'Éditer', ['id' => $newsItem->id])}} | {{link_to_route('admin.news.destroy', 'Supprimer', ['id' => $newsItem->id], ['onclick' => 'return confirm(\'Are you sure you want to delete it?\')'])}} ]
                         </div>
                         <h2>
-                            {{link_to_route('news.show', $newsItem->title, ['id' => $newsItem->id])}}
+                            {{link_to_route('admin.news.show', $newsItem->title, ['id' => $newsItem->id])}}
                         </h2>
                         <hr>
                         {!! str_limit(strip_tags($newsItem->body)) !!}

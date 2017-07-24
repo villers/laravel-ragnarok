@@ -33,11 +33,11 @@ Route::middleware(['auth'])->prefix('user')->group(function() {
 
 
 
-Route::middleware(['admin'])->prefix('admin')->namespace('Admin')->group(function() {
+Route::middleware(['admin'])->prefix('admin')->namespace('Admin')->as('admin.')->group(function() {
     /*
      * Admin
      */
-    Route::get('/', 'AdminController@index')->name('admin.index');
+    Route::get('/', 'AdminController@index')->name('index');
 
     /*
      * News

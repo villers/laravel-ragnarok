@@ -12,8 +12,8 @@
             </div>
 
             <div class="form-group">
-                {{link_to_route('news.index', 'Manage News', [], ['class' => 'btn btn-primary'])}}
-                {{link_to_route('category.index', 'Manage Catégorie', [], ['class' => 'btn btn-primary'])}}
+                {{link_to_route('admin.news.index', 'Manage News', [], ['class' => 'btn btn-primary'])}}
+                {{link_to_route('admin.category.index', 'Manage Catégorie', [], ['class' => 'btn btn-primary'])}}
             </div>
         </div>
     </div>

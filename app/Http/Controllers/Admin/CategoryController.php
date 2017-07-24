@@ -23,19 +23,19 @@ class CategoryController extends Controller
     public function destroy(Category $category) {
         $category->delete();
 
-        return redirect()->route('category.index');
+        return redirect()->route('admin.category.index');
     }
 
     public function store(CategoryRequest $request) {
         Category::create($request->all());
 
-        return redirect()->route('category.index');
+        return redirect()->route('admin.category.index');
     }
 
     public function update(CategoryRequest $request, Category $category) {
         $category->update($request->all());
 
-        return redirect()->route('category.index');
+        return redirect()->route('admin.category.index');
     }
 
     public function edit(Category $category) {

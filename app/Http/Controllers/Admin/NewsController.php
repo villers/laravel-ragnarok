@@ -30,7 +30,7 @@ class NewsController extends Controller
     public function destroy(News $news) {
         $news->delete();
 
-        return redirect()->route('news.index');
+        return redirect()->route('admin.news.index');
     }
 
     public function create() {
@@ -42,12 +42,12 @@ class NewsController extends Controller
     public function store(NewsRequest $request) {
         News::create($request->all());
 
-        return redirect()->route('news.index');
+        return redirect()->route('admin.news.index');
     }
 
     public function update(NewsRequest $request, News $news) {
         $news->update($request->all());
 
-        return redirect()->route('news.index');
+        return redirect()->route('admin.news.index');
     }
 }
