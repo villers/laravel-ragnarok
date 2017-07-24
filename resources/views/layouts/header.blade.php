@@ -76,7 +76,7 @@
 
                     <div class="col-sm-12" style="padding: 0;">
                         <span class="col-sm-6">Online</span>
-                        <span class="col-sm-6" style="color:#2fef2f;">{{$server['get_nb_online']['nbOnline']}}</span>
+                        <span class="col-sm-6" style="color:greenyellow;">{{$server['get_nb_online']['nbOnline']}}</span>
                     </div>
 
                     <div class="col-sm-12" style="padding: 0;">

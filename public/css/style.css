@@ -320,13 +320,10 @@ img.img-circle.team-img {
 
 /* Clients Section */
 #tf-clients{
-	background: url(../img/01.jpg);
+	background: url(../img/01.jpg) no-repeat center center fixed;
 	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
 	color: #ffffff;
-	padding: 0px 0px 0px 0px;
+	height:100vh;
 }
 
 #tf-clients .overlay{
@@ -339,6 +336,8 @@ img.img-circle.team-img {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
 	padding: 80px 0;
 	background-attachment: fixed;
+	height: 100%;
+	background-size: cover;
 }
 
 #clients .item{
@@ -574,6 +573,10 @@ nav#footer{
 	background: #222222;
 	color: #ffffff;
 	padding: 20px 0 15px 0;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
 }
 nav#footer .fnav{ vertical-align: middle;}
 ul.footer-social li{
@@ -623,11 +626,11 @@ nav#footer p{
 }
 
 .bg-green {
-	background-color: #2fef2f;
+	background-color: greenyellow;
 }
 
-bg-red {
-	background-color: #FF1F3D;
+.bg-red {
+	background-color: orangered;
 }
 
 #tf-forum {

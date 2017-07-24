@@ -28,7 +28,7 @@ class HomeController extends Controller
     {
         $news = News::orderBy('created_at', 'desc')
             ->orderByDesc('created_at')
-            ->paginate(5);
+            ->paginate(3);
 
         return view('news', compact('news'));
     }
