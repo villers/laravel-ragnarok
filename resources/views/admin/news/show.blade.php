@@ -11,7 +11,7 @@
                 </div>
             </div>
 
-            <p>{!! nl2br(e($news->body)) !!}</p>
+            <p>{!! $news->body !!}</p>
         </div>
     </div>
 @endsection

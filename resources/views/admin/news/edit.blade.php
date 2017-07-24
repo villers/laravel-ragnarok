@@ -30,7 +30,7 @@
         $('.navbar-default').addClass('on');
         var route_prefix = "{{ url(config('lfm.prefix')) }}";
 
-        CKEDITOR.config.extraPlugins = 'justify';
+        CKEDITOR.config.extraPlugins = 'justify,colorbutton';
 
         $('textarea[name=body]').ckeditor({
             height: 100,

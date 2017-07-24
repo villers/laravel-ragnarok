@@ -14,7 +14,7 @@
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div id="testimonial" class="owl-carousel owl-theme">
+                    <div id="testimonial">
                         @foreach($news as $newsItem)
                             <div class="item">
                                 <h5>{{$newsItem->title}}</h5>
