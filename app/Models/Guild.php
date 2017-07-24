@@ -36,8 +36,9 @@ class Guild extends Eloquent
 	protected $table = 'guild';
 	public $timestamps = false;
 
+    protected $primaryKey = 'guild_id';
+
 	protected $casts = [
-		'char_id' => 'int',
 		'guild_lv' => 'int',
 		'connect_member' => 'int',
 		'max_member' => 'int',
