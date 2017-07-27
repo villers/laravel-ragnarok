@@ -3,12 +3,30 @@
 namespace App\Http\Controllers;
 
 use App\Lib\Ragnarok\Emblem;
-use App\Models\Char;
-use App\Models\Guild;
-use App\Models\News;
+use App\Repositories\CharRepository;
+use App\Repositories\GuildRepository;
+use App\Repositories\NewsRepository;
+use Illuminate\Support\Facades\Response;
 
 class HomeController extends Controller
 {
+    protected $charRepository;
+    protected $guildRepository;
+    protected $newsRepository;
+
+    /**
+     * UserController constructor.
+     * @param CharRepository $charRepository
+     * @param GuildRepository $guildRepository
+     * @param NewsRepository $newsRepository
+     */
+    public function __construct(CharRepository $charRepository, GuildRepository $guildRepository, NewsRepository $newsRepository)
+    {
+        $this->charRepository = $charRepository;
+        $this->guildRepository = $guildRepository;
+        $this->newsRepository = $newsRepository;
+    }
+
     /**
      * Show the application dashboard.
      *
@@ -26,9 +44,7 @@ class HomeController extends Controller
      */
     public function news()
     {
-        $news = News::orderBy('created_at', 'desc')
-            ->orderByDesc('created_at')
-            ->paginate(3);
+        $news = $this->newsRepository->paginate('desc', 3);
 
         return view('news', compact('news'));
     }
@@ -60,23 +76,18 @@ class HomeController extends Controller
      */
     public function online()
     {
-        $chars = Char::where('online', '>', 0)
-            ->with('guild')
-            ->get();
+        $chars = $this->charRepository->getOnline();
 
         return view('online', compact('chars'));
     }
 
     public function emblem($id) {
-        $guild = Guild::where('guild_id', $id)->firstOrFail();
+        $guild = $this->guildRepository->get($id, 'guild_id')->emblem_data;
+        $ebm = @gzuncompress(pack('H*', $guild));
 
-        $ebm = $guild->emblem_data;
-        $ebm=@gzuncompress(pack('H*',$ebm));
-        // need to convert that to PNG with transparency
-        $im=Emblem::imagecreatefrombmpstring($ebm);
-        header('Content-Type: image/png');
-        //The guild emblem ^_^
-        imagepng($im);
-        exit;
+        $response = Response::make((string)imagepng(Emblem::imagecreatefrombmpstring($ebm)));
+        $response->header('Content-Type', 'image/png');
+
+        return $response;
     }
 }

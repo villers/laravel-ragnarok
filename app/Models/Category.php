@@ -1,14 +1,7 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: mickaelvillers
- * Date: 21/07/2017
- * Time: 22:15
- */
 
 namespace App\Models;
 
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -28,18 +21,4 @@ class Category extends Model
     public function newsItems() {
         return $this->belongsTo('App\News');
     }
-
-    /**
-     * @return array
-     */
-    public static function getAllCategories() {
-        $result = [];
-        $categories = Category::all(['id', 'title'])->toArray();
-        foreach ($categories as $category) {
-            $categoryId = $category['id'];
-            $result[$categoryId] = $category['title'];
-        }
-        return $result;
-    }
-
 }

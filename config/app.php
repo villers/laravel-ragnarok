@@ -188,6 +188,11 @@ return [
         Collective\Html\HtmlServiceProvider::class,
 
         /*
+         * Add Repositories
+         */
+        App\Providers\RepositoryServiceProvider::class,
+
+        /*
          * Wisiwig
          */
         Intervention\Image\ImageServiceProvider::class,

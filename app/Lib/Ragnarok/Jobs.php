@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: mickaelvillers
- * Date: 16/07/2017
- * Time: 17:28
- */
 
 namespace App\Lib\Ragnarok;
-
 
 class Jobs
 {

@@ -3,16 +3,29 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Category;
 use App\Http\Requests\NewsRequest;
 use App\Models\News;
+use App\Repositories\CategoryRepository;
+use App\Repositories\NewsRepository;
 
 class NewsController extends Controller
 {
+    private $newsRepository;
+    private $categoryRepository;
+
+    /**
+     * NewsController constructor.
+     * @param NewsRepository $newsRepository
+     * @param CategoryRepository $categoryRepository
+     */
+    public function __construct(NewsRepository $newsRepository, CategoryRepository $categoryRepository)
+    {
+        $this->newsRepository = $newsRepository;
+        $this->categoryRepository = $categoryRepository;
+    }
+
     public function index() {
-        $news = News::orderBy('created_at', 'desc')
-            ->orderByDesc('created_at')
-            ->paginate(3);
+        $news = $this->newsRepository->paginate('desc', 3);
 
         return view('admin.news.index', compact('news'));
     }
@@ -22,31 +35,31 @@ class NewsController extends Controller
     }
 
     public function edit(News $news) {
-        $categories = Category::getAllCategories();
+        $categories = $this->categoryRepository->allToList();
 
         return view('admin.news.edit', compact('news', 'categories'));
     }
 
     public function destroy(News $news) {
-        $news->delete();
+        $this->newsRepository->delete($news);
 
         return redirect()->route('admin.news.index');
     }
 
     public function create() {
-        $categories = Category::getAllCategories();
+        $categories = $this->categoryRepository->allToList();
 
         return view('admin.news.create', compact(['categories']));
     }
 
     public function store(NewsRequest $request) {
-        News::create($request->all());
+        $this->newsRepository->create($request->all());
 
         return redirect()->route('admin.news.index');
     }
 
     public function update(NewsRequest $request, News $news) {
-        $news->update($request->all());
+        $this->newsRepository->update($news, $request->all());
 
         return redirect()->route('admin.news.index');
     }

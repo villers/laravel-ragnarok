@@ -5,13 +5,23 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CategoryRequest;
 use App\Models\Category;
-use App\Http\Requests\NewsRequest;
-use App\Models\News;
+use App\Repositories\CategoryRepository;
 
 class CategoryController extends Controller
 {
+    private $categoryRepository;
+
+    /**
+     * NewsController constructor.
+     * @param CategoryRepository $categoryRepository
+     */
+    public function __construct(CategoryRepository $categoryRepository)
+    {
+        $this->categoryRepository = $categoryRepository;
+    }
+
     public function index() {
-        $categories = Category::all();
+        $categories = $this->categoryRepository->all();
 
         return view('admin.category.index', compact('categories'));
     }
@@ -21,19 +31,19 @@ class CategoryController extends Controller
     }
 
     public function destroy(Category $category) {
-        $category->delete();
+        $this->categoryRepository->delete($category);
 
         return redirect()->route('admin.category.index');
     }
 
     public function store(CategoryRequest $request) {
-        Category::create($request->all());
+        $this->categoryRepository->create($request->all());
 
         return redirect()->route('admin.category.index');
     }
 
     public function update(CategoryRequest $request, Category $category) {
-        $category->update($request->all());
+        $this->categoryRepository->update($category, $request->all());
 
         return redirect()->route('admin.category.index');
     }

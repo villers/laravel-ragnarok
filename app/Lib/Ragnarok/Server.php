@@ -1,44 +1,34 @@
 <?php
 namespace App\Lib\Ragnarok;
-use App\Models\Char;
-use App\Models\SiteOnlinepeak;
 
-/**
- * Created by IntelliJ IDEA.
- * User: mickaelvillers
- * Date: 16/07/2017
- * Time: 16:42
- */
+use App\Repositories\CharRepositoryEloquent;
+use App\Repositories\SiteOnlinepeakRepositoryEloquent;
+use Illuminate\Support\Facades\Config;
 
 class Server {
 
+    private $charRepository;
+    private $onlinepeakRepository;
+
+    public function __construct(CharRepositoryEloquent $charRepository, SiteOnlinepeakRepositoryEloquent $onlinepeakRepository)
+    {
+        $this->charRepository = $charRepository;
+        $this->onlinepeakRepository = $onlinepeakRepository;
+    }
+
     public function is_server_up() {
+        $serverHost = Config::get('ragnarok.server_ip');
 
-        //$toto = \App\Models\Char::where('char_id', 150000)->first()->guild;
-        //$char = \App\Models\Guild::where('guild_id', 3)->first()->members;
-        //dd($char[0]->char->name);
+        $loginUp = $this->check_server($serverHost, Config::get('ragnarok.server_login_port'));
+        $charUp = $this->check_server($serverHost, Config::get('ragnarok.server_char_port'));
+        $mapUp = $this->check_server($serverHost, Config::get('ragnarok.server_map_port'));
 
-
-        // todo: extract to config
-        $serverHost = '46.105.55.202';
-
-        $loginUp = $this->check_server($serverHost, 6900);
-        $charUp = $this->check_server($serverHost, 6121);
-        $mapUp = $this->check_server($serverHost, 5121);
         return ($loginUp && $charUp && $mapUp);
     }
 
     public function get_nb_online() {
-        $nbOnline = Char::where('online', '>', '0')->count();
-        $nbMax = SiteOnlinepeak::findOrFail(1);
-
-        if ((int)$nbOnline > (int)$nbMax->players)
-        {
-           $nbMax->players = $nbOnline;
-           $nbMax->save();
-        }
-
-        $nbMax = $nbMax->players;
+        $nbOnline = $this->charRepository->countOnline();
+        $nbMax = $this->onlinepeakRepository->updateMaxOnline($nbOnline);
 
         return compact('nbOnline', 'nbMax');
     }

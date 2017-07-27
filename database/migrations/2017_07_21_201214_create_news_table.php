@@ -13,18 +13,20 @@ class CreateNewsTable extends Migration
      */
     public function up()
     {
-        Schema::create('news', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title');
-            $table->text('body');
-            $table->integer('category_id')->unsigned()->index();
-            $table->timestamps();
-        });
-
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->timestamps();
+        });
+
+        Schema::create('news', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('title');
+            $table->text('body');
+            $table->integer('category_id')->unsigned();
+            $table->timestamps();
+
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');;
         });
     }
 

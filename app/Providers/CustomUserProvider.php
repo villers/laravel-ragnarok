@@ -12,6 +12,9 @@ class CustomUserProvider extends EloquentUserProvider {
      * #param \Illuminate\Contracts\Auth\Authenticatable $user
      * #param array $credentials
      * #return bool
+     * @param Authenticatable $user
+     * @param array $credentials
+     * @return bool
      */
     public function validateCredentials(Authenticatable $user, array $credentials)
     {

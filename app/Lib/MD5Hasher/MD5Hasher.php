@@ -1,5 +1,10 @@
 <?php
-class MD5Hasher implements Illuminate\Contracts\Hashing\Hasher
+
+namespace App\Lib\MD5Hasher;
+
+use Illuminate\Contracts\Hashing\Hasher;
+
+class MD5Hasher implements Hasher
 {
     /**
      * Hash the given value.
@@ -7,11 +12,15 @@ class MD5Hasher implements Illuminate\Contracts\Hashing\Hasher
      * #param string $value
      * #return array $options
      * #return string
+     * @param string $value
+     * @param array $options
+     * @return string
      */
     public function make($value, array $options = array())
     {
         return md5($value);
     }
+
     /**
      * Check the given plain value against a hash.
      *
@@ -19,17 +28,25 @@ class MD5Hasher implements Illuminate\Contracts\Hashing\Hasher
      * #param string $hashedValue
      * #param array $options
      * #return bool
+     * @param string $value
+     * @param string $hashedValue
+     * @param array $options
+     * @return bool
      */
     public function check($value, $hashedValue, array $options = array())
     {
         return $this->make($value) === $hashedValue;
     }
+
     /**
      * Check if the given hash has been hashed using the given options.
      *
      * #param string $hashedValue
      * #param array $options
      * #return bool
+     * @param string $hashedValue
+     * @param array $options
+     * @return bool
      */
     public function needsRehash($hashedValue, array $options = array())
     {

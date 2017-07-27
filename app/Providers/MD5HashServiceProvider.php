@@ -1,5 +1,8 @@
 <?php namespace App\Providers;
+
+use App\Lib\MD5Hasher\MD5Hasher;
 use Illuminate\Support\ServiceProvider;
+
 class MD5HashServiceProvider extends ServiceProvider
 {
     /**
@@ -8,6 +11,7 @@ class MD5HashServiceProvider extends ServiceProvider
      * #var bool
      */
     protected $defer = true;
+
     /**
      * Register the service provider.
      *
@@ -16,9 +20,10 @@ class MD5HashServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('hash', function () {
-            return new \MD5Hasher;
+            return new MD5Hasher;
         });
     }
+
     /**
      * Get the services provided by the provider.
      *
