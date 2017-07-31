@@ -29,25 +29,28 @@ Route::middleware(['auth'])->prefix('user')->group(function() {
 
     Route::get('chars', 'UserController@chars')->name('user.chars');
     Route::post('chars', 'UserController@postResetChars')->name('user.post.reset.chars');
-});
 
 
+    Route::get('payment', 'PaymentController@show')->name('user.payment.show');
+    Route::post('payment/check', 'PaymentController@checkStarpass')->name('user.payment.check.starpass');
 
-Route::middleware(['admin'])->prefix('admin')->namespace('Admin')->as('admin.')->group(function() {
-    /*
-     * Admin
-     */
-    Route::get('/', 'AdminController@index')->name('index');
 
-    /*
-     * News
-     */
-    Route::resource('news', 'NewsController');
-    Route::get('news/{news}/delete', 'NewsController@destroy')->name('news.destroy');
+    Route::middleware(['admin'])->prefix('admin')->namespace('Admin')->as('admin.')->group(function() {
+        /*
+         * Admin
+         */
+        Route::get('/', 'AdminController@index')->name('index');
 
-    /*
-     * Category
-     */
-    Route::resource('category', 'CategoryController');
-    Route::get('category/{category}/delete', 'CategoryController@destroy')->name('category.destroy');
+        /*
+         * News
+         */
+        Route::resource('news', 'NewsController');
+        Route::get('news/{news}/delete', 'NewsController@destroy')->name('news.destroy');
+
+        /*
+         * Category
+         */
+        Route::resource('category', 'CategoryController');
+        Route::get('category/{category}/delete', 'CategoryController@destroy')->name('category.destroy');
+    });
 });

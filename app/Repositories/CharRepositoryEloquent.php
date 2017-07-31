@@ -40,7 +40,12 @@ class CharRepositoryEloquent extends BaseRepository implements CharRepository
         return $char->firstOrFail();
     }
 
-    function getOnline()
+    function isOnline($account_id)
+    {
+        return $this->model->where(['online' => 1, 'account_id' => $account_id])->count() > 0;
+    }
+
+    function getOnline($account_id = null)
     {
         return $this->model->where('online', '>', 0)
             ->with('guild')

@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Repositories\AccRegNumRepository;
+use App\Repositories\AccRegNumRepositoryEloquent;
 use App\Repositories\CategoryRepository;
 use App\Repositories\CategoryRepositoryEloquent;
 use App\Repositories\CharRepository;
@@ -33,6 +35,7 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->bind(AccRegNumRepository::class, AccRegNumRepositoryEloquent::class);
         $this->app->bind(NewsRepository::class, NewsRepositoryEloquent::class);
         $this->app->bind(CategoryRepository::class, CategoryRepositoryEloquent::class);
         $this->app->bind(CharRepository::class, CharRepositoryEloquent::class);

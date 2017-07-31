@@ -42,4 +42,25 @@ return [
 
     'server_map_port' => env('RAGNAROK_SERVER_MAP_PORT', '5121'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Server Number Add Cashpoint
+    |--------------------------------------------------------------------------
+    |
+    | This value is the number of increments of the account's cashpoints.
+    */
+
+    'server_nb_add_cashpoint' => env('RAGNAROK_SERVER_NB_ADD_CASHPOINT', '500'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Starpass configuration
+    |--------------------------------------------------------------------------
+    |
+    | This value is the number idp and idd of starpass
+    */
+
+    'starpass_idp' => env('RAGNAROK_STARPASS_IDP', '142078'),
+    'starpass_idd' => env('RAGNAROK_STARPASS_IDD', '225986'),
+
 ];

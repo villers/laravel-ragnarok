@@ -108,6 +108,6 @@ class Login extends Authenticatable
      */
     public function char()
     {
-        return $this->hasMany('App\Models\Char', 'char_id', 'char_id');
+        return $this->hasMany(Char::class, 'char_id', 'char_id');
     }
 }
