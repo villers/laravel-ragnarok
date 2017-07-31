@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Lib\Starpass\Starpass;
-use App\Models\Login;
 use App\Repositories\AccRegNumRepository;
 use App\Repositories\CharRepository;
 use Illuminate\Contracts\Auth\Guard;
@@ -30,10 +29,11 @@ class PaymentController
      */
     public function show(Guard $auth)
     {
+        $cashPoint = $this->accRegNumRepository->getCashPoint($auth->user()->account_id);
         $isOnline = $this->charRepository->isOnline($auth->user()->account_id);
         $starpass_idd = Config::get('ragnarok.starpass_idd');
 
-        return view('payment.show', compact('starpass_idd', 'isOnline'));
+        return view('payment.show', compact('cashPoint', 'starpass_idd', 'isOnline'));
     }
 
     /**

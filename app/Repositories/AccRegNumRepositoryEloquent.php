@@ -29,4 +29,21 @@ class AccRegNumRepositoryEloquent extends BaseRepository implements AccRegNumRep
     {
        $this->model->updateOrInsert($attributes, $values);
     }
+
+    /**
+     * @param $account_id
+     * @return int|mixed
+     * @internal param array $attributes
+     * @internal param array $values
+     */
+    function getCashPoint($account_id)
+    {
+        $result = $this->model->where([
+            'account_id' => $account_id,
+            'key' => '#CASHPOINTS'
+        ])->first();
+
+        return ($result) ? $result->value : 0;
+
+    }
 }

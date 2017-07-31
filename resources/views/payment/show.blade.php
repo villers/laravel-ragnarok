@@ -13,6 +13,12 @@
                 </div>
             </div>
 
+            <div class="well">
+                <h4>Vous possedez {{$cashPoint}} cashpoints.</h4>
+
+                1 code = 500 cashpoints
+            </div>
+
             @if($isOnline)
                 <div class="alert alert-danger">Vous devez être déconnecté du serveur</div>
                 <button id="refresh" class="btn btn-primary">Rafraichir</button>
