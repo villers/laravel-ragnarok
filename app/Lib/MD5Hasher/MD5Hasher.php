@@ -3,6 +3,7 @@
 namespace App\Lib\MD5Hasher;
 
 use Illuminate\Contracts\Hashing\Hasher;
+use Illuminate\Support\Facades\Config;
 
 class MD5Hasher implements Hasher
 {
@@ -18,7 +19,7 @@ class MD5Hasher implements Hasher
      */
     public function make($value, array $options = array())
     {
-        return md5($value);
+        return (Config::get('ragnarok.server_md5')) ? md5($value) : $value;
     }
 
     /**

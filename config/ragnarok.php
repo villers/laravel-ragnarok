@@ -63,4 +63,14 @@ return [
     'starpass_idp' => env('RAGNAROK_STARPASS_IDP', '142078'),
     'starpass_idd' => env('RAGNAROK_STARPASS_IDD', '225986'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Enable MD5
+    |--------------------------------------------------------------------------
+    |
+    | Active md5 password
+    */
+
+    'server_md5' => env('RAGNAROK_SERVER_MD5', true),
+
 ];
