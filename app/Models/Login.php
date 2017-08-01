@@ -9,6 +9,7 @@ namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Config;
 
 /**
  * Class Login
@@ -85,7 +86,7 @@ class Login extends Authenticatable
 
     public function setPasswordAttribute($value)
     {
-        $this->attributes['user_pass'] = md5($value);
+        $this->attributes['user_pass'] = Config::get('ragnarok.server_md5') ? md5($value) : $value;
     }
 
     public function getAuthPassword()
