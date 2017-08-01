@@ -60,7 +60,7 @@
                 @endif
 
                 <li>
-                    <a href="http://ro-play.org/forum">Forum</a>
+                    <a href="http://forum.ro-play.org">Forum</a>
                 </li>
             </ul>
 
