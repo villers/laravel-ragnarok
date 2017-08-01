@@ -31,9 +31,10 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
-                            <li>{{link_to_route('user.payment.show', 'Obtenir des CashPoints')}}</li>
+                            <li>{{link_to_route('user.index', 'Mon compte')}}</li>
                             <li>{{link_to_route('user.chars', 'Mes personnages')}}</li>
                             <li>{{link_to_route('user.password', 'Changer mon mot de passe')}}</li>
+                            <li>{{link_to_route('user.payment.show', 'Obtenir des CashPoints')}}</li>
 
                             @if (Auth::user()->isAdmin())
                                 <li class="divider"></li>

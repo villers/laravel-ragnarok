@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUserPassword;
+use App\Repositories\AccRegNumRepository;
 use App\Repositories\CharRepository;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Support\Facades\Hash;
@@ -16,24 +17,30 @@ use Illuminate\Support\Facades\Request;
 class UserController extends Controller
 {
     protected $charRepository;
+    protected $accRegNumRepository;
 
     /**
      * UserController constructor.
      * @param CharRepository $charRepository
+     * @param AccRegNumRepository $accRegNumRepository
      */
-    public function __construct(CharRepository $charRepository)
+    public function __construct(CharRepository $charRepository, AccRegNumRepository $accRegNumRepository)
     {
         $this->charRepository = $charRepository;
+        $this->accRegNumRepository = $accRegNumRepository;
     }
 
     /**
      * Show the user dashboard.
      *
+     * @param Guard $guard
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Guard $guard)
     {
-        return view('user.home');
+        $nb_cashpoint = $this->accRegNumRepository->getCashPoint($guard->user()->account_id);
+
+        return view('user.home', compact('nb_cashpoint'));
     }
 
     /**
