@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\Login;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -67,7 +68,7 @@ class RegisterController extends Controller
         return Login::create([
             'userid' => $data['userid'],
             'email' => $data['email'],
-            'user_pass' => md5($data['password']),
+            'user_pass' => Config::get('ragnarok.server_md5') ? md5($data['password']) : $data['password'],
             'sex' => $data['sex'],
             'birthdate' => $data['birthdate'],
             'last_ip' => Request::ip(),
