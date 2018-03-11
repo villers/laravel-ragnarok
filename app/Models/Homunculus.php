@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Homunculus
- * 
+ *
  * @property int $homun_id
  * @property int $char_id
  * @property int $class
@@ -40,56 +40,56 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Homunculus extends Eloquent
 {
-	protected $table = 'homunculus';
-	protected $primaryKey = 'homun_id';
-	public $timestamps = false;
+    protected $table = 'homunculus';
+    protected $primaryKey = 'homun_id';
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'class' => 'int',
-		'prev_class' => 'int',
-		'level' => 'int',
-		'exp' => 'int',
-		'intimacy' => 'int',
-		'hunger' => 'int',
-		'str' => 'int',
-		'agi' => 'int',
-		'vit' => 'int',
-		'int' => 'int',
-		'dex' => 'int',
-		'luk' => 'int',
-		'hp' => 'int',
-		'max_hp' => 'int',
-		'sp' => 'int',
-		'max_sp' => 'int',
-		'skill_point' => 'int',
-		'alive' => 'int',
-		'rename_flag' => 'int',
-		'vaporize' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'class' => 'int',
+        'prev_class' => 'int',
+        'level' => 'int',
+        'exp' => 'int',
+        'intimacy' => 'int',
+        'hunger' => 'int',
+        'str' => 'int',
+        'agi' => 'int',
+        'vit' => 'int',
+        'int' => 'int',
+        'dex' => 'int',
+        'luk' => 'int',
+        'hp' => 'int',
+        'max_hp' => 'int',
+        'sp' => 'int',
+        'max_sp' => 'int',
+        'skill_point' => 'int',
+        'alive' => 'int',
+        'rename_flag' => 'int',
+        'vaporize' => 'int'
+    ];
 
-	protected $fillable = [
-		'char_id',
-		'class',
-		'prev_class',
-		'name',
-		'level',
-		'exp',
-		'intimacy',
-		'hunger',
-		'str',
-		'agi',
-		'vit',
-		'int',
-		'dex',
-		'luk',
-		'hp',
-		'max_hp',
-		'sp',
-		'max_sp',
-		'skill_point',
-		'alive',
-		'rename_flag',
-		'vaporize'
-	];
+    protected $fillable = [
+        'char_id',
+        'class',
+        'prev_class',
+        'name',
+        'level',
+        'exp',
+        'intimacy',
+        'hunger',
+        'str',
+        'agi',
+        'vit',
+        'int',
+        'dex',
+        'luk',
+        'hp',
+        'max_hp',
+        'sp',
+        'max_sp',
+        'skill_point',
+        'alive',
+        'rename_flag',
+        'vaporize'
+    ];
 }

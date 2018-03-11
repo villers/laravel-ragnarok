@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class DbRoulette
- * 
+ *
  * @property int $index
  * @property int $level
  * @property int $item_id
@@ -22,23 +22,23 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class DbRoulette extends Eloquent
 {
-	protected $table = 'db_roulette';
-	protected $primaryKey = 'index';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'db_roulette';
+    protected $primaryKey = 'index';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'index' => 'int',
-		'level' => 'int',
-		'item_id' => 'int',
-		'amount' => 'int',
-		'flag' => 'int'
-	];
+    protected $casts = [
+        'index' => 'int',
+        'level' => 'int',
+        'item_id' => 'int',
+        'amount' => 'int',
+        'flag' => 'int'
+    ];
 
-	protected $fillable = [
-		'level',
-		'item_id',
-		'amount',
-		'flag'
-	];
+    protected $fillable = [
+        'level',
+        'item_id',
+        'amount',
+        'flag'
+    ];
 }

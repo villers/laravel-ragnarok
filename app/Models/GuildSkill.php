@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class GuildSkill
- * 
+ *
  * @property int $guild_id
  * @property int $id
  * @property int $lv
@@ -20,17 +20,17 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class GuildSkill extends Eloquent
 {
-	protected $table = 'guild_skill';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'guild_skill';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'guild_id' => 'int',
-		'id' => 'int',
-		'lv' => 'int'
-	];
+    protected $casts = [
+        'guild_id' => 'int',
+        'id' => 'int',
+        'lv' => 'int'
+    ];
 
-	protected $fillable = [
-		'lv'
-	];
+    protected $fillable = [
+        'lv'
+    ];
 }

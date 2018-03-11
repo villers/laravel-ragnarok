@@ -24,14 +24,16 @@ class News extends Model
     /**
      * @param $date
      */
-    public function setCreatedAtAttribute($date) {
+    public function setCreatedAtAttribute($date)
+    {
         $this->attributes['created_at'] = Carbon::parse($date);
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
-    public function category() {
+    public function category()
+    {
         return $this->hasOne(Category::class, 'id', 'category_id');
     }
 
@@ -39,8 +41,8 @@ class News extends Model
      * Get the tags associated with news item
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function tags() {
+    public function tags()
+    {
         return $this->belongsToMany('App\Tag', 'news_tags', 'news_id', 'tag_id');
     }
-
 }

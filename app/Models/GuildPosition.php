@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class GuildPosition
- * 
+ *
  * @property int $guild_id
  * @property int $position
  * @property string $name
@@ -22,20 +22,20 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class GuildPosition extends Eloquent
 {
-	protected $table = 'guild_position';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'guild_position';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'guild_id' => 'int',
-		'position' => 'int',
-		'mode' => 'int',
-		'exp_mode' => 'int'
-	];
+    protected $casts = [
+        'guild_id' => 'int',
+        'position' => 'int',
+        'mode' => 'int',
+        'exp_mode' => 'int'
+    ];
 
-	protected $fillable = [
-		'name',
-		'mode',
-		'exp_mode'
-	];
+    protected $fillable = [
+        'name',
+        'mode',
+        'exp_mode'
+    ];
 }

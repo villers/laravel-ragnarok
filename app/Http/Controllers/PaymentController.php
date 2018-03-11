@@ -45,13 +45,11 @@ class PaymentController
      */
     public function checkStarpass(Guard $auth, Starpass $starpass)
     {
-        if ($this->charRepository->isOnline($auth->user()->account_id))
-        {
+        if ($this->charRepository->isOnline($auth->user()->account_id)) {
             return redirect()->route('user.payment.show');
         }
 
-        if($starpass->codeIsInvalide(Config::get('ragnarok.starpass_idp'), Config::get('ragnarok.starpass_idd'), Input::all()))
-        {
+        if ($starpass->codeIsInvalide(Config::get('ragnarok.starpass_idp'), Config::get('ragnarok.starpass_idd'), Input::all())) {
             return redirect()->route('user.payment.show')
                 ->with('error', 'Le code est invalide');
         }

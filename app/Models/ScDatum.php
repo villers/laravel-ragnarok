@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class ScDatum
- * 
+ *
  * @property int $account_id
  * @property int $char_id
  * @property int $type
@@ -25,28 +25,28 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class ScDatum extends Eloquent
 {
-	public $incrementing = false;
-	public $timestamps = false;
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'account_id' => 'int',
-		'char_id' => 'int',
-		'type' => 'int',
-		'tick' => 'int',
-		'val1' => 'int',
-		'val2' => 'int',
-		'val3' => 'int',
-		'val4' => 'int'
-	];
+    protected $casts = [
+        'account_id' => 'int',
+        'char_id' => 'int',
+        'type' => 'int',
+        'tick' => 'int',
+        'val1' => 'int',
+        'val2' => 'int',
+        'val3' => 'int',
+        'val4' => 'int'
+    ];
 
-	protected $fillable = [
-		'account_id',
-		'char_id',
-		'type',
-		'tick',
-		'val1',
-		'val2',
-		'val3',
-		'val4'
-	];
+    protected $fillable = [
+        'account_id',
+        'char_id',
+        'type',
+        'tick',
+        'val1',
+        'val2',
+        'val3',
+        'val4'
+    ];
 }

@@ -24,41 +24,48 @@ class NewsController extends Controller
         $this->categoryRepository = $categoryRepository;
     }
 
-    public function index() {
+    public function index()
+    {
         $news = $this->newsRepository->paginate('desc', 3);
 
         return view('admin.news.index', compact('news'));
     }
 
-    public function show(News $news) {
+    public function show(News $news)
+    {
         return view('admin.news.show', compact('news'));
     }
 
-    public function edit(News $news) {
+    public function edit(News $news)
+    {
         $categories = $this->categoryRepository->allToList();
 
         return view('admin.news.edit', compact('news', 'categories'));
     }
 
-    public function destroy(News $news) {
+    public function destroy(News $news)
+    {
         $this->newsRepository->delete($news);
 
         return redirect()->route('admin.news.index');
     }
 
-    public function create() {
+    public function create()
+    {
         $categories = $this->categoryRepository->allToList();
 
         return view('admin.news.create', compact(['categories']));
     }
 
-    public function store(NewsRequest $request) {
+    public function store(NewsRequest $request)
+    {
         $this->newsRepository->create($request->all());
 
         return redirect()->route('admin.news.index');
     }
 
-    public function update(NewsRequest $request, News $news) {
+    public function update(NewsRequest $request, News $news)
+    {
         $this->newsRepository->update($news, $request->all());
 
         return redirect()->route('admin.news.index');

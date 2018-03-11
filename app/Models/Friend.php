@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Friend
- * 
+ *
  * @property int $char_id
  * @property int $friend_account
  * @property int $friend_id
@@ -20,18 +20,18 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Friend extends Eloquent
 {
-	public $incrementing = false;
-	public $timestamps = false;
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'friend_account' => 'int',
-		'friend_id' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'friend_account' => 'int',
+        'friend_id' => 'int'
+    ];
 
-	protected $fillable = [
-		'char_id',
-		'friend_account',
-		'friend_id'
-	];
+    protected $fillable = [
+        'char_id',
+        'friend_account',
+        'friend_id'
+    ];
 }

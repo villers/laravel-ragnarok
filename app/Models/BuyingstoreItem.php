@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class BuyingstoreItem
- * 
+ *
  * @property int $buyingstore_id
  * @property int $index
  * @property int $item_id
@@ -22,22 +22,22 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class BuyingstoreItem extends Eloquent
 {
-	public $incrementing = false;
-	public $timestamps = false;
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'buyingstore_id' => 'int',
-		'index' => 'int',
-		'item_id' => 'int',
-		'amount' => 'int',
-		'price' => 'int'
-	];
+    protected $casts = [
+        'buyingstore_id' => 'int',
+        'index' => 'int',
+        'item_id' => 'int',
+        'amount' => 'int',
+        'price' => 'int'
+    ];
 
-	protected $fillable = [
-		'buyingstore_id',
-		'index',
-		'item_id',
-		'amount',
-		'price'
-	];
+    protected $fillable = [
+        'buyingstore_id',
+        'index',
+        'item_id',
+        'amount',
+        'price'
+    ];
 }

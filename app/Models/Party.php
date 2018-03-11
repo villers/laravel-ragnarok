@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Party
- * 
+ *
  * @property int $party_id
  * @property string $name
  * @property int $exp
@@ -23,22 +23,22 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Party extends Eloquent
 {
-	protected $table = 'party';
-	protected $primaryKey = 'party_id';
-	public $timestamps = false;
+    protected $table = 'party';
+    protected $primaryKey = 'party_id';
+    public $timestamps = false;
 
-	protected $casts = [
-		'exp' => 'int',
-		'item' => 'int',
-		'leader_id' => 'int',
-		'leader_char' => 'int'
-	];
+    protected $casts = [
+        'exp' => 'int',
+        'item' => 'int',
+        'leader_id' => 'int',
+        'leader_char' => 'int'
+    ];
 
-	protected $fillable = [
-		'name',
-		'exp',
-		'item',
-		'leader_id',
-		'leader_char'
-	];
+    protected $fillable = [
+        'name',
+        'exp',
+        'item',
+        'leader_id',
+        'leader_char'
+    ];
 }

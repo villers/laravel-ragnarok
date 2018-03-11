@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Skill
- * 
+ *
  * @property int $char_id
  * @property int $id
  * @property int $lv
@@ -21,19 +21,19 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Skill extends Eloquent
 {
-	protected $table = 'skill';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'skill';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'id' => 'int',
-		'lv' => 'int',
-		'flag' => 'bool'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'id' => 'int',
+        'lv' => 'int',
+        'flag' => 'bool'
+    ];
 
-	protected $fillable = [
-		'lv',
-		'flag'
-	];
+    protected $fillable = [
+        'lv',
+        'flag'
+    ];
 }

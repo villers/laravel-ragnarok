@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Guild
- * 
+ *
  * @property int $guild_id
  * @property string $name
  * @property int $char_id
@@ -33,39 +33,39 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Guild extends Eloquent
 {
-	protected $table = 'guild';
-	public $timestamps = false;
+    protected $table = 'guild';
+    public $timestamps = false;
 
     protected $primaryKey = 'guild_id';
 
-	protected $casts = [
-		'guild_lv' => 'int',
-		'connect_member' => 'int',
-		'max_member' => 'int',
-		'average_lv' => 'int',
-		'exp' => 'int',
-		'next_exp' => 'int',
-		'skill_point' => 'int',
-		'emblem_len' => 'int',
-		'emblem_id' => 'int',
-	];
+    protected $casts = [
+        'guild_lv' => 'int',
+        'connect_member' => 'int',
+        'max_member' => 'int',
+        'average_lv' => 'int',
+        'exp' => 'int',
+        'next_exp' => 'int',
+        'skill_point' => 'int',
+        'emblem_len' => 'int',
+        'emblem_id' => 'int',
+    ];
 
-	protected $fillable = [
-		'name',
-		'master',
-		'guild_lv',
-		'connect_member',
-		'max_member',
-		'average_lv',
-		'exp',
-		'next_exp',
-		'skill_point',
-		'mes1',
-		'mes2',
-		'emblem_len',
-		'emblem_id',
-		'emblem_data'
-	];
+    protected $fillable = [
+        'name',
+        'master',
+        'guild_lv',
+        'connect_member',
+        'max_member',
+        'average_lv',
+        'exp',
+        'next_exp',
+        'skill_point',
+        'mes1',
+        'mes2',
+        'emblem_len',
+        'emblem_id',
+        'emblem_data'
+    ];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\hasMany

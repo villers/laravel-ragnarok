@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Vending
- * 
+ *
  * @property int $id
  * @property int $account_id
  * @property int $char_id
@@ -29,29 +29,29 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Vending extends Eloquent
 {
-	public $incrementing = false;
-	public $timestamps = false;
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'id' => 'int',
-		'account_id' => 'int',
-		'char_id' => 'int',
-		'x' => 'int',
-		'y' => 'int',
-		'autotrade' => 'int'
-	];
+    protected $casts = [
+        'id' => 'int',
+        'account_id' => 'int',
+        'char_id' => 'int',
+        'x' => 'int',
+        'y' => 'int',
+        'autotrade' => 'int'
+    ];
 
-	protected $fillable = [
-		'account_id',
-		'char_id',
-		'sex',
-		'map',
-		'x',
-		'y',
-		'title',
-		'body_direction',
-		'head_direction',
-		'sit',
-		'autotrade'
-	];
+    protected $fillable = [
+        'account_id',
+        'char_id',
+        'sex',
+        'map',
+        'x',
+        'y',
+        'title',
+        'body_direction',
+        'head_direction',
+        'sit',
+        'autotrade'
+    ];
 }

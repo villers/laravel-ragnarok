@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Interlog
- * 
+ *
  * @property \Carbon\Carbon $time
  * @property string $log
  *
@@ -19,16 +19,16 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Interlog extends Eloquent
 {
-	protected $table = 'interlog';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'interlog';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $dates = [
-		'time'
-	];
+    protected $dates = [
+        'time'
+    ];
 
-	protected $fillable = [
-		'time',
-		'log'
-	];
+    protected $fillable = [
+        'time',
+        'log'
+    ];
 }

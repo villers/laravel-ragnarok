@@ -20,7 +20,7 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
         return Category::class;
     }
 
-    function allToList()
+    public function allToList()
     {
         $result = [];
         $categories = $this->model->all(['id', 'title'])->toArray();

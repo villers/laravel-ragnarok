@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class BonusScript
- * 
+ *
  * @property int $char_id
  * @property string $script
  * @property int $tick
@@ -23,24 +23,24 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class BonusScript extends Eloquent
 {
-	protected $table = 'bonus_script';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'bonus_script';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'tick' => 'int',
-		'flag' => 'int',
-		'type' => 'bool',
-		'icon' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'tick' => 'int',
+        'flag' => 'int',
+        'type' => 'bool',
+        'icon' => 'int'
+    ];
 
-	protected $fillable = [
-		'char_id',
-		'script',
-		'tick',
-		'flag',
-		'type',
-		'icon'
-	];
+    protected $fillable = [
+        'char_id',
+        'script',
+        'tick',
+        'flag',
+        'type',
+        'icon'
+    ];
 }

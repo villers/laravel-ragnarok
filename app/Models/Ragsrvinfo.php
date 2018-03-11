@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Ragsrvinfo
- * 
+ *
  * @property int $index
  * @property string $name
  * @property int $exp
@@ -22,22 +22,22 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Ragsrvinfo extends Eloquent
 {
-	protected $table = 'ragsrvinfo';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'ragsrvinfo';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'index' => 'int',
-		'exp' => 'int',
-		'jexp' => 'int',
-		'drop' => 'int'
-	];
+    protected $casts = [
+        'index' => 'int',
+        'exp' => 'int',
+        'jexp' => 'int',
+        'drop' => 'int'
+    ];
 
-	protected $fillable = [
-		'index',
-		'name',
-		'exp',
-		'jexp',
-		'drop'
-	];
+    protected $fillable = [
+        'index',
+        'name',
+        'exp',
+        'jexp',
+        'drop'
+    ];
 }

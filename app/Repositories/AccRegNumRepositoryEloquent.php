@@ -3,7 +3,6 @@
 namespace App\Repositories;
 
 use App\Models\AccRegNum;
-use App\Models\Category;
 
 /**
  * Class CategoryRepositoryEloquent
@@ -25,9 +24,9 @@ class AccRegNumRepositoryEloquent extends BaseRepository implements AccRegNumRep
      * @param array $attributes
      * @param array $values
      */
-    function incrementOrCreate(array $attributes, array $values = [])
+    public function incrementOrCreate(array $attributes, array $values = [])
     {
-       $this->model->updateOrInsert($attributes, $values);
+        $this->model->updateOrInsert($attributes, $values);
     }
 
     /**
@@ -36,7 +35,7 @@ class AccRegNumRepositoryEloquent extends BaseRepository implements AccRegNumRep
      * @internal param array $attributes
      * @internal param array $values
      */
-    function getCashPoint($account_id)
+    public function getCashPoint($account_id)
     {
         $result = $this->model->where([
             'account_id' => $account_id,
@@ -44,6 +43,5 @@ class AccRegNumRepositoryEloquent extends BaseRepository implements AccRegNumRep
         ])->first();
 
         return ($result) ? $result->value : 0;
-
     }
 }

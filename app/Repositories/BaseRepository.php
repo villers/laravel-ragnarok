@@ -2,8 +2,8 @@
 
 namespace App\Repositories;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Container\Container as App;
+use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Repository
@@ -38,7 +38,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
     /**
      * Specify Model class name
      */
-    protected abstract function model();
+    abstract protected function model();
 
     /**
      * @return Model
@@ -52,8 +52,8 @@ abstract class BaseRepository implements BaseRepositoryInterface
      * Set Eloquent Model to instantiate
      *
      * @param $eloquentModel
-     * @return Model
      * @throws \Exception
+     * @return Model
      */
     protected function setModel($eloquentModel)
     {
@@ -74,7 +74,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
      * @param string $key
      * @return mixed
      */
-    function paginate($orderBy = 'desc', $paginate = 3, $key = 'created_at')
+    public function paginate($orderBy = 'desc', $paginate = 3, $key = 'created_at')
     {
         return $this->model->orderBy('created_at', $orderBy)
             ->paginate($paginate);
@@ -83,7 +83,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
     /**
      * @return mixed
      */
-    function all()
+    public function all()
     {
         return $this->model->all();
     }
@@ -93,7 +93,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
      * @param string $key
      * @return mixed
      */
-    function get($id, $key = 'id')
+    public function get($id, $key = 'id')
     {
         return $this->model->where($key, $id)->firstOrFail();
     }
@@ -101,7 +101,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
     /**
      * @param $item
      */
-    function delete($item)
+    public function delete($item)
     {
         $item->delete();
     }
@@ -109,7 +109,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
     /**
      * @param $item
      */
-    function create($item)
+    public function create($item)
     {
         $this->model->create($item);
     }
@@ -118,7 +118,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
      * @param $item
      * @param $newItem
      */
-    function update($item, $newItem)
+    public function update($item, $newItem)
     {
         $item->update($newItem);
     }

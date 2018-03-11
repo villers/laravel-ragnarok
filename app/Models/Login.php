@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Config;
 
 /**
  * Class Login
- * 
+ *
  * @property int $account_id
  * @property string $userid
  * @property string $user_pass
@@ -40,49 +40,49 @@ class Login extends Authenticatable
     use Notifiable;
 
     protected $table = 'login';
-	protected $primaryKey = 'account_id';
-	public $timestamps = false;
+    protected $primaryKey = 'account_id';
+    public $timestamps = false;
 
-	protected $casts = [
-		'group_id' => 'int',
-		'state' => 'int',
-		'unban_time' => 'int',
-		'expiration_time' => 'int',
-		'logincount' => 'int',
-		'character_slots' => 'int',
-		'pincode_change' => 'int',
-		'vip_time' => 'int',
-		'old_group' => 'int'
-	];
+    protected $casts = [
+        'group_id' => 'int',
+        'state' => 'int',
+        'unban_time' => 'int',
+        'expiration_time' => 'int',
+        'logincount' => 'int',
+        'character_slots' => 'int',
+        'pincode_change' => 'int',
+        'vip_time' => 'int',
+        'old_group' => 'int'
+    ];
 
-	protected $dates = [
-		'lastlogin',
-		'birthdate'
-	];
+    protected $dates = [
+        'lastlogin',
+        'birthdate'
+    ];
 
-	protected $hidden = [
-		'user_pass'
-	];
+    protected $hidden = [
+        'user_pass'
+    ];
 
-	protected $fillable = [
-		'userid',
-		'user_pass',
-		'sex',
-		'email',
-		'group_id',
-		'state',
-		'unban_time',
-		'expiration_time',
-		'logincount',
-		'lastlogin',
-		'last_ip',
-		'birthdate',
-		'character_slots',
-		'pincode',
-		'pincode_change',
-		'vip_time',
-		'old_group'
-	];
+    protected $fillable = [
+        'userid',
+        'user_pass',
+        'sex',
+        'email',
+        'group_id',
+        'state',
+        'unban_time',
+        'expiration_time',
+        'logincount',
+        'lastlogin',
+        'last_ip',
+        'birthdate',
+        'character_slots',
+        'pincode',
+        'pincode_change',
+        'vip_time',
+        'old_group'
+    ];
 
     public function setPasswordAttribute($value)
     {
@@ -99,8 +99,8 @@ class Login extends Authenticatable
         return 'userid';
     }
 
-    public function isAdmin() {
-
+    public function isAdmin()
+    {
         return $this->group_id === 99;
     }
 

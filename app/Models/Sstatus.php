@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Sstatus
- * 
+ *
  * @property int $index
  * @property string $name
  * @property int $user
@@ -20,18 +20,18 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Sstatus extends Eloquent
 {
-	protected $table = 'sstatus';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'sstatus';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'index' => 'int',
-		'user' => 'int'
-	];
+    protected $casts = [
+        'index' => 'int',
+        'user' => 'int'
+    ];
 
-	protected $fillable = [
-		'index',
-		'name',
-		'user'
-	];
+    protected $fillable = [
+        'index',
+        'name',
+        'user'
+    ];
 }

@@ -69,7 +69,7 @@ class HomeController extends Controller
         return view('staff');
     }
 
-      /**
+    /**
      * Show the page partenaire.
      *
      * @return \Illuminate\Http\Response
@@ -111,7 +111,8 @@ class HomeController extends Controller
         return view('online', compact('chars'));
     }
 
-    public function emblem($id) {
+    public function emblem($id)
+    {
         $guild = $this->guildRepository->get($id, 'guild_id')->emblem_data;
         $ebm = @gzuncompress(pack('H*', $guild));
 

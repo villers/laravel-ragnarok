@@ -17,7 +17,7 @@ class MD5Hasher implements Hasher
      * @param array $options
      * @return string
      */
-    public function make($value, array $options = array())
+    public function make($value, array $options = [])
     {
         return (Config::get('ragnarok.server_md5')) ? md5($value) : $value;
     }
@@ -34,7 +34,7 @@ class MD5Hasher implements Hasher
      * @param array $options
      * @return bool
      */
-    public function check($value, $hashedValue, array $options = array())
+    public function check($value, $hashedValue, array $options = [])
     {
         return $this->make($value) === $hashedValue;
     }
@@ -49,7 +49,7 @@ class MD5Hasher implements Hasher
      * @param array $options
      * @return bool
      */
-    public function needsRehash($hashedValue, array $options = array())
+    public function needsRehash($hashedValue, array $options = [])
     {
         return false;
     }

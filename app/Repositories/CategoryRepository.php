@@ -8,5 +8,5 @@ namespace App\Repositories;
  */
 interface CategoryRepository extends BaseRepositoryInterface
 {
-    function allToList();
+    public function allToList();
 }

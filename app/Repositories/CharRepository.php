@@ -8,10 +8,10 @@ namespace App\Repositories;
  */
 interface CharRepository extends BaseRepositoryInterface
 {
-    function getByAccountId($id);
-    function get($charId, $accountId = null, $isOnline = null);
-    function isOnline($account_id);
-    function getOnline();
-    function countOnline();
-    function reset($char);
+    public function getByAccountId($id);
+    public function get($charId, $accountId = null, $isOnline = null);
+    public function isOnline($account_id);
+    public function getOnline();
+    public function countOnline();
+    public function reset($char);
 }

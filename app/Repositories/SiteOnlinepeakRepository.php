@@ -8,5 +8,5 @@ namespace App\Repositories;
  */
 interface SiteOnlinepeakRepository extends BaseRepositoryInterface
 {
-    function updateMaxOnline($nbOnline);
+    public function updateMaxOnline($nbOnline);
 }

@@ -5,7 +5,8 @@ namespace App\Providers;
 use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Contracts\Auth\Authenticatable;
 
-class CustomUserProvider extends EloquentUserProvider {
+class CustomUserProvider extends EloquentUserProvider
+{
     /**
      * Validate a user against the given credentials.
      *

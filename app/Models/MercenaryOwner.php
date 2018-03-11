@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class MercenaryOwner
- * 
+ *
  * @property int $char_id
  * @property int $merc_id
  * @property int $arch_calls
@@ -25,29 +25,29 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class MercenaryOwner extends Eloquent
 {
-	protected $table = 'mercenary_owner';
-	protected $primaryKey = 'char_id';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'mercenary_owner';
+    protected $primaryKey = 'char_id';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'merc_id' => 'int',
-		'arch_calls' => 'int',
-		'arch_faith' => 'int',
-		'spear_calls' => 'int',
-		'spear_faith' => 'int',
-		'sword_calls' => 'int',
-		'sword_faith' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'merc_id' => 'int',
+        'arch_calls' => 'int',
+        'arch_faith' => 'int',
+        'spear_calls' => 'int',
+        'spear_faith' => 'int',
+        'sword_calls' => 'int',
+        'sword_faith' => 'int'
+    ];
 
-	protected $fillable = [
-		'merc_id',
-		'arch_calls',
-		'arch_faith',
-		'spear_calls',
-		'spear_faith',
-		'sword_calls',
-		'sword_faith'
-	];
+    protected $fillable = [
+        'merc_id',
+        'arch_calls',
+        'arch_faith',
+        'spear_calls',
+        'spear_faith',
+        'sword_calls',
+        'sword_faith'
+    ];
 }

@@ -24,7 +24,7 @@ Route::get('/nwoe', 'HomeController@nwoe')->name('nwoe');
 Route::get('/onlines', 'HomeController@online')->name('onlines');
 Route::get('/emblem/{id}', 'HomeController@emblem')->name('emblem');
 
-Route::middleware(['auth'])->prefix('user')->group(function() {
+Route::middleware(['auth'])->prefix('user')->group(function () {
     Route::get('/', 'UserController@index')->name('user.index');
 
     Route::get('password', 'UserController@changePassword')->name('user.password');
@@ -38,7 +38,7 @@ Route::middleware(['auth'])->prefix('user')->group(function() {
     Route::post('payment/check', 'PaymentController@checkStarpass')->name('user.payment.check.starpass');
 
 
-    Route::middleware(['admin'])->prefix('admin')->namespace('Admin')->as('admin.')->group(function() {
+    Route::middleware(['admin'])->prefix('admin')->namespace('Admin')->as('admin.')->group(function () {
         /*
          * Admin
          */

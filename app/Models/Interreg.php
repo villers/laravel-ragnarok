@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Interreg
- * 
+ *
  * @property string $varname
  * @property string $value
  *
@@ -19,12 +19,12 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Interreg extends Eloquent
 {
-	protected $table = 'interreg';
-	protected $primaryKey = 'varname';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'interreg';
+    protected $primaryKey = 'varname';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $fillable = [
-		'value'
-	];
+    protected $fillable = [
+        'value'
+    ];
 }

@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateNewsTable extends Migration
 {
@@ -26,7 +26,8 @@ class CreateNewsTable extends Migration
             $table->integer('category_id')->unsigned();
             $table->timestamps();
 
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');;
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+            ;
         });
     }
 

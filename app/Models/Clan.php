@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Clan
- * 
+ *
  * @property int $clan_id
  * @property string $name
  * @property string $master
@@ -22,18 +22,18 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Clan extends Eloquent
 {
-	protected $table = 'clan';
-	protected $primaryKey = 'clan_id';
-	public $timestamps = false;
+    protected $table = 'clan';
+    protected $primaryKey = 'clan_id';
+    public $timestamps = false;
 
-	protected $casts = [
-		'max_member' => 'int'
-	];
+    protected $casts = [
+        'max_member' => 'int'
+    ];
 
-	protected $fillable = [
-		'name',
-		'master',
-		'mapname',
-		'max_member'
-	];
+    protected $fillable = [
+        'name',
+        'master',
+        'mapname',
+        'max_member'
+    ];
 }

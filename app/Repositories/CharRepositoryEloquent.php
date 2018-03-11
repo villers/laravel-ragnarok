@@ -20,12 +20,12 @@ class CharRepositoryEloquent extends BaseRepository implements CharRepository
         return Char::class;
     }
 
-    function getByAccountId($id)
+    public function getByAccountId($id)
     {
         return $this->model->where('account_id', $id)->get();
     }
 
-    function get($charId, $accountId = null, $isOnline = null)
+    public function get($charId, $accountId = null, $isOnline = null)
     {
         $char = $this->model->where('char_id', $charId);
 
@@ -40,24 +40,24 @@ class CharRepositoryEloquent extends BaseRepository implements CharRepository
         return $char->firstOrFail();
     }
 
-    function isOnline($account_id)
+    public function isOnline($account_id)
     {
         return $this->model->where(['online' => 1, 'account_id' => $account_id])->count() > 0;
     }
 
-    function getOnline($account_id = null)
+    public function getOnline($account_id = null)
     {
         return $this->model->where('online', '>', 0)
             ->with('guild')
             ->get();
     }
 
-    function countOnline()
+    public function countOnline()
     {
         return $this->model->where('online', '>', 0)->count();
     }
 
-    function reset($char)
+    public function reset($char)
     {
         $char->last_map = $char->save_map;
         $char->last_x = $char->save_x;
@@ -74,5 +74,4 @@ class CharRepositoryEloquent extends BaseRepository implements CharRepository
 
         return $char->save();
     }
-
 }

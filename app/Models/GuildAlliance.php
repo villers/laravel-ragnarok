@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class GuildAlliance
- * 
+ *
  * @property int $guild_id
  * @property int $opposition
  * @property int $alliance_id
@@ -21,18 +21,18 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class GuildAlliance extends Eloquent
 {
-	protected $table = 'guild_alliance';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'guild_alliance';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'guild_id' => 'int',
-		'opposition' => 'int',
-		'alliance_id' => 'int'
-	];
+    protected $casts = [
+        'guild_id' => 'int',
+        'opposition' => 'int',
+        'alliance_id' => 'int'
+    ];
 
-	protected $fillable = [
-		'opposition',
-		'name'
-	];
+    protected $fillable = [
+        'opposition',
+        'name'
+    ];
 }

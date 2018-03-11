@@ -18,7 +18,8 @@ class Category extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function newsItems() {
+    public function newsItems()
+    {
         return $this->belongsTo('App\News');
     }
 }

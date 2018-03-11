@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class PvpRank
- * 
+ *
  * @property int $char_id
  * @property int $account_id
  * @property string $char
@@ -40,57 +40,57 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class PvpRank extends Eloquent
 {
-	protected $table = 'pvp_rank';
-	protected $primaryKey = 'char_id';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'pvp_rank';
+    protected $primaryKey = 'char_id';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'account_id' => 'int',
-		'kill' => 'int',
-		'death' => 'int',
-		'killingstreak' => 'int',
-		'multikill' => 'int',
-		'killingspree' => 'int',
-		'dominating' => 'int',
-		'megakill' => 'int',
-		'unstoppable' => 'int',
-		'wickedsick' => 'int',
-		'monsterkill' => 'int',
-		'godlike' => 'int',
-		'beyondgodlike' => 'int',
-		'doublekill' => 'int',
-		'triplekill' => 'int',
-		'ultrakill' => 'int',
-		'rampage' => 'int',
-		'ownage' => 'int',
-		'nemesiskill' => 'int',
-		'feedcount' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'account_id' => 'int',
+        'kill' => 'int',
+        'death' => 'int',
+        'killingstreak' => 'int',
+        'multikill' => 'int',
+        'killingspree' => 'int',
+        'dominating' => 'int',
+        'megakill' => 'int',
+        'unstoppable' => 'int',
+        'wickedsick' => 'int',
+        'monsterkill' => 'int',
+        'godlike' => 'int',
+        'beyondgodlike' => 'int',
+        'doublekill' => 'int',
+        'triplekill' => 'int',
+        'ultrakill' => 'int',
+        'rampage' => 'int',
+        'ownage' => 'int',
+        'nemesiskill' => 'int',
+        'feedcount' => 'int'
+    ];
 
-	protected $fillable = [
-		'account_id',
-		'char',
-		'kill',
-		'death',
-		'kdr',
-		'killingstreak',
-		'multikill',
-		'killingspree',
-		'dominating',
-		'megakill',
-		'unstoppable',
-		'wickedsick',
-		'monsterkill',
-		'godlike',
-		'beyondgodlike',
-		'doublekill',
-		'triplekill',
-		'ultrakill',
-		'rampage',
-		'ownage',
-		'nemesiskill',
-		'feedcount'
-	];
+    protected $fillable = [
+        'account_id',
+        'char',
+        'kill',
+        'death',
+        'kdr',
+        'killingstreak',
+        'multikill',
+        'killingspree',
+        'dominating',
+        'megakill',
+        'unstoppable',
+        'wickedsick',
+        'monsterkill',
+        'godlike',
+        'beyondgodlike',
+        'doublekill',
+        'triplekill',
+        'ultrakill',
+        'rampage',
+        'ownage',
+        'nemesiskill',
+        'feedcount'
+    ];
 }

@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class GuildCastle
- * 
+ *
  * @property int $castle_id
  * @property int $guild_id
  * @property int $economy
@@ -35,49 +35,49 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class GuildCastle extends Eloquent
 {
-	protected $table = 'guild_castle';
-	protected $primaryKey = 'castle_id';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'guild_castle';
+    protected $primaryKey = 'castle_id';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'castle_id' => 'int',
-		'guild_id' => 'int',
-		'economy' => 'int',
-		'defense' => 'int',
-		'triggerE' => 'int',
-		'triggerD' => 'int',
-		'nextTime' => 'int',
-		'payTime' => 'int',
-		'createTime' => 'int',
-		'visibleC' => 'int',
-		'visibleG0' => 'int',
-		'visibleG1' => 'int',
-		'visibleG2' => 'int',
-		'visibleG3' => 'int',
-		'visibleG4' => 'int',
-		'visibleG5' => 'int',
-		'visibleG6' => 'int',
-		'visibleG7' => 'int'
-	];
+    protected $casts = [
+        'castle_id' => 'int',
+        'guild_id' => 'int',
+        'economy' => 'int',
+        'defense' => 'int',
+        'triggerE' => 'int',
+        'triggerD' => 'int',
+        'nextTime' => 'int',
+        'payTime' => 'int',
+        'createTime' => 'int',
+        'visibleC' => 'int',
+        'visibleG0' => 'int',
+        'visibleG1' => 'int',
+        'visibleG2' => 'int',
+        'visibleG3' => 'int',
+        'visibleG4' => 'int',
+        'visibleG5' => 'int',
+        'visibleG6' => 'int',
+        'visibleG7' => 'int'
+    ];
 
-	protected $fillable = [
-		'guild_id',
-		'economy',
-		'defense',
-		'triggerE',
-		'triggerD',
-		'nextTime',
-		'payTime',
-		'createTime',
-		'visibleC',
-		'visibleG0',
-		'visibleG1',
-		'visibleG2',
-		'visibleG3',
-		'visibleG4',
-		'visibleG5',
-		'visibleG6',
-		'visibleG7'
-	];
+    protected $fillable = [
+        'guild_id',
+        'economy',
+        'defense',
+        'triggerE',
+        'triggerD',
+        'nextTime',
+        'payTime',
+        'createTime',
+        'visibleC',
+        'visibleG0',
+        'visibleG1',
+        'visibleG2',
+        'visibleG3',
+        'visibleG4',
+        'visibleG5',
+        'visibleG6',
+        'visibleG7'
+    ];
 }

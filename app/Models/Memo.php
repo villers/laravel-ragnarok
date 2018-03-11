@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Memo
- * 
+ *
  * @property int $memo_id
  * @property int $char_id
  * @property string $map
@@ -22,20 +22,20 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Memo extends Eloquent
 {
-	protected $table = 'memo';
-	protected $primaryKey = 'memo_id';
-	public $timestamps = false;
+    protected $table = 'memo';
+    protected $primaryKey = 'memo_id';
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'x' => 'int',
-		'y' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'x' => 'int',
+        'y' => 'int'
+    ];
 
-	protected $fillable = [
-		'char_id',
-		'map',
-		'x',
-		'y'
-	];
+    protected $fillable = [
+        'char_id',
+        'map',
+        'x',
+        'y'
+    ];
 }

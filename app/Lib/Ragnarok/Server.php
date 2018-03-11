@@ -5,8 +5,8 @@ use App\Repositories\CharRepositoryEloquent;
 use App\Repositories\SiteOnlinepeakRepositoryEloquent;
 use Illuminate\Support\Facades\Config;
 
-class Server {
-
+class Server
+{
     private $charRepository;
     private $onlinepeakRepository;
 
@@ -16,7 +16,8 @@ class Server {
         $this->onlinepeakRepository = $onlinepeakRepository;
     }
 
-    public function is_server_up() {
+    public function is_server_up()
+    {
         $serverHost = Config::get('ragnarok.server_ip');
 
         $loginUp = $this->check_server($serverHost, Config::get('ragnarok.server_login_port'));
@@ -26,14 +27,16 @@ class Server {
         return ($loginUp && $charUp && $mapUp);
     }
 
-    public function get_nb_online() {
+    public function get_nb_online()
+    {
         $nbOnline = $this->charRepository->countOnline();
         $nbMax = $this->onlinepeakRepository->updateMaxOnline($nbOnline);
 
         return compact('nbOnline', 'nbMax');
     }
 
-    private function check_server($host, $port) {
+    private function check_server($host, $port)
+    {
         $sock = @fsockopen($host, $port, $errno, $errstr, 2);
 
         if (is_resource($sock)) {

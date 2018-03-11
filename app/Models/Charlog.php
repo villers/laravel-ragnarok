@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Charlog
- * 
+ *
  * @property \Carbon\Carbon $time
  * @property string $char_msg
  * @property int $account_id
@@ -30,40 +30,40 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Charlog extends Eloquent
 {
-	protected $table = 'charlog';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'charlog';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'account_id' => 'int',
-		'char_num' => 'int',
-		'str' => 'int',
-		'agi' => 'int',
-		'vit' => 'int',
-		'int' => 'int',
-		'dex' => 'int',
-		'luk' => 'int',
-		'hair' => 'int',
-		'hair_color' => 'int'
-	];
+    protected $casts = [
+        'account_id' => 'int',
+        'char_num' => 'int',
+        'str' => 'int',
+        'agi' => 'int',
+        'vit' => 'int',
+        'int' => 'int',
+        'dex' => 'int',
+        'luk' => 'int',
+        'hair' => 'int',
+        'hair_color' => 'int'
+    ];
 
-	protected $dates = [
-		'time'
-	];
+    protected $dates = [
+        'time'
+    ];
 
-	protected $fillable = [
-		'time',
-		'char_msg',
-		'account_id',
-		'char_num',
-		'name',
-		'str',
-		'agi',
-		'vit',
-		'int',
-		'dex',
-		'luk',
-		'hair',
-		'hair_color'
-	];
+    protected $fillable = [
+        'time',
+        'char_msg',
+        'account_id',
+        'char_num',
+        'name',
+        'str',
+        'agi',
+        'vit',
+        'int',
+        'dex',
+        'luk',
+        'hair',
+        'hair_color'
+    ];
 }

@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Auction
- * 
+ *
  * @property int $auction_id
  * @property int $seller_id
  * @property string $seller_name
@@ -51,76 +51,76 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Auction extends Eloquent
 {
-	protected $table = 'auction';
-	protected $primaryKey = 'auction_id';
-	public $timestamps = false;
+    protected $table = 'auction';
+    protected $primaryKey = 'auction_id';
+    public $timestamps = false;
 
-	protected $casts = [
-		'seller_id' => 'int',
-		'buyer_id' => 'int',
-		'price' => 'int',
-		'buynow' => 'int',
-		'hours' => 'int',
-		'timestamp' => 'int',
-		'nameid' => 'int',
-		'type' => 'int',
-		'refine' => 'int',
-		'attribute' => 'int',
-		'card0' => 'int',
-		'card1' => 'int',
-		'card2' => 'int',
-		'card3' => 'int',
-		'option_id0' => 'int',
-		'option_val0' => 'int',
-		'option_parm0' => 'int',
-		'option_id1' => 'int',
-		'option_val1' => 'int',
-		'option_parm1' => 'int',
-		'option_id2' => 'int',
-		'option_val2' => 'int',
-		'option_parm2' => 'int',
-		'option_id3' => 'int',
-		'option_val3' => 'int',
-		'option_parm3' => 'int',
-		'option_id4' => 'int',
-		'option_val4' => 'int',
-		'option_parm4' => 'int',
-		'unique_id' => 'int'
-	];
+    protected $casts = [
+        'seller_id' => 'int',
+        'buyer_id' => 'int',
+        'price' => 'int',
+        'buynow' => 'int',
+        'hours' => 'int',
+        'timestamp' => 'int',
+        'nameid' => 'int',
+        'type' => 'int',
+        'refine' => 'int',
+        'attribute' => 'int',
+        'card0' => 'int',
+        'card1' => 'int',
+        'card2' => 'int',
+        'card3' => 'int',
+        'option_id0' => 'int',
+        'option_val0' => 'int',
+        'option_parm0' => 'int',
+        'option_id1' => 'int',
+        'option_val1' => 'int',
+        'option_parm1' => 'int',
+        'option_id2' => 'int',
+        'option_val2' => 'int',
+        'option_parm2' => 'int',
+        'option_id3' => 'int',
+        'option_val3' => 'int',
+        'option_parm3' => 'int',
+        'option_id4' => 'int',
+        'option_val4' => 'int',
+        'option_parm4' => 'int',
+        'unique_id' => 'int'
+    ];
 
-	protected $fillable = [
-		'seller_id',
-		'seller_name',
-		'buyer_id',
-		'buyer_name',
-		'price',
-		'buynow',
-		'hours',
-		'timestamp',
-		'nameid',
-		'item_name',
-		'type',
-		'refine',
-		'attribute',
-		'card0',
-		'card1',
-		'card2',
-		'card3',
-		'option_id0',
-		'option_val0',
-		'option_parm0',
-		'option_id1',
-		'option_val1',
-		'option_parm1',
-		'option_id2',
-		'option_val2',
-		'option_parm2',
-		'option_id3',
-		'option_val3',
-		'option_parm3',
-		'option_id4',
-		'option_val4',
-		'option_parm4',
-		'unique_id'
-	];
+    protected $fillable = [
+        'seller_id',
+        'seller_name',
+        'buyer_id',
+        'buyer_name',
+        'price',
+        'buynow',
+        'hours',
+        'timestamp',
+        'nameid',
+        'item_name',
+        'type',
+        'refine',
+        'attribute',
+        'card0',
+        'card1',
+        'card2',
+        'card3',
+        'option_id0',
+        'option_val0',
+        'option_parm0',
+        'option_id1',
+        'option_val1',
+        'option_parm1',
+        'option_id2',
+        'option_val2',
+        'option_parm2',
+        'option_id3',
+        'option_val3',
+        'option_parm3',
+        'option_id4',
+        'option_val4',
+        'option_parm4',
+        'unique_id'
+    ];
 }

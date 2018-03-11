@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class CharRegStr
- * 
+ *
  * @property int $char_id
  * @property string $key
  * @property int $index
@@ -21,16 +21,16 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class CharRegStr extends Eloquent
 {
-	protected $table = 'char_reg_str';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'char_reg_str';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'index' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'index' => 'int'
+    ];
 
-	protected $fillable = [
-		'value'
-	];
+    protected $fillable = [
+        'value'
+    ];
 }

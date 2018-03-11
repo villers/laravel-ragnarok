@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class CharRegNum
- * 
+ *
  * @property int $char_id
  * @property string $key
  * @property int $index
@@ -21,17 +21,17 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class CharRegNum extends Eloquent
 {
-	protected $table = 'char_reg_num';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'char_reg_num';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'index' => 'int',
-		'value' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'index' => 'int',
+        'value' => 'int'
+    ];
 
-	protected $fillable = [
-		'value'
-	];
+    protected $fillable = [
+        'value'
+    ];
 }

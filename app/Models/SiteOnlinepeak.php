@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class SiteOnlinepeak
- * 
+ *
  * @property int $id
  * @property int $players
  *
@@ -19,14 +19,14 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class SiteOnlinepeak extends Eloquent
 {
-	protected $table = 'site_onlinepeak';
-	public $timestamps = false;
+    protected $table = 'site_onlinepeak';
+    public $timestamps = false;
 
-	protected $casts = [
-		'players' => 'int'
-	];
+    protected $casts = [
+        'players' => 'int'
+    ];
 
-	protected $fillable = [
-		'players'
-	];
+    protected $fillable = [
+        'players'
+    ];
 }

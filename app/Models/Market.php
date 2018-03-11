@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Market
- * 
+ *
  * @property string $name
  * @property int $nameid
  * @property int $price
@@ -22,20 +22,20 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Market extends Eloquent
 {
-	protected $table = 'market';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'market';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'nameid' => 'int',
-		'price' => 'int',
-		'amount' => 'int',
-		'flag' => 'int'
-	];
+    protected $casts = [
+        'nameid' => 'int',
+        'price' => 'int',
+        'amount' => 'int',
+        'flag' => 'int'
+    ];
 
-	protected $fillable = [
-		'price',
-		'amount',
-		'flag'
-	];
+    protected $fillable = [
+        'price',
+        'amount',
+        'flag'
+    ];
 }

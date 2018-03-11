@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Mapreg
- * 
+ *
  * @property string $varname
  * @property int $index
  * @property string $value
@@ -20,15 +20,15 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Mapreg extends Eloquent
 {
-	protected $table = 'mapreg';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'mapreg';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'index' => 'int'
-	];
+    protected $casts = [
+        'index' => 'int'
+    ];
 
-	protected $fillable = [
-		'value'
-	];
+    protected $fillable = [
+        'value'
+    ];
 }

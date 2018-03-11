@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Ipbanlist
- * 
+ *
  * @property string $list
  * @property \Carbon\Carbon $btime
  * @property \Carbon\Carbon $rtime
@@ -21,19 +21,19 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Ipbanlist extends Eloquent
 {
-	protected $table = 'ipbanlist';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'ipbanlist';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $dates = [
-		'btime',
-		'rtime'
-	];
+    protected $dates = [
+        'btime',
+        'rtime'
+    ];
 
-	protected $fillable = [
-		'list',
-		'btime',
-		'rtime',
-		'reason'
-	];
+    protected $fillable = [
+        'list',
+        'btime',
+        'rtime',
+        'reason'
+    ];
 }

@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Hotkey
- * 
+ *
  * @property int $char_id
  * @property int $hotkey
  * @property bool $type
@@ -22,21 +22,21 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Hotkey extends Eloquent
 {
-	protected $table = 'hotkey';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'hotkey';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'hotkey' => 'int',
-		'type' => 'bool',
-		'itemskill_id' => 'int',
-		'skill_lvl' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'hotkey' => 'int',
+        'type' => 'bool',
+        'itemskill_id' => 'int',
+        'skill_lvl' => 'int'
+    ];
 
-	protected $fillable = [
-		'type',
-		'itemskill_id',
-		'skill_lvl'
-	];
+    protected $fillable = [
+        'type',
+        'itemskill_id',
+        'skill_lvl'
+    ];
 }

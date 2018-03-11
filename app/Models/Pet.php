@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Pet
- * 
+ *
  * @property int $pet_id
  * @property int $class
  * @property string $name
@@ -29,34 +29,34 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Pet extends Eloquent
 {
-	protected $table = 'pet';
-	protected $primaryKey = 'pet_id';
-	public $timestamps = false;
+    protected $table = 'pet';
+    protected $primaryKey = 'pet_id';
+    public $timestamps = false;
 
-	protected $casts = [
-		'class' => 'int',
-		'account_id' => 'int',
-		'char_id' => 'int',
-		'level' => 'int',
-		'egg_id' => 'int',
-		'equip' => 'int',
-		'intimate' => 'int',
-		'hungry' => 'int',
-		'rename_flag' => 'int',
-		'incubate' => 'int'
-	];
+    protected $casts = [
+        'class' => 'int',
+        'account_id' => 'int',
+        'char_id' => 'int',
+        'level' => 'int',
+        'egg_id' => 'int',
+        'equip' => 'int',
+        'intimate' => 'int',
+        'hungry' => 'int',
+        'rename_flag' => 'int',
+        'incubate' => 'int'
+    ];
 
-	protected $fillable = [
-		'class',
-		'name',
-		'account_id',
-		'char_id',
-		'level',
-		'egg_id',
-		'equip',
-		'intimate',
-		'hungry',
-		'rename_flag',
-		'incubate'
-	];
+    protected $fillable = [
+        'class',
+        'name',
+        'account_id',
+        'char_id',
+        'level',
+        'egg_id',
+        'equip',
+        'intimate',
+        'hungry',
+        'rename_flag',
+        'incubate'
+    ];
 }

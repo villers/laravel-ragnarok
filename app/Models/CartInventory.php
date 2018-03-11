@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class CartInventory
- * 
+ *
  * @property int $id
  * @property int $char_id
  * @property int $nameid
@@ -47,70 +47,70 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class CartInventory extends Eloquent
 {
-	protected $table = 'cart_inventory';
-	public $timestamps = false;
+    protected $table = 'cart_inventory';
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'nameid' => 'int',
-		'amount' => 'int',
-		'equip' => 'int',
-		'identify' => 'int',
-		'refine' => 'int',
-		'attribute' => 'int',
-		'card0' => 'int',
-		'card1' => 'int',
-		'card2' => 'int',
-		'card3' => 'int',
-		'option_id0' => 'int',
-		'option_val0' => 'int',
-		'option_parm0' => 'int',
-		'option_id1' => 'int',
-		'option_val1' => 'int',
-		'option_parm1' => 'int',
-		'option_id2' => 'int',
-		'option_val2' => 'int',
-		'option_parm2' => 'int',
-		'option_id3' => 'int',
-		'option_val3' => 'int',
-		'option_parm3' => 'int',
-		'option_id4' => 'int',
-		'option_val4' => 'int',
-		'option_parm4' => 'int',
-		'expire_time' => 'int',
-		'bound' => 'int',
-		'unique_id' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'nameid' => 'int',
+        'amount' => 'int',
+        'equip' => 'int',
+        'identify' => 'int',
+        'refine' => 'int',
+        'attribute' => 'int',
+        'card0' => 'int',
+        'card1' => 'int',
+        'card2' => 'int',
+        'card3' => 'int',
+        'option_id0' => 'int',
+        'option_val0' => 'int',
+        'option_parm0' => 'int',
+        'option_id1' => 'int',
+        'option_val1' => 'int',
+        'option_parm1' => 'int',
+        'option_id2' => 'int',
+        'option_val2' => 'int',
+        'option_parm2' => 'int',
+        'option_id3' => 'int',
+        'option_val3' => 'int',
+        'option_parm3' => 'int',
+        'option_id4' => 'int',
+        'option_val4' => 'int',
+        'option_parm4' => 'int',
+        'expire_time' => 'int',
+        'bound' => 'int',
+        'unique_id' => 'int'
+    ];
 
-	protected $fillable = [
-		'char_id',
-		'nameid',
-		'amount',
-		'equip',
-		'identify',
-		'refine',
-		'attribute',
-		'card0',
-		'card1',
-		'card2',
-		'card3',
-		'option_id0',
-		'option_val0',
-		'option_parm0',
-		'option_id1',
-		'option_val1',
-		'option_parm1',
-		'option_id2',
-		'option_val2',
-		'option_parm2',
-		'option_id3',
-		'option_val3',
-		'option_parm3',
-		'option_id4',
-		'option_val4',
-		'option_parm4',
-		'expire_time',
-		'bound',
-		'unique_id'
-	];
+    protected $fillable = [
+        'char_id',
+        'nameid',
+        'amount',
+        'equip',
+        'identify',
+        'refine',
+        'attribute',
+        'card0',
+        'card1',
+        'card2',
+        'card3',
+        'option_id0',
+        'option_val0',
+        'option_parm0',
+        'option_id1',
+        'option_val1',
+        'option_parm1',
+        'option_id2',
+        'option_val2',
+        'option_parm2',
+        'option_id3',
+        'option_val3',
+        'option_parm3',
+        'option_id4',
+        'option_val4',
+        'option_parm4',
+        'expire_time',
+        'bound',
+        'unique_id'
+    ];
 }

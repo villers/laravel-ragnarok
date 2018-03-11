@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Mail
- * 
+ *
  * @property int $id
  * @property string $send_name
  * @property int $send_id
@@ -53,78 +53,78 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Mail extends Eloquent
 {
-	protected $table = 'mail';
-	public $timestamps = false;
+    protected $table = 'mail';
+    public $timestamps = false;
 
-	protected $casts = [
-		'send_id' => 'int',
-		'dest_id' => 'int',
-		'time' => 'int',
-		'status' => 'int',
-		'zeny' => 'int',
-		'nameid' => 'int',
-		'amount' => 'int',
-		'refine' => 'int',
-		'attribute' => 'int',
-		'identify' => 'int',
-		'card0' => 'int',
-		'card1' => 'int',
-		'card2' => 'int',
-		'card3' => 'int',
-		'option_id0' => 'int',
-		'option_val0' => 'int',
-		'option_parm0' => 'int',
-		'option_id1' => 'int',
-		'option_val1' => 'int',
-		'option_parm1' => 'int',
-		'option_id2' => 'int',
-		'option_val2' => 'int',
-		'option_parm2' => 'int',
-		'option_id3' => 'int',
-		'option_val3' => 'int',
-		'option_parm3' => 'int',
-		'option_id4' => 'int',
-		'option_val4' => 'int',
-		'option_parm4' => 'int',
-		'unique_id' => 'int',
-		'bound' => 'bool'
-	];
+    protected $casts = [
+        'send_id' => 'int',
+        'dest_id' => 'int',
+        'time' => 'int',
+        'status' => 'int',
+        'zeny' => 'int',
+        'nameid' => 'int',
+        'amount' => 'int',
+        'refine' => 'int',
+        'attribute' => 'int',
+        'identify' => 'int',
+        'card0' => 'int',
+        'card1' => 'int',
+        'card2' => 'int',
+        'card3' => 'int',
+        'option_id0' => 'int',
+        'option_val0' => 'int',
+        'option_parm0' => 'int',
+        'option_id1' => 'int',
+        'option_val1' => 'int',
+        'option_parm1' => 'int',
+        'option_id2' => 'int',
+        'option_val2' => 'int',
+        'option_parm2' => 'int',
+        'option_id3' => 'int',
+        'option_val3' => 'int',
+        'option_parm3' => 'int',
+        'option_id4' => 'int',
+        'option_val4' => 'int',
+        'option_parm4' => 'int',
+        'unique_id' => 'int',
+        'bound' => 'bool'
+    ];
 
-	protected $fillable = [
-		'send_name',
-		'send_id',
-		'dest_name',
-		'dest_id',
-		'title',
-		'message',
-		'time',
-		'status',
-		'zeny',
-		'nameid',
-		'amount',
-		'refine',
-		'attribute',
-		'identify',
-		'card0',
-		'card1',
-		'card2',
-		'card3',
-		'option_id0',
-		'option_val0',
-		'option_parm0',
-		'option_id1',
-		'option_val1',
-		'option_parm1',
-		'option_id2',
-		'option_val2',
-		'option_parm2',
-		'option_id3',
-		'option_val3',
-		'option_parm3',
-		'option_id4',
-		'option_val4',
-		'option_parm4',
-		'unique_id',
-		'bound'
-	];
+    protected $fillable = [
+        'send_name',
+        'send_id',
+        'dest_name',
+        'dest_id',
+        'title',
+        'message',
+        'time',
+        'status',
+        'zeny',
+        'nameid',
+        'amount',
+        'refine',
+        'attribute',
+        'identify',
+        'card0',
+        'card1',
+        'card2',
+        'card3',
+        'option_id0',
+        'option_val0',
+        'option_parm0',
+        'option_id1',
+        'option_val1',
+        'option_parm1',
+        'option_id2',
+        'option_val2',
+        'option_parm2',
+        'option_id3',
+        'option_val3',
+        'option_parm3',
+        'option_id4',
+        'option_val4',
+        'option_parm4',
+        'unique_id',
+        'bound'
+    ];
 }

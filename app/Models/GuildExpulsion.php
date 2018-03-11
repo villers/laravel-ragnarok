@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class GuildExpulsion
- * 
+ *
  * @property int $guild_id
  * @property int $account_id
  * @property string $name
@@ -21,17 +21,17 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class GuildExpulsion extends Eloquent
 {
-	protected $table = 'guild_expulsion';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'guild_expulsion';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'guild_id' => 'int',
-		'account_id' => 'int'
-	];
+    protected $casts = [
+        'guild_id' => 'int',
+        'account_id' => 'int'
+    ];
 
-	protected $fillable = [
-		'account_id',
-		'mes'
-	];
+    protected $fillable = [
+        'account_id',
+        'mes'
+    ];
 }

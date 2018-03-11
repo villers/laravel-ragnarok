@@ -4,7 +4,7 @@ namespace App\Lib\Ragnarok;
 
 class Jobs
 {
-    static function get($id)
+    public static function get($id)
     {
         $jobs = [
             0    => 'Novice',

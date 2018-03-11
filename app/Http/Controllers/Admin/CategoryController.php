@@ -20,35 +20,41 @@ class CategoryController extends Controller
         $this->categoryRepository = $categoryRepository;
     }
 
-    public function index() {
+    public function index()
+    {
         $categories = $this->categoryRepository->all();
 
         return view('admin.category.index', compact('categories'));
     }
 
-    public function create() {
+    public function create()
+    {
         return view('admin.category.create');
     }
 
-    public function destroy(Category $category) {
+    public function destroy(Category $category)
+    {
         $this->categoryRepository->delete($category);
 
         return redirect()->route('admin.category.index');
     }
 
-    public function store(CategoryRequest $request) {
+    public function store(CategoryRequest $request)
+    {
         $this->categoryRepository->create($request->all());
 
         return redirect()->route('admin.category.index');
     }
 
-    public function update(CategoryRequest $request, Category $category) {
+    public function update(CategoryRequest $request, Category $category)
+    {
         $this->categoryRepository->update($category, $request->all());
 
         return redirect()->route('admin.category.index');
     }
 
-    public function edit(Category $category) {
+    public function edit(Category $category)
+    {
         return view('admin.category.edit', compact('category'));
     }
 }

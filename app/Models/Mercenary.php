@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Mercenary
- * 
+ *
  * @property int $mer_id
  * @property int $char_id
  * @property int $class
@@ -24,25 +24,25 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Mercenary extends Eloquent
 {
-	protected $table = 'mercenary';
-	protected $primaryKey = 'mer_id';
-	public $timestamps = false;
+    protected $table = 'mercenary';
+    protected $primaryKey = 'mer_id';
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'class' => 'int',
-		'hp' => 'int',
-		'sp' => 'int',
-		'kill_counter' => 'int',
-		'life_time' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'class' => 'int',
+        'hp' => 'int',
+        'sp' => 'int',
+        'kill_counter' => 'int',
+        'life_time' => 'int'
+    ];
 
-	protected $fillable = [
-		'char_id',
-		'class',
-		'hp',
-		'sp',
-		'kill_counter',
-		'life_time'
-	];
+    protected $fillable = [
+        'char_id',
+        'class',
+        'hp',
+        'sp',
+        'kill_counter',
+        'life_time'
+    ];
 }

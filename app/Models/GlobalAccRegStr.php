@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class GlobalAccRegStr
- * 
+ *
  * @property int $account_id
  * @property string $key
  * @property int $index
@@ -21,16 +21,16 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class GlobalAccRegStr extends Eloquent
 {
-	protected $table = 'global_acc_reg_str';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'global_acc_reg_str';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'account_id' => 'int',
-		'index' => 'int'
-	];
+    protected $casts = [
+        'account_id' => 'int',
+        'index' => 'int'
+    ];
 
-	protected $fillable = [
-		'value'
-	];
+    protected $fillable = [
+        'value'
+    ];
 }

@@ -11,7 +11,7 @@ use Reliese\Database\Eloquent\Model as Eloquent;
 
 /**
  * Class Quest
- * 
+ *
  * @property int $char_id
  * @property int $quest_id
  * @property string $state
@@ -24,24 +24,24 @@ use Reliese\Database\Eloquent\Model as Eloquent;
  */
 class Quest extends Eloquent
 {
-	protected $table = 'quest';
-	public $incrementing = false;
-	public $timestamps = false;
+    protected $table = 'quest';
+    public $incrementing = false;
+    public $timestamps = false;
 
-	protected $casts = [
-		'char_id' => 'int',
-		'quest_id' => 'int',
-		'time' => 'int',
-		'count1' => 'int',
-		'count2' => 'int',
-		'count3' => 'int'
-	];
+    protected $casts = [
+        'char_id' => 'int',
+        'quest_id' => 'int',
+        'time' => 'int',
+        'count1' => 'int',
+        'count2' => 'int',
+        'count3' => 'int'
+    ];
 
-	protected $fillable = [
-		'state',
-		'time',
-		'count1',
-		'count2',
-		'count3'
-	];
+    protected $fillable = [
+        'state',
+        'time',
+        'count1',
+        'count2',
+        'count3'
+    ];
 }

@@ -20,7 +20,7 @@ class SiteOnlinepeakRepositoryEloquent extends BaseRepository implements SiteOnl
         return SiteOnlinepeak::class;
     }
 
-    function updateMaxOnline($nbOnline)
+    public function updateMaxOnline($nbOnline)
     {
         $nbMax = $this->model->findOrFail(1);
 
