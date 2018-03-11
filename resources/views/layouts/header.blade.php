@@ -10,9 +10,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
-            <a class="navbar-brand" href="{{ url('/') }}" style="margin-left: -100px; font-size:50%;"><img src="https://img4.hostingpics.net/pics/875996mogo.png" border="0" alt="Hebergeur d'image" /></a>
-
+            <div class="logo">
+            <a class="navbar-brand" href="{{ url('/') }}" style="margin-top: -15px; position: absolute;"><img src="../img/logo.png"></a>
+            </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,9 +21,13 @@
             <ul class="nav navbar-nav">
                 <li>{{link_to_route('news', 'Actualités')}}</li>
                 <li>{{link_to_route('informations', 'Informations')}}</li>
+                <li><a href="https://www.ro-play.fr/forum">Forum</a></li>
+                <li>{{link_to_route('staff', 'Staff')}}</li>
+
                 @if (Auth::guest())
-                    <li>{{link_to_route('login', 'Se connecter')}}</li>
                     <li>{{link_to_route('register', 'S\'inscrire')}}</li>
+                    <li>{{link_to_route('login', 'Se connecter')}}</li>
+
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -59,9 +63,7 @@
                     </li>
                 @endif
 
-                <li>
-                    <a href="http://forum.ro-play.org">Forum</a>
-                </li>
+
             </ul>
 
             <div class="server-wrapper">
@@ -69,7 +71,7 @@
                     <div class="col-sm-12" style="padding: 0;">
                         <span class="col-sm-6">Status</span>
 
-                        <span class="col-sm-6">
+                        <span style="float:right;margin-right:14px;">
                             <span class="circle {{$server['is_server_up'] ? 'bg-green' : 'bg-red'}}"
                                   title="{{$server['is_server_up'] ? 'EN LIGNE' : 'HORS LIGNE'}}"></span>
                         </span>
@@ -78,14 +80,14 @@
 
                     <div class="col-sm-12" style="padding: 0;">
                         <span class="col-sm-6">Online</span>
-                        <span class="col-sm-6" style="color:greenyellow;">{{$server['get_nb_online']['nbOnline']}}</span>
+                        <span style="color:greenyellow;float:right;margin-right:15px;">{{$server['get_nb_online']['nbOnline']}}</span>
                     </div>
 
                     <div class="col-sm-12" style="padding: 0;">
                         <span class="col-sm-6">Record</span>
-                        <span class="col-sm-6" style="color: #fcac45;">{{$server['get_nb_online']['nbMax']}}</span>
+                        <span style="color: #fcac45;float:right;margin-right:15px;">{{$server['get_nb_online']['nbMax']}}</span>
                     </div>
-                    <a style="margin-left: 13px; margin-top: 5px;" class="btn btn-primary btn-xs" href="{{route('onlines')}}">
+                    <a style="margin-left: 10px; margin-top: 5px;" class="btn btn-primary btn-xs" href="{{route('onlines')}}">
                         Qui est en ligne ?
                     </a>
                 </div>

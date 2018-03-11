@@ -2,14 +2,20 @@
 
 @section('content')
     <br><br>
-    <div id="tf-team">
-        <div class="container">
-            <div class="section-title center text-center">
-                <h2>Qui<strong> est en ligne ?</strong></h2>
+<div id="tf-about">
+   
+                <div class="container">
+        <div class="section-title center text-center">
+                <div class="bloctitleqeel">
+                    <img style="position:absolute;margin-top:-70px;margin-left:-530px;" src="../img/giphy.gif">
+                <h2>Qui est en <strong> ligne ?</strong></h2>
                 <div class="line">
                     <hr>
                 </div>
             </div>
+            </div>
+
+
 
             <table class="table table-striped table-hover">
                 <thead>
@@ -40,7 +46,11 @@
             </table>
 
         </div>
-    </div>
+
+</div>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 @endsection
 
 @section('script')

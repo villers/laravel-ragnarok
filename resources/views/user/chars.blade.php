@@ -2,14 +2,17 @@
 
 @section('content')
     <br><br>
-    <div id="tf-team">
-        <div class="container">
+
+        <div class="container" style="margin-top:80px;">
             <div class="section-title center text-center">
+                <div class="bloctitleqeel">
+                    <img style="position:absolute;margin-top:-100px;margin-left:-550px;" src="../img/orig.gif">
                 <h2>MES<strong> PERSONNAGES</strong></h2>
                 <div class="line">
                     <hr>
                 </div>
             </div>
+        </div>
 
             @if (session('status'))
                 <div class="alert alert-success">
@@ -17,7 +20,7 @@
                 </div>
             @endif
 
-                <h4>Pour éffectuer une action sur un personnage, veuillez le déconnecte.</h4>
+                <div class="alert alert-danger" style="text-align:center;">Pour éffectuer une action sur un personnage, veuillez le déconnecte.</div>
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
@@ -73,7 +76,7 @@
 
             </form>
         </div>
-    </div>
+  
 @endsection
 
 @section('script')

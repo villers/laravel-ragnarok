@@ -69,6 +69,36 @@ class HomeController extends Controller
         return view('staff');
     }
 
+      /**
+     * Show the page partenaire.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function partenaire()
+    {
+        return view('partenaire');
+    }
+
+    /**
+     * Show the page territoire.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function territoire()
+    {
+        return view('territoire');
+    }
+
+    /**
+     * Show the page NwoE.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function nwoe()
+    {
+        return view('nwoe');
+    }
+
     /**
      * Show the page staff.
      *

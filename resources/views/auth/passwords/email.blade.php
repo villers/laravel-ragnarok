@@ -45,3 +45,9 @@
         </div>
     </div>
 @endsection
+
+@section('script')
+    <script>
+        $('.navbar-default').addClass('on');
+    </script>
+@endsection

@@ -1,14 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-    <div id="tf-clients" class="text-center">
+    <div class="text-center">
         <div class="overlay">
-            <div class="container">
+            <div class="container" style="margin-top:200px;">
+                            <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                            <img style="position:absolute;top:20px;right:110px;width:auto;height:350px;" src="../img/mdp.png">
+                            <div id="testimonial">
                 <div class="section-title center">
-                    <h1>CHANGER MON <strong><span class="color">MOT DE PASSE</span></strong></h1>
+                    <h2 style="margin-right:280px;">CHANGER MON <strong><span class="color">MOT DE PASSE</span></strong>
                     <div class="line">
                         <hr>
                     </div>
+                    </h2>
                 </div>
 
                 @if (session('status'))
@@ -62,7 +67,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" style="margin-right:190px;">
                         <div class="col-md-4 col-md-offset-4">
                             <button type="submit" class="btn btn-primary">
                                 Valider
@@ -73,4 +78,12 @@
             </div>
         </div>
     </div>
+    </div>
+    </div>
+    </div>
+@endsection
+@section('script')
+    <script>
+        $('.navbar-default').addClass('on');
+    </script>
 @endsection

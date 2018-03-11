@@ -18,6 +18,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/news', 'HomeController@news')->name('news');
 Route::get('/informations', 'HomeController@informations')->name('informations');
 Route::get('/staff', 'HomeController@staff')->name('staff');
+Route::get('/partenaire', 'HomeController@partenaire')->name('partenaire');
+Route::get('/territoire', 'HomeController@territoire')->name('territoire');
+Route::get('/nwoe', 'HomeController@nwoe')->name('nwoe');
 Route::get('/onlines', 'HomeController@online')->name('onlines');
 Route::get('/emblem/{id}', 'HomeController@emblem')->name('emblem');
 

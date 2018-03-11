@@ -1,15 +1,39 @@
+
 @extends('layouts.app')
 
 @section('content')
-    <div id="tf-clients" class="text-center">
-        <div class="overlay">
-            <div class="container">
+
+
+
+
+
+
+
+  <div id="tf-about">
+        <div class="container">
+         <div class="section-title center">
+         
+        </div>
+
+            
+            <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+            <div id="testimonial">
+
+                
                 <div class="section-title center">
-                    <h1>Créer <strong><span class="color">un compte</span></strong></h1>
+                    <h2 style="text-align:center;">Créer <strong><span class="color">un compte</span></strong>
                     <div class="line">
                         <hr>
                     </div>
+                    </h2>
                 </div>
+
+                <img style="position:absolute;top:30px;right:50px;" src="../img/novice.png">
+
+
+
+
                 <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                     {{ csrf_field() }}
 
@@ -92,15 +116,27 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <div class="col-md-4 col-md-offset-4">
-                            <button type="submit" class="btn btn-primary">
-                                S'inscrire
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                                 <div class="form-group">
+                                    <div class="col-md-4 col-md-offset-4">
+                                    <button type="submit" class="btn btn-primary" style="text-align:center;">
+                                        S'inscrire
+                                    </button>
+                                 </div>
+                             </div>
+                  
+                 </form>
+
             </div>
-        </div>
-    </div>
+         </div>
+     </div>
+</div>
+
+
+
+@endsection
+
+@section('script')
+    <script>
+        $('.navbar-default').addClass('on');
+    </script>
 @endsection
