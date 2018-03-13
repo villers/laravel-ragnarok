@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Lib\Ragnarok\Emblem;
+use App\Repositories\CartInventoryRepository;
 use App\Repositories\CharRepository;
 use App\Repositories\GuildRepository;
 use App\Repositories\NewsRepository;
+use App\Repositories\VendingItemRepository;
+use App\Repositories\VendingRepository;
 use Illuminate\Support\Facades\Response;
 
 class HomeController extends Controller
@@ -13,18 +16,27 @@ class HomeController extends Controller
     protected $charRepository;
     protected $guildRepository;
     protected $newsRepository;
+    protected $vendingRepository;
+    protected $vendingItemRepository;
+    protected $cartInventoryRepository;
 
     /**
      * UserController constructor.
      * @param CharRepository $charRepository
      * @param GuildRepository $guildRepository
      * @param NewsRepository $newsRepository
+     * @param VendingRepository $vendingRepository
+     * @param VendingItemRepository $vendingItemRepository
+     * @param CartInventoryRepository $cartInventoryRepository
      */
-    public function __construct(CharRepository $charRepository, GuildRepository $guildRepository, NewsRepository $newsRepository)
+    public function __construct(CharRepository $charRepository, GuildRepository $guildRepository, NewsRepository $newsRepository, VendingRepository $vendingRepository, VendingItemRepository $vendingItemRepository, CartInventoryRepository $cartInventoryRepository)
     {
         $this->charRepository = $charRepository;
         $this->guildRepository = $guildRepository;
         $this->newsRepository = $newsRepository;
+        $this->vendingRepository = $vendingRepository;
+        $this->vendingItemRepository = $vendingItemRepository;
+        $this->cartInventoryRepository = $cartInventoryRepository;
     }
 
     /**
@@ -111,6 +123,10 @@ class HomeController extends Controller
         return view('online', compact('chars'));
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function emblem($id)
     {
         $guild = $this->guildRepository->get($id, 'guild_id')->emblem_data;
@@ -120,5 +136,20 @@ class HomeController extends Controller
         $response->header('Content-Type', 'image/png');
 
         return $response;
+    }
+
+    public function vendings()
+    {
+        $vendings = $this->vendingRepository->all();
+
+        return $vendings;
+    }
+
+    public function vendingsItems($id)
+    {
+        $vendingsItems = $this->vendingItemRepository->get($id, 'vending_id');
+        $cartItems = $this->cartInventoryRepository->get($vendingsItems->cartinventory_id);
+
+        return compact('vendingsItems', 'cartItems');
     }
 }

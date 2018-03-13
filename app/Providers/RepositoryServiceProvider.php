@@ -2,8 +2,11 @@
 
 namespace App\Providers;
 
+use App\Models\CartInventory;
 use App\Repositories\AccRegNumRepository;
 use App\Repositories\AccRegNumRepositoryEloquent;
+use App\Repositories\CartInventoryRepository;
+use App\Repositories\CartInventoryRepositoryEloquent;
 use App\Repositories\CategoryRepository;
 use App\Repositories\CategoryRepositoryEloquent;
 use App\Repositories\CharRepository;
@@ -14,6 +17,10 @@ use App\Repositories\NewsRepository;
 use App\Repositories\NewsRepositoryEloquent;
 use App\Repositories\SiteOnlinepeakRepository;
 use App\Repositories\SiteOnlinepeakRepositoryEloquent;
+use App\Repositories\VendingItemRepository;
+use App\Repositories\VendingItemRepositoryEloquent;
+use App\Repositories\VendingRepository;
+use App\Repositories\VendingRepositoryEloquent;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -41,6 +48,9 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(CharRepository::class, CharRepositoryEloquent::class);
         $this->app->bind(GuildRepository::class, GuildRepositoryEloquent::class);
         $this->app->bind(SiteOnlinepeakRepository::class, SiteOnlinepeakRepositoryEloquent::class);
+        $this->app->bind(VendingRepository::class, VendingRepositoryEloquent::class);
+        $this->app->bind(VendingItemRepository::class, VendingItemRepositoryEloquent::class);
+        $this->app->bind(CartInventoryRepository::class, CartInventoryRepositoryEloquent::class);
         //:end-bindings:
     }
 }
