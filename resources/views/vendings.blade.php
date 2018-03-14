@@ -19,25 +19,33 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>Pseudo</th>
-                    <th>Classe</th>
+                    <th>Nom Vendeur</th>
+                    <th>Nom de la boutique</th>
                     <th>Guild</th>
+                    <th>Map</th>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>Sex</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach ($vendings as $vending)
                     <tr>
-                        <th scope="row">{{$loop->iteration}}</th>
+                        <th scope="row">{{link_to_route('vendingsItems', $loop->iteration, ['id' => $vending->id])}}</th>
                         <td>{{$vending->char->name}}</td>
-                        <td>{{\App\Lib\Ragnarok\Jobs::get($vending->char->class)}}</td>
+                        <td>{{link_to_route('vendingsItems', $vending->title, ['id' => $vending->id])}}</td>
                         <td>
                             @if($vending->char->guild)
-                                {{$vending->char->guild->name}} &nbsp;
                                 <img src="{{route('emblem', $vending->char->guild->guild_id)}}" alt="{{$vending->char->guild->name}}" />
+                                &nbsp;{{$vending->char->guild->name}}
                             @else
                                 -
                             @endif
                         </td>
+                        <td>{{$vending->map}}</td>
+                        <td>{{$vending->x}}</td>
+                        <td>{{$vending->y}}</td>
+                        <td>{{$vending->char->sex}}</td>
                     </tr>
                 @endforeach
                 </tbody>

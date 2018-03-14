@@ -40,4 +40,9 @@ class VendingItem extends Eloquent
         'amount',
         'price'
     ];
+
+    public function cartInventory()
+    {
+        return $this->hasOne('App\Models\CartInventory', 'id', 'cartinventory_id');
+    }
 }
