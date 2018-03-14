@@ -54,4 +54,14 @@ class Vending extends Eloquent
         'sit',
         'autotrade'
     ];
+
+    public function vendingItems()
+    {
+        return $this->hasMany('App\Models\VendingItem');
+    }
+
+    public function char()
+    {
+        return $this->hasOne('App\Models\Char', 'char_id', 'char_id');
+    }
 }

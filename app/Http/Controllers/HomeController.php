@@ -142,14 +142,13 @@ class HomeController extends Controller
     {
         $vendings = $this->vendingRepository->all();
 
-        return $vendings;
+        return view('vendings', compact('vendings'));
     }
 
     public function vendingsItems($id)
     {
-        $vendingsItems = $this->vendingItemRepository->get($id, 'vending_id');
-        $cartItems = $this->cartInventoryRepository->get($vendingsItems->cartinventory_id);
+        $vending = $this->vendingRepository->get($id);
 
-        return compact('vendingsItems', 'cartItems');
+        return view('vendingsItems', compact('vending'));
     }
 }

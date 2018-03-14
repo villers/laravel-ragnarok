@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use App\Models\CartInventory;
 use App\Repositories\AccRegNumRepository;
 use App\Repositories\AccRegNumRepositoryEloquent;
 use App\Repositories\CartInventoryRepository;

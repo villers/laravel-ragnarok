@@ -99,6 +99,16 @@ abstract class BaseRepository implements BaseRepositoryInterface
     }
 
     /**
+     * @param $id
+     * @param string $key
+     * @return mixed
+     */
+    public function getAll($id, $key = 'id')
+    {
+        return $this->model->where($key, $id);
+    }
+
+    /**
      * @param $item
      */
     public function delete($item)
