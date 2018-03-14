@@ -114,14 +114,16 @@ class CartInventory extends Eloquent
         'unique_id'
     ];
 
-    public function item() {
+    public function item()
+    {
         return $this->hasOne('App\Models\ItemDb', 'id', 'nameid');
     }
 
-    public function getCards() {
+    public function getCards()
+    {
         $cards = [];
 
-        for($i = 0; $i <= 3; $i++) {
+        for ($i = 0; $i <= 3; $i++) {
             $name = 'card'.$i;
             $card = ItemDb::find($this->$name);
             if ($card) {
