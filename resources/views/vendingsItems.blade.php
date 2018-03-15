@@ -50,7 +50,9 @@
                 @endforeach
                 </tbody>
             </table>
+            <a href="{{route('vendings')}}" class="btn btn-primary text-center" style="width: 100px; margin: 0 auto; display: block">Précédent</a>
         </div>
+
 
     </div>
     <br><br><br>

@@ -54,6 +54,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Server Number Vote Add Cashpoint
+    |--------------------------------------------------------------------------
+    |
+    | This value is the number of increments of the account's cashpoints when voted.
+    */
+
+    'server_nb_vote_add_cashpoint' => env('RAGNAROK_SERVER_NB_VOTE_ADD_CASHPOINT', '10'),
+
+
+    /*
+    |--------------------------------------------------------------------------
     | Starpass configuration
     |--------------------------------------------------------------------------
     |
@@ -62,6 +73,18 @@ return [
 
     'starpass_idp' => env('RAGNAROK_STARPASS_IDP', '142078'),
     'starpass_idd' => env('RAGNAROK_STARPASS_IDD', '225986'),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Starpass configuration
+    |--------------------------------------------------------------------------
+    |
+    | This value is the number idp and idd of starpass
+    */
+
+    'rotop_public_key' => env('RAGNAROK_ROTOP_PUBLIC_KEY', ''),
+    'rotop_private_key' => env('RAGNAROK_ROTOP_PRIVATE_KEY', ''),
+
 
     /*
     |--------------------------------------------------------------------------

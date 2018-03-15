@@ -44,7 +44,8 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="{{ asset('js/jquery.1.11.1.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.countdown.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
     @yield('script')
 </body>

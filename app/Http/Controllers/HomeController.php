@@ -3,12 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Lib\Ragnarok\Emblem;
+use App\Models\Login;
+use App\Models\Vote;
+use App\Repositories\AccRegNumRepository;
 use App\Repositories\CartInventoryRepository;
 use App\Repositories\CharRepository;
 use App\Repositories\GuildRepository;
 use App\Repositories\NewsRepository;
 use App\Repositories\VendingItemRepository;
 use App\Repositories\VendingRepository;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Response;
 
 class HomeController extends Controller
@@ -19,6 +25,7 @@ class HomeController extends Controller
     protected $vendingRepository;
     protected $vendingItemRepository;
     protected $cartInventoryRepository;
+    protected $accRegNumRepository;
 
     /**
      * UserController constructor.
@@ -28,8 +35,9 @@ class HomeController extends Controller
      * @param VendingRepository $vendingRepository
      * @param VendingItemRepository $vendingItemRepository
      * @param CartInventoryRepository $cartInventoryRepository
+     * @param AccRegNumRepository $accRegNumRepository
      */
-    public function __construct(CharRepository $charRepository, GuildRepository $guildRepository, NewsRepository $newsRepository, VendingRepository $vendingRepository, VendingItemRepository $vendingItemRepository, CartInventoryRepository $cartInventoryRepository)
+    public function __construct(CharRepository $charRepository, GuildRepository $guildRepository, NewsRepository $newsRepository, VendingRepository $vendingRepository, VendingItemRepository $vendingItemRepository, CartInventoryRepository $cartInventoryRepository, AccRegNumRepository $accRegNumRepository)
     {
         $this->charRepository = $charRepository;
         $this->guildRepository = $guildRepository;
@@ -37,6 +45,7 @@ class HomeController extends Controller
         $this->vendingRepository = $vendingRepository;
         $this->vendingItemRepository = $vendingItemRepository;
         $this->cartInventoryRepository = $cartInventoryRepository;
+        $this->accRegNumRepository = $accRegNumRepository;
     }
 
     /**
@@ -150,5 +159,36 @@ class HomeController extends Controller
         $vending = $this->vendingRepository->get($id);
 
         return view('vendingsItems', compact('vending'));
+    }
+
+    public function callbackVote(Request $request)
+    {
+        $login = $request->input('pseudo');
+        $action = $request->input('action');
+        $key = $request->input('key');
+        $success = false;
+
+        if ($login && $action === 'vote' && Config::get('ragnarok.rotop_private_key') === $key) {
+            $account = Login::where('userid', $login)->firstOrFail();
+
+            if ($account) {
+                $vote = Vote::firstOrNew([
+                    'account_id' => $account->account_id,
+                ]);
+                $vote->vote++;
+                $vote->save();
+
+                $this->accRegNumRepository->incrementOrCreate([
+                    'account_id' => $account->account_id,
+                    'key' => '#CASHPOINTS',
+                ], [
+                    'value' => DB::raw('value+'. Config::get('ragnarok.server_nb_vote_add_cashpoint')),
+                ]);
+
+                $success = true;
+            }
+        }
+
+        return compact('success');
     }
 }
