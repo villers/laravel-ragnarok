@@ -76,10 +76,10 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Starpass configuration
+    | Rotop configuration
     |--------------------------------------------------------------------------
     |
-    | This value is the number idp and idd of starpass
+    | This value is the api key of rotop
     */
 
     'rotop_public_key' => env('RAGNAROK_ROTOP_PUBLIC_KEY', ''),
