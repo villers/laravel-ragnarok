@@ -70,7 +70,7 @@
                                                         <h4 class="panel-title">
                                                             <a data-toggle="collapse" href="#collapse2">
 
-                                                                <p><i><strong style="color:#6db860;font-size:12px;">UPPER HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></strong></p>
+                                                                <p><i><strong style="color:#6db860;font-size:12px;">UPPER HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></p>
 
                                                             </a>
                                                         </h4>
@@ -244,7 +244,7 @@
                                                             <div class="panel-title">
                                                                 <a data-toggle="collapse" href="#collapse3">
 
-                                                                    <p><i><strong style="color:#6db860;font-size:12px;">MIDDLE HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></strong></p>
+                                                                    <p><i><strong style="color:#6db860;font-size:12px;">MIDDLE HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></p>
 
                                                                 </a>
                                                             </div>
@@ -401,7 +401,7 @@
                                                                 <h4 class="panel-title">
                                                                     <a data-toggle="collapse" href="#collapse4">
 
-                                                                        <p><i><strong style="color:#6db860;font-size:12px;">LOWER HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></strong></p>
+                                                                        <p><i><strong style="color:#6db860;font-size:12px;">LOWER HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></p>
 
                                                                     </a>
                                                                 </h4>
@@ -559,7 +559,7 @@
                                                                     <h4 class="panel-title">
                                                                         <a data-toggle="collapse" href="#collapse5">
 
-                                                                            <p><i><strong style="color:#6db860;font-size:12px;">UPPER & MIDDLE HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></strong></p>
+                                                                            <p><i><strong style="color:#6db860;font-size:12px;">UPPER & MIDDLE HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></p>
 
                                                                         </a>
                                                                     </h4>
@@ -700,7 +700,7 @@
                                                                     <h4 class="panel-title">
                                                                         <a data-toggle="collapse" href="#collapse6">
 
-                                                                            <p><i><strong style="color:#6db860;font-size:12px;">UPPER & LOWER HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></strong></p>
+                                                                            <p><i><strong style="color:#6db860;font-size:12px;">UPPER & LOWER HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></p>
 
                                                                         </a>
                                                                     </h4>
@@ -744,7 +744,7 @@
                                                                     <h4 class="panel-title">
                                                                         <a data-toggle="collapse" href="#collapse7">
 
-                                                                            <p><i><strong style="color:#6db860;font-size:12px;">MIDDLE & LOWER HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></strong></p>
+                                                                            <p><i><strong style="color:#6db860;font-size:12px;">MIDDLE & LOWER HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></p>
 
                                                                         </a>
                                                                     </h4>
@@ -865,7 +865,7 @@
                                                                     <h4 class="panel-title">
                                                                         <a data-toggle="collapse" href="#collapse8">
 
-                                                                            <p><i><strong style="color:#6db860;font-size:12px;">UPPER / MIDDLE / LOWER HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></strong></p>
+                                                                            <p><i><strong style="color:#6db860;font-size:12px;">UPPER / MIDDLE / LOWER HEAD</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></p>
 
                                                                         </a>
                                                                     </h4>
@@ -1025,7 +1025,7 @@
                                                                     <h4 class="panel-title">
                                                                         <a data-toggle="collapse" href="#collapse9">
 
-                                                                            <p><i><strong style="color:#6db860;font-size:12px;">BOX HAT ALEATOIRE</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></strong></p>
+                                                                            <p><i><strong style="color:#6db860;font-size:12px;">BOX HAT ALEATOIRE</strong></i><img src="../img/btn.png" style="float:right;margin-top:5px;"></p>
 
                                                                         </a>
                                                                     </h4>
@@ -1169,10 +1169,6 @@
                                     </div>
                                 </div>
 
-
-
-
-
                             </div>
                         </div>
                     </div>
@@ -1247,36 +1243,54 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <div id="testimonial" style=";">
-                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                    <input type="hidden" name="cmd" value="_s-xclick">
-                                    <input type="hidden" name="hosted_button_id" value="ZSKDSUW6LUM3E">
-                                    <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
-                                    <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-                                </form>
+                                @if($isOnline)
+                                    <div class="alert alert-danger">Vous devez être déconnecté du serveur</div>
+                                    <button id="refresh" class="btn btn-primary">Rafraichir</button>
+                                @else
+                                    @if(session('paypal_success'))
+                                        <div class="alert alert-info">{!! session('paypal_success') !!}</div>
+                                    @endif
+
+                                    @if(session('paypal_error'))
+                                        <div class="alert alert-danger">{{ session('paypal_error') }}</div>
+                                    @endif
+
+                                    {!! Form::open(['route' => 'user.payment.paypal']) !!}
+                                    <fieldset>
+
+                                        <div class="form-group">
+                                            {{ Form::label('qty', 'Nombre de cash point') }}
+                                            {{ Form::number('qty', 100, [ 'step' => '0.01', 'min' => '0.01', 'max' => '10000000.00' ,'class' => 'form-control']) }}
+                                        </div>
+
+                                        <div class="form-group">
+                                            {!! Form::submit('Valider', ['class' => 'btn btn-success'] ) !!}
+                                        </div>
+
+                                    </fieldset>
+                                    {!! Form::close() !!}
+                                @endif
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+@endsection
 
 
 
+@section('script')
+    <script>
+        $('.navbar-default').addClass('on');
+    </script>
 
-        @endsection
-
-
-
-        @section('script')
-            <script>
-                $('.navbar-default').addClass('on');
-            </script>
-
-            @if($isOnline)
-                <script>
-                    $('#refresh').on('click', function() {
-                        location.reload();
-                    });
-                </script>
+    @if($isOnline)
+        <script>
+            $('#refresh').on('click', function() {
+                location.reload();
+            });
+        </script>
     @endif
 @endsection

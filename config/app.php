@@ -201,7 +201,7 @@ return [
         /*
          * Paypal
          */
-        Anouar\Paypalpayment\PaypalpaymentServiceProvider::class,
+        Srmklive\PayPal\Providers\PayPalServiceProvider::class
     ],
 
     /*
@@ -255,8 +255,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Carbon' => Carbon\Carbon::class,
-
-        'Paypalpayment'   => Anouar\Paypalpayment\Facades\PaypalPayment::class,
+        'PayPal' => Srmklive\PayPal\Facades\PayPal::class
     ],
 
 ];

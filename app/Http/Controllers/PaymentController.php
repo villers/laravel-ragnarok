@@ -9,16 +9,25 @@ use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
+use Srmklive\PayPal\Services\ExpressCheckout;
 
 class PaymentController
 {
     protected $accRegNumRepository;
     protected $charRepository;
+    protected $provider;
 
+    /**
+     * PaymentController constructor.
+     * @param AccRegNumRepository $accRegNumRepository
+     * @param CharRepository $charRepository
+     * @throws \Exception
+     */
     public function __construct(AccRegNumRepository $accRegNumRepository, CharRepository $charRepository)
     {
         $this->accRegNumRepository = $accRegNumRepository;
         $this->charRepository = $charRepository;
+        $this->provider = new ExpressCheckout();
     }
 
     /**
