@@ -37,10 +37,10 @@
                             <img src="http://imgs.ratemyserver.net/items/small/{{$vendingItem->cartInventory->item->id}}.gif" alt="">
                             &nbsp;{{$vendingItem->cartInventory->item->name_english}}
                         </td>
-                        <td>{{$vendingItem->cartInventory->refine}}</td>
+                        <td>+{{$vendingItem->cartInventory->refine}}</td>
                         <td>
                             @if($vendingItem->cartInventory->item->slots)
-                                [{{$vendingItem->cartInventory->item->slots}}]
+                                [<span style="color:orange;">{{$vendingItem->cartInventory->item->slots}}</span>]
                             @endif
                         </td>
                         <td>{{$vendingItem->cartInventory->getCards()}}</td>
