@@ -21,15 +21,6 @@ class AccRegNumRepositoryEloquent extends BaseRepository implements AccRegNumRep
     }
 
     /**
-     * @param array $attributes
-     * @param array $values
-     */
-    public function incrementOrCreate(array $attributes, array $values = [])
-    {
-        $this->model->updateOrInsert($attributes, $values);
-    }
-
-    /**
      * @param $account_id
      * @return int|mixed
      * @internal param array $attributes

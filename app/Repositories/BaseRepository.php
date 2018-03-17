@@ -132,4 +132,13 @@ abstract class BaseRepository implements BaseRepositoryInterface
     {
         $item->update($newItem);
     }
+
+    /**
+     * @param array $attributes
+     * @param array $values
+     */
+    public function incrementOrCreate(array $attributes, array $values = [])
+    {
+        $this->model->updateOrInsert($attributes, $values);
+    }
 }

@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Lib\Ragnarok\Emblem;
-use App\Models\Login;
 use App\Models\Vote;
 use App\Repositories\AccRegNumRepository;
 use App\Repositories\CartInventoryRepository;
 use App\Repositories\CharRepository;
 use App\Repositories\GuildRepository;
+use App\Repositories\LoginRepository;
 use App\Repositories\NewsRepository;
 use App\Repositories\VendingItemRepository;
 use App\Repositories\VendingRepository;
+use App\Repositories\VoteRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
@@ -26,6 +27,8 @@ class HomeController extends Controller
     protected $vendingItemRepository;
     protected $cartInventoryRepository;
     protected $accRegNumRepository;
+    protected $voteRepository;
+    protected $loginRepository;
 
     /**
      * UserController constructor.
@@ -36,9 +39,20 @@ class HomeController extends Controller
      * @param VendingItemRepository $vendingItemRepository
      * @param CartInventoryRepository $cartInventoryRepository
      * @param AccRegNumRepository $accRegNumRepository
+     * @param VoteRepository $voteRepository
+     * @param LoginRepository $loginRepository
      */
-    public function __construct(CharRepository $charRepository, GuildRepository $guildRepository, NewsRepository $newsRepository, VendingRepository $vendingRepository, VendingItemRepository $vendingItemRepository, CartInventoryRepository $cartInventoryRepository, AccRegNumRepository $accRegNumRepository)
-    {
+    public function __construct(
+        CharRepository $charRepository,
+        GuildRepository $guildRepository,
+        NewsRepository $newsRepository,
+        VendingRepository $vendingRepository,
+        VendingItemRepository $vendingItemRepository,
+        CartInventoryRepository $cartInventoryRepository,
+        AccRegNumRepository $accRegNumRepository,
+        VoteRepository $voteRepository,
+        LoginRepository $loginRepository
+    ) {
         $this->charRepository = $charRepository;
         $this->guildRepository = $guildRepository;
         $this->newsRepository = $newsRepository;
@@ -46,6 +60,8 @@ class HomeController extends Controller
         $this->vendingItemRepository = $vendingItemRepository;
         $this->cartInventoryRepository = $cartInventoryRepository;
         $this->accRegNumRepository = $accRegNumRepository;
+        $this->voteRepository = $voteRepository;
+        $this->loginRepository = $loginRepository;
     }
 
     /**
@@ -169,14 +185,14 @@ class HomeController extends Controller
         $success = false;
 
         if ($login && $action === 'vote' && Config::get('ragnarok.rotop_private_key') === $key) {
-            $account = Login::where('userid', $login)->firstOrFail();
+            $account = $this->loginRepository->get($login, 'userid');
 
             if ($account) {
-                $vote = Vote::firstOrNew([
+                $this->voteRepository->incrementOrCreate([
                     'account_id' => $account->account_id,
+                ], [
+                    'vote' => DB::raw('vote+'. 1),
                 ]);
-                $vote->vote++;
-                $vote->save();
 
                 $this->accRegNumRepository->incrementOrCreate([
                     'account_id' => $account->account_id,

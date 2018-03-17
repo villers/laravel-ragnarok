@@ -15,4 +15,5 @@ interface BaseRepositoryInterface
     public function delete($item);
     public function create($item);
     public function update($item, $newItem);
+    public function incrementOrCreate(array $attributes, array $values = []);
 }

@@ -12,6 +12,8 @@ use App\Repositories\CharRepository;
 use App\Repositories\CharRepositoryEloquent;
 use App\Repositories\GuildRepository;
 use App\Repositories\GuildRepositoryEloquent;
+use App\Repositories\LoginRepository;
+use App\Repositories\LoginRepositoryEloquent;
 use App\Repositories\NewsRepository;
 use App\Repositories\NewsRepositoryEloquent;
 use App\Repositories\SiteOnlinepeakRepository;
@@ -20,6 +22,8 @@ use App\Repositories\VendingItemRepository;
 use App\Repositories\VendingItemRepositoryEloquent;
 use App\Repositories\VendingRepository;
 use App\Repositories\VendingRepositoryEloquent;
+use App\Repositories\VoteRepository;
+use App\Repositories\VoteRepositoryEloquent;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -50,6 +54,8 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(VendingRepository::class, VendingRepositoryEloquent::class);
         $this->app->bind(VendingItemRepository::class, VendingItemRepositoryEloquent::class);
         $this->app->bind(CartInventoryRepository::class, CartInventoryRepositoryEloquent::class);
+        $this->app->bind(VoteRepository::class, VoteRepositoryEloquent::class);
+        $this->app->bind(LoginRepository::class, LoginRepositoryEloquent::class);
         //:end-bindings:
     }
 }
