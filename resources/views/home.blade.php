@@ -42,7 +42,7 @@
                 @if (Auth::guest())
                     <a href="https://www.ro-play.fr/register" class="myButton2"><img src="../img/user.png" style="float:left; postition:relative; margin-right:10px; opacity:0.9;">INSCRIPTION SITE/SERVEUR</a>
                 @endif
-                <a href="#" class="myButton3"><img src="../img/dl.png" style="float:left; postition:relative; margin-right:10px;">CLIENT COMPLET</a></br>
+                <a href="https://static.ro-play.fr/client-roplay.rar" class="myButton3"><img src="../img/dl.png" style="float:left; postition:relative; margin-right:10px;">CLIENT COMPLET</a></br>
             </div>
         </div>
     </div>
