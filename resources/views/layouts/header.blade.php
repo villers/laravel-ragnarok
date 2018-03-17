@@ -21,7 +21,7 @@
             <ul class="nav navbar-nav">
                 <li>{{link_to_route('news', 'Actualités')}}</li>
                 <li>{{link_to_route('informations', 'Informations')}}</li>
-                <li><a href="https://www.ro-play.fr/forum">Forum</a></li>
+                <li><a href="https://forum.ro-play.fr">Forum</a></li>
                 <li>{{link_to_route('staff', 'Staff')}}</li>
 
                 @if (Auth::guest())
