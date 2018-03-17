@@ -40,7 +40,7 @@
                         <td>{{$vendingItem->cartInventory->refine}}</td>
                         <td>
                             @if($vendingItem->cartInventory->item->slots)
-                            [{{$vendingItem->cartInventory->item->slots}}]
+                                [{{$vendingItem->cartInventory->item->slots}}]
                             @endif
                         </td>
                         <td>{{$vendingItem->cartInventory->getCards()}}</td>

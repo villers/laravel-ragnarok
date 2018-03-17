@@ -27,20 +27,20 @@
                 @endif
 
                 @if (!$ouverture->isPast())
-                OUVERTURE
-                <div class="box">
-                    <div class="lead" id="counter" data-date="{{$ouverture}}">
-                        <span class="bubble days"></span> jours
-                        <span class="bubble hours"></span> heures
-                        <span class="bubble min"></span> minutes
-                        <span class="bubble sec"></span> secondes
+                    OUVERTURE
+                    <div class="box">
+                        <div class="lead" id="counter" data-date="{{$ouverture}}">
+                            <span class="bubble days"></span> jours
+                            <span class="bubble hours"></span> heures
+                            <span class="bubble min"></span> minutes
+                            <span class="bubble sec"></span> secondes
+                        </div>
                     </div>
-                </div>
                 @endif
 
                 <a href="http://forum.ro-play.org/index.php?/register/" class="myButton"><img src="../img/user.png" style="float:left; postition:relative; margin-right:10px; opacity:0.9;">INSCRIPTION FORUM</a>
                 @if (Auth::guest())
-                <a href="https://www.ro-play.fr/register" class="myButton2"><img src="../img/user.png" style="float:left; postition:relative; margin-right:10px; opacity:0.9;">INSCRIPTION SITE/SERVEUR</a>
+                    <a href="https://www.ro-play.fr/register" class="myButton2"><img src="../img/user.png" style="float:left; postition:relative; margin-right:10px; opacity:0.9;">INSCRIPTION SITE/SERVEUR</a>
                 @endif
                 <a href="#" class="myButton3"><img src="../img/dl.png" style="float:left; postition:relative; margin-right:10px;">CLIENT COMPLET</a></br>
             </div>

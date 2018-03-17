@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
             </button>
             <div class="logo">
-            <a class="navbar-brand" href="{{ url('/') }}" style="margin-top: -15px; position: absolute;"><img src="../img/logo.png"></a>
+                <a class="navbar-brand" href="{{ url('/') }}" style="margin-top: -15px; position: absolute;"><img src="../img/logo.png"></a>
             </div>
         </div>
 
