@@ -43,7 +43,7 @@ Route::middleware(['auth'])->prefix('user')->group(function () {
 
     Route::post('payment/paypal', 'PayPalController@getPaypal')->name('user.payment.paypal');
     Route::get('payment/paypal/checkout', 'PayPalController@getPaypalCheckout')->name('user.payment.paypal.checkout');
-    Route::post('paypal/notify', 'PayPalController@notify');
+    Route::post('payment/paypal/notify', 'PayPalController@notify');
 
 
     Route::middleware(['admin'])->prefix('admin')->namespace('Admin')->as('admin.')->group(function () {

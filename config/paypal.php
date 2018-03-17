@@ -23,7 +23,7 @@ return [
 
     'payment_action' => 'Sale', // Can only be 'Sale', 'Authorization' or 'Order'
     'currency'       => 'EUR',
-    'notify_url'     => 'http://localhost/tet', // Change this accordingly for your application.
+    'notify_url'     => 'http://ro-play.fr/user/payment/paypal/notify', // Change this accordingly for your application.
     'locale'         => 'en_US', // force gateway language  i.e. it_IT, es_ES, en_US ... (for express checkout only)
     'validate_ssl'   => false, // Validate SSL when creating api client.
 ];
