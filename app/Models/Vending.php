@@ -57,11 +57,11 @@ class Vending extends Eloquent
 
     public function vendingItems()
     {
-        return $this->hasMany('App\Models\VendingItem');
+        return $this->hasMany(VendingItem::class);
     }
 
     public function char()
     {
-        return $this->hasOne('App\Models\Char', 'char_id', 'char_id');
+        return $this->hasOne(Char::class, 'char_id', 'char_id');
     }
 }

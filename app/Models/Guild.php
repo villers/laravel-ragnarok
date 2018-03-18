@@ -72,6 +72,6 @@ class Guild extends Eloquent
      */
     public function members()
     {
-        return $this->hasMany('App\Models\GuildMember', 'guild_id', 'guild_id');
+        return $this->hasMany(GuildMember::class, 'guild_id', 'guild_id');
     }
 }

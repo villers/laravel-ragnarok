@@ -20,6 +20,6 @@ class Category extends Model
      */
     public function newsItems()
     {
-        return $this->belongsTo('App\News');
+        return $this->belongsTo(News::class);
     }
 }

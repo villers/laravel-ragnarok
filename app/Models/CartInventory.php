@@ -116,7 +116,7 @@ class CartInventory extends Eloquent
 
     public function item()
     {
-        return $this->hasOne('App\Models\ItemDb', 'id', 'nameid');
+        return $this->hasOne(ItemDb::class, 'id', 'nameid');
     }
 
     public function getCards()

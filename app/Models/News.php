@@ -36,13 +36,4 @@ class News extends Model
     {
         return $this->hasOne(Category::class, 'id', 'category_id');
     }
-
-    /**
-     * Get the tags associated with news item
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
-    public function tags()
-    {
-        return $this->belongsToMany('App\Tag', 'news_tags', 'news_id', 'tag_id');
-    }
 }

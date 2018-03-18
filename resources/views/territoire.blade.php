@@ -37,6 +37,27 @@
                 </div>
 
             </div>
+
+            <div id="team" class="row">
+                @foreach($regions as $region)
+                    <h5>{{$region['name']}}</h5>
+                    @foreach($region['totem'] as $territoire)
+                        <div class="row">
+                            <img style="width: 100px" src="{{ asset('img/territoire/map/'.$territoire->map_territoire.'.bmp') }}" alt="{{$territoire->map_territoire}}">
+
+                            <ul style="margin-left: 120px;">
+                                <li>{{$territoire->map_territoire}}</li>
+                                @if ($territoire->conquerant_territoire == 'Inoccupé')
+                                    <li>Le térritoire est inoccupé</li>
+                                @else
+                                    <li>Occupé par {{$territoire->conquerant_territoire}}</li>
+                                @endif
+                            </ul>
+                        </div>
+                    @endforeach
+                    <br><br>
+                @endforeach
+            </div>
         </div>
         @endsection
 

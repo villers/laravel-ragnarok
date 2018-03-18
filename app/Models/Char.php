@@ -206,6 +206,6 @@ class Char extends Eloquent
 
     public function guild()
     {
-        return $this->belongsTo('App\Models\Guild', 'guild_id', 'guild_id');
+        return $this->belongsTo(Guild::class, 'guild_id', 'guild_id');
     }
 }

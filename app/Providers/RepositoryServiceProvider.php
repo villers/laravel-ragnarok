@@ -18,6 +18,8 @@ use App\Repositories\NewsRepository;
 use App\Repositories\NewsRepositoryEloquent;
 use App\Repositories\SiteOnlinepeakRepository;
 use App\Repositories\SiteOnlinepeakRepositoryEloquent;
+use App\Repositories\TotemRepository;
+use App\Repositories\TotemRepositoryEloquent;
 use App\Repositories\VendingItemRepository;
 use App\Repositories\VendingItemRepositoryEloquent;
 use App\Repositories\VendingRepository;
@@ -56,6 +58,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(CartInventoryRepository::class, CartInventoryRepositoryEloquent::class);
         $this->app->bind(VoteRepository::class, VoteRepositoryEloquent::class);
         $this->app->bind(LoginRepository::class, LoginRepositoryEloquent::class);
+        $this->app->bind(TotemRepository::class, TotemRepositoryEloquent::class);
         //:end-bindings:
     }
 }

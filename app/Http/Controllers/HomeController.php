@@ -10,6 +10,7 @@ use App\Repositories\CharRepository;
 use App\Repositories\GuildRepository;
 use App\Repositories\LoginRepository;
 use App\Repositories\NewsRepository;
+use App\Repositories\TotemRepository;
 use App\Repositories\VendingItemRepository;
 use App\Repositories\VendingRepository;
 use App\Repositories\VoteRepository;
@@ -29,6 +30,7 @@ class HomeController extends Controller
     protected $accRegNumRepository;
     protected $voteRepository;
     protected $loginRepository;
+    protected $totemRepository;
 
     /**
      * UserController constructor.
@@ -41,6 +43,7 @@ class HomeController extends Controller
      * @param AccRegNumRepository $accRegNumRepository
      * @param VoteRepository $voteRepository
      * @param LoginRepository $loginRepository
+     * @param TotemRepository $totemRepository
      */
     public function __construct(
         CharRepository $charRepository,
@@ -51,7 +54,8 @@ class HomeController extends Controller
         CartInventoryRepository $cartInventoryRepository,
         AccRegNumRepository $accRegNumRepository,
         VoteRepository $voteRepository,
-        LoginRepository $loginRepository
+        LoginRepository $loginRepository,
+        TotemRepository $totemRepository
     ) {
         $this->charRepository = $charRepository;
         $this->guildRepository = $guildRepository;
@@ -62,6 +66,7 @@ class HomeController extends Controller
         $this->accRegNumRepository = $accRegNumRepository;
         $this->voteRepository = $voteRepository;
         $this->loginRepository = $loginRepository;
+        $this->totemRepository = $totemRepository;
     }
 
     /**
@@ -82,8 +87,8 @@ class HomeController extends Controller
     public function news()
     {
         $news = $this->newsRepository->paginate('desc', 3);
-
-        return view('news', compact('news'));
+        $territoire = $this->totemRepository->getTerritoireStatus();
+        return view('news', compact('news', 'territoire'));
     }
 
     /**
@@ -123,7 +128,9 @@ class HomeController extends Controller
      */
     public function territoire()
     {
-        return view('territoire');
+        $regions = $this->totemRepository->getTotemGroupedByRegion();
+
+        return view('territoire', compact('regions'));
     }
 
     /**

@@ -192,9 +192,9 @@
 
                                 <h2 style="text-decoration:underline;font-style: italic;font-size: 14px;">Horaires :</h2>
                                 <br>
-                                <p><strong>Territoires disponibles:</strong> 55/142</p>
-                                <p><strong>Territoires conquis:</strong> 87</p>
-                                <a href="http://ro-play.fr/forum/index.php?/topic/8-les-territoires/" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-40px;float:right;margin-right:20px;"></a>
+                                <p><strong>Territoires disponibles:</strong> {{ $territoire['available'] }}/{{ $territoire['total'] }}</p>
+                                <p><strong>Territoires conquis:</strong> {{ $territoire['conquered'] }}</p>
+                                <a href="{{route('territoire')}}" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-40px;float:right;margin-right:20px;"></a>
                             </div>
 
 
