@@ -1259,12 +1259,16 @@
                                     <fieldset>
 
                                         <div class="form-group">
-                                            {{ Form::label('qty', 'Nombre de cash point') }}
-                                            {{ Form::number('qty', 100, [ 'step' => '0.01', 'min' => '0.01', 'max' => '10000000.00' ,'class' => 'form-control']) }}
+                                            <div class="col-md-offset-4 col-md-4">
+                                                {{ Form::label('qty', 'Nombre de cash point') }}
+                                                {{ Form::number('qty', 100, [ 'step' => '1', 'min' => '0', 'max' => '100000000' ,'class' => 'form-control']) }}
+                                            </div>
                                         </div>
 
                                         <div class="form-group">
-                                            {!! Form::submit('Valider', ['class' => 'btn btn-success'] ) !!}
+                                            <div class="col-md-offset-4 col-md-4">
+                                                {!! Form::submit('Valider', ['class' => 'btn btn-success'] ) !!}
+                                            </div>
                                         </div>
 
                                     </fieldset>
