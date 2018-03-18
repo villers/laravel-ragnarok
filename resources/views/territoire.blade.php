@@ -9,6 +9,13 @@
     <div id="tf-about">
         <div class="container">
 
+            <div class="row" id="team">
+                <ul class="list-unstyled">
+                    @foreach($regions as $region)
+                        <li><a href="#{{$region['name']}}">{{$region['name']}}</a></li>
+                    @endforeach
+                </ul>
+            </div>
 
             <div class="section-title center">
                 <div class="bloctitle">
@@ -19,7 +26,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div id="team" class="row">
                 <div class="item">
@@ -40,7 +46,7 @@
 
             <div id="team" class="row">
                 @foreach($regions as $region)
-                    <h5>{{$region['name']}}</h5>
+                    <h5 id="{{$region['name']}}">{{$region['name']}}</h5>
                     @foreach($region['totem'] as $territoire)
                         <div class="row">
                             <img style="width: 100px" src="{{ asset('img/territoire/map/'.$territoire->map_territoire.'.bmp') }}" alt="{{$territoire->map_territoire}}">
@@ -48,7 +54,7 @@
                             <ul style="margin-left: 120px;">
                                 <li>{{$territoire->map_territoire}}</li>
                                 @if ($territoire->conquerant_territoire == 'Inoccupé')
-                                    <li>Le térritoire est inoccupé</li>
+                                    <li>Le territoire est inoccupé</li>
                                 @else
                                     <li>Occupé par {{$territoire->conquerant_territoire}}</li>
                                 @endif
