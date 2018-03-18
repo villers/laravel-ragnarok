@@ -118,10 +118,10 @@ class PayPalController extends Controller
                 'qty'   => Session::get('qty'),
             ]
         ];
-        $data['return_url'] = url('/user/payment/paypal/checkout');
+        $data['return_url'] = route('user.payment.paypal.checkout');
         $data['invoice_id'] = $order_id;
         $data['invoice_description'] = "Order #$order_id Invoice for " . Session::get('qty') . " cashpoints";
-        $data['cancel_url'] = url('/user/payment');
+        $data['cancel_url'] = route('user.payment.show');
 
         $total = 0;
         foreach ($data['items'] as $item) {
