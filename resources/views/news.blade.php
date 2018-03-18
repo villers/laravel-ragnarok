@@ -233,7 +233,7 @@
                                 <br>
                                 <p><strong>Bateaux disponibles:</strong>7/14</p>
                                 <p><strong>Bateaux actifs:</strong>7</p>
-                                <a href="http://ro-play.fr/forum/index.php?/topic/7-naval-war-of-emperium/" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-40px;float:right;margin-right:20px;"></a>
+                                <a href="https://forum.ro-play.fr/index.php?/topic/7-naval-war-of-emperium/" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-40px;float:right;margin-right:20px;"></a>
                             </div>
                         </div>
 
