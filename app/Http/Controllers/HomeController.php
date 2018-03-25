@@ -101,6 +101,16 @@ class HomeController extends Controller
         return view('informations');
     }
 
+ /**
+     * Show the page téléchargment.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function telechargement()
+    {
+        return view('telechargement');
+    }
+
     /**
      * Show the page staff.
      *

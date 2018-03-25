@@ -10,7 +10,7 @@
                     <img style="position:absolute;margin-top:-70px;margin-left:-530px;" src="../img/giphy.gif">
                     <h2>Qui est en <strong> ligne ?</strong></h2>
 
-                    <a href="{{route('vendings')}}" class="btn btn-primary">Afficher les shops</a>
+                    <a style="float:right; margin-top:-10px; background-color:#45c367;" href="{{route('vendings')}}" class="btn btn-primary">Afficher les shops</a>
 
                     <div class="line">
                         <hr>

@@ -7,7 +7,7 @@
         <div class="container">
             <div class="section-title center text-center">
                 <div class="bloctitleqeel">
-                    <img style="position:absolute;margin-top:-70px;margin-left:-530px;" src="../img/giphy.gif">
+                    <img style="position:absolute;margin-top:-70px;margin-left:-450px; width:7%;" src="../img/whitesmith.png">
                     <h2>Shop en <strong> ligne ?</strong></h2>
                     <div class="line">
                         <hr>
@@ -51,7 +51,7 @@
                 </tbody>
             </table>
         </div>
-
+<a href="https://www.ro-play.fr/onlines" class="btn btn-primary text-center" style="width: 100px; margin: 0 auto; display: block">Précédent</a>
     </div>
     <br><br><br>
     <br><br><br>

@@ -1295,7 +1295,7 @@ p {
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 21px;
+    font-size: 16px;
   }
 }
 small,
@@ -3396,7 +3396,9 @@ input[type="button"].btn-block {
 .collapse {
   display: none;
   visibility: hidden;
+
 }
+
 .collapse.in {
   display: block;
   visibility: visible;
@@ -3421,6 +3423,7 @@ tbody.collapse.in {
        -o-transition-property: height, visibility;
           transition-property: height, visibility;
 }
+
 .caret {
   display: inline-block;
   width: 0;
@@ -5335,6 +5338,15 @@ a.list-group-item-danger.active:focus {
 .panel-body {
   padding: 15px;
 }
+.panel-body2 {
+ background-color: rgba(200, 200, 200, 0.1);
+  padding: 15px;
+  text-align: center;
+  margin-left:15px;
+  margin-right:15px;
+
+}
+
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;

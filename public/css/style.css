@@ -48,6 +48,7 @@ h5{
 	line-height: 20px;
 	text-align: center;
 	font-size: 20px;
+	margin:15px;
 }
 h6{
 	text-transform: uppercase;
@@ -686,6 +687,19 @@ ol.type li a.active { font-weight: 700; }
 	background-color: rgba(250,250,250,0.9);
 	box-shadow: inset rgba(255,255,255,0.4) 0px 1px 0px, inset rgba(255,255,255,0.2) 0px 0px 0px 1px, rgba(0,0,0,0.2) 0px 1px 4px;
 }
+#testimonial2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 25px;
+	display: block;
+	background-color: rgba(250,250,250,0.9);
+	box-shadow: inset rgba(255,255,255,0.4) 0px 1px 0px, inset rgba(255,255,255,0.2) 0px 0px 0px 1px, rgba(0,0,0,0.2) 0px 1px 4px;
+}
+#testimonial2:hover {
+	display: block;
+	background-color: rgba(150,250,150,0.1);
+	box-shadow: inset rgba(255,255,255,0.4) 0px 1px 0px, inset rgba(255,255,255,0.2) 0px 0px 0px 1px, rgba(0,0,0,0.2) 0px 1px 4px;
+}
 
 #testimonial .item{
 	display: block;
@@ -966,7 +980,7 @@ nav#footer p{
 
 	text-align: right;
 	margin-top: 5px;
-	margin-right: 200px;
+	margin-right: 25%;
 }
 
 .partenaire a{
@@ -1035,7 +1049,7 @@ nav#footer p{
 	background-color: rgba(0,0,0,0.3);
 	border-radius: 2px;
 	box-shadow: inset rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.2) 0 0 0 1px, rgba(0,0,0,0.2) 0 1px 4px;
-	width: 40%;
+	width: 35%;
 	margin: 0 auto;
 }
 #counter, #counter2 {
@@ -1045,19 +1059,87 @@ nav#footer p{
 }
 
 #counter .bubble, #counter2 .bubble {
-	background:#9db56d;
+	background:#ff9958;
 	color: white;
 	border-radius: 2px;
 	box-shadow: inset rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.2) 0 0 0 1px, rgba(0,0,0,0.2) 0 1px 4px;
 	text-shadow: 0 1px 0 #cc9f52;
 	font-weight: bold;
-	height: 35px;
-	width: 35px;
 	padding: 2px 3px 2px 3px;
 	margin: 10px;
 	text-align: center;
 }
 
 #counter2 .bubble.beta {
-	background: #fcac45;
+	background: #b79958;
 }
+
+.puce{
+background:3ea072;
+display:inline-block;
+border-radius: 3px;
+float:right;
+}
+.puce img{
+-moz-transition: opacity 0.2s;
+-webkit-transition: opacity 0.2s;
+-o-transition: opacity 0.2s;
+}
+.puce img:hover{
+opacity:0.6;
+-moz-transition: opacity 0.2s;
+-webkit-transition: opacity 0.2s;
+-o-transition: opacity 0.2s;
+}
+
+.btnfc{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:20px
+}
+
+.btnfc:hover {
+    background-color: #4cd950;
+    color: white;
+}
+
+.btnfc2{
+    background-color:#3e6e72;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:20px
+}
+
+.btnfc2:hover {
+    background-color: #569492;
+    color: white;
+}
+
+.panel-body2 h3 {
+	text-transform: capitalize;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+	color: #56565a
+}
+
+.discord img{
+
+	width:3%;
+	float:right;
+	margin-right:20px;
+	margin-top:-2px;
+}
+
