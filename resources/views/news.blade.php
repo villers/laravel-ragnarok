@@ -26,9 +26,9 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse1">
-                                    <img src="../img/coupe.png" style="margin-top:-30px;position:absolute;margin-left:-10%;">
+                                    <img src="../img/coupe.png" style="margin-top:-30px;">
                                     <div class="linetitle" style="text-align:center;">
-                                        <strong>TOURNOIS<img src="../img/fleche.png" style="float:right;"></strong>
+                                        <strong style="margin-right:20%;">TOURNOIS</strong><img src="../img/fleche.png" style="float:right;">
                                         <div class="line">
                                             <div class="line2">
                                             </div>
@@ -49,7 +49,7 @@
                                 <img style="padding-right:10px;" src="../img/coup.png">
                                 <p style="color:#d9ad30;text-align:left;margin-top:20px;text-decoration:underline;"><strong>Champion de la semaine:</strong> </p>
                                 <br>
-                                <a href="http://ro-play.fr/forum/index.php?/topic/5-tournois-pvp/" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-20px;float:right;"></a>
+                                <a href="https://forum.ro-play.fr/index.php?/topic/5-tournois-pvp/" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-20px;float:right;"></a>
                             </div>
                         </div>
                     </div>
@@ -61,9 +61,9 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse2">
-                                    <img src="../img/event.png" style="position:absolute;margin-left:-11%;margin-top:-20px;">
+                                    <img src="../img/event.png" style="margin-top:-20px;">
                                     <div class="linetitle">
-                                        <strong>EVENEMENTS<img src="../img/fleche.png" style="float:right;"></strong>
+                                        <strong style="margin-right:20%;">EVENEMENTS</strong><img src="../img/fleche.png" style="float:right;">
                                         <div class="bline">
                                             <div class="bline2">
                                             </div>
@@ -77,17 +77,17 @@
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">
 
-                                <h2><strong><a style="text-decoration:underline;font-style: italic;font-size: 14px;color:#c42b2f;" href="http://ro-play.fr/forum/index.php?/topic/3-death-marathon/">DEATH MARATHON<a/></strong></h2>
+                                <h2><strong><a style="text-decoration:underline;font-style: italic;font-size: 14px;color:#c42b2f;" href="https://forum.ro-play.fr/index.php?/topic/3-death-marathon/">DEATH MARATHON<a/></strong></h2>
 
                                 <p><strong>Début de l'évènement le:  -- / -- / ----</strong></p>
                                 <p style="margin-top:-10px;"><strong>Heure:</strong> -- / --</p>
 
-                                <br>      <h2><strong><a style="text-decoration:underline;font-style: italic;font-size: 14px;color:#c48fde;" href="http://ro-play.fr/forum/index.php?/topic/4-battle-square/">BATTLE SQUARE<a/></strong></h2>
+                                <br>      <h2><strong><a style="text-decoration:underline;font-style: italic;font-size: 14px;color:#c48fde;" href="https://forum.ro-play.fr/index.php?/topic/4-battle-square/">BATTLE SQUARE<a/></strong></h2>
 
                                 <p><strong>Trois jours par semaine: </strong>Mardi / Jeudi / Samedi</p>
                                 <p style="margin-top:-10px;"><strong>Durée</strong> 24h</p>
 
-                                <a href="http://ro-play.fr/forum/index.php?/forum/10-ev%C3%A8nements/" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-20px;float:right;"></a>
+                                <a href="https://forum.ro-play.fr/index.php?/forum/10-ev%C3%A8nements/" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-20px;float:right;"></a>
                             </div>
 
 
@@ -108,9 +108,9 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse3">
-                                    <img src="../img/woe.png" style="position:absolute;margin-left:-11%;margin-top:-30px;width:70px;height:81px;">
+                                    <img src="../img/woe.png" style="margin-top:-35px;width:70px;height:81px;">
                                     <div class="linetitle">
-                                        <strong>WAR OF EMPERIUM<img src="../img/fleche.png" style="float:right;"></strong>
+                                        <strong style="margin-right:20%;">WAR OF EMPERIUM</strong><img src="../img/fleche.png" style="float:right;">
                                         <div class="cline">
                                             <div class="cline2">
                                             </div>
@@ -134,7 +134,7 @@
                                 <br>
 
 
-                                <a href="https://www.ro-play.fr/nwoe" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-20px;float:right;"></a>
+                                <a href="https://forum.ro-play.fr/index.php?/topic/6-war-of-emperium/" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-20px;float:right;"></a>
 
                             </div>
 
@@ -174,9 +174,9 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse4">
-                                    <img src="../img/1905.gif" style="width:41px;height:100px;position:absolute;margin-top:-30px;margin-left:-10%;">
+                                    <img src="../img/1905.gif" style="width:41px;height:100px;margin-top:-35px;margin-left:15%;">
                                     <div class="linetitle">
-                                        <strong>LES TERRITOIRES<img src="../img/fleche.png" style="float:right;"></strong>
+                                        <strong style="margin-right:20%;">LES TERRITOIRES</strong><img src="../img/fleche.png" style="float:right;">
                                         <div class="dline">
                                             <div class="dline2">
                                             </div>
@@ -189,11 +189,11 @@
 
                         <div id="collapse4" class="panel-collapse collapse">
                             <div class="panel-body">
-
-                                <h2 style="text-decoration:underline;font-style: italic;font-size: 14px;">Horaires :</h2>
-                                <br>
-                                <p><strong>Territoires disponibles:</strong> {{ $territoire['available'] }}/{{ $territoire['total'] }}</p>
-                                <p><strong>Territoires conquis:</strong> {{ $territoire['conquered'] }}</p>
+<br>
+                                <strong><a style="text-decoration:underline;font-style: italic;font-size: 14px;" href="https://forum.ro-play.fr/index.php?/topic/8-les-territoires/">Guide Forum<a/></strong>
+                                <br><br>
+                                <p><strong>Territoires disponibles:</strong> [<strong style="color:green;">{{ $territoire['available'] }}</strong>] sur [<strong style="color:black;">{{ $territoire['total'] }}</strong>]</p>
+                                <p><strong>Territoires conquis:</strong> [<strong style="color:red;">{{ $territoire['conquered'] }}</strong>]</p>
                                 <a href="{{route('territoire')}}" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-40px;float:right;margin-right:20px;"></a>
                             </div>
 
@@ -214,9 +214,9 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse5">
-                                    <img src="../img/ship.png" style="width:120px;height:120px;position:absolute;margin-left:-16%;margin-top:-40px;">
+                                    <img src="../img/ship.png" style="width:120px;height:120px;margin-left:5%;margin-top:-40px;">
                                     <div class="linetitle">
-                                        <strong>NAVAL WAR OF EMPERIUM<img src="../img/fleche.png" style="float:right;"></strong>
+                                        <strong style="margin-right:20%;">NAVAL WAR OF EMPERIUM</strong><img src="../img/fleche.png" style="float:right;">
                                         <div class="eline">
                                             <div class="eline2">
                                             </div>
@@ -228,12 +228,12 @@
 
                         <div id="collapse5" class="panel-collapse collapse">
                             <div class="panel-body">
-
-                                <h2 style="text-decoration:underline;font-style: italic;font-size: 14px;">Horaires :</h2>
-                                <br>
+<br>
+                                <strong><a style="text-decoration:underline;font-style: italic;font-size: 14px;" href="https://forum.ro-play.fr/index.php?/topic/7-naval-war-of-emperium/">Guide Forum<a/></strong>
+                                <br><br>
                                 <p><strong>Bateaux disponibles:</strong>7/14</p>
                                 <p><strong>Bateaux actifs:</strong>7</p>
-                                <a href="https://forum.ro-play.fr/index.php?/topic/7-naval-war-of-emperium/" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-40px;float:right;margin-right:20px;"></a>
+                                <a href="https://www.ro-play.fr/nwoe" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-40px;float:right;margin-right:20px;"></a>
                             </div>
                         </div>
 

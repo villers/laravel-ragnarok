@@ -7,7 +7,7 @@
         <div class="container">
             <div class="section-title center text-center">
                 <div class="bloctitleqeel">
-                    <img style="position:absolute;margin-top:-70px;margin-left:-530px;" src="../img/giphy.gif">
+                    <img style="position:absolute;margin-top:-40px;margin-left:-480px; width:7%;" src="../img/shop.png">
                     <h2>Shop de <strong> {{$vending->char->name}}</strong></h2>
                     <div class="line">
                         <hr>
