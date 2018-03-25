@@ -4,8 +4,59 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc8dbc86f8199a63aaef995cafe777e6",
+    "content-hash": "c7097df6853b85277898a7dc4917c0ed",
     "packages": [
+        {
+            "name": "bonecms/laravel-captcha",
+            "version": "v2.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igoshev/laravel-captcha.git",
+                "reference": "cee61ebf9b3c868bb117af9f68373af0834369b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/igoshev/laravel-captcha/zipball/cee61ebf9b3c868bb117af9f68373af0834369b4",
+                "reference": "cee61ebf9b3c868bb117af9f68373af0834369b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Igoshev\\Captcha\\Providers\\CaptchaServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Igoshev\\Captcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dmitriy Igoshev",
+                    "email": "dmitry.igo@gmail.com"
+                }
+            ],
+            "description": "Captcha integration for the Laravel 5",
+            "homepage": "https://github.com/igoshev/laravel-captcha",
+            "keywords": [
+                "Laravel Captcha",
+                "captcha"
+            ],
+            "time": "2018-01-29T16:47:32+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",

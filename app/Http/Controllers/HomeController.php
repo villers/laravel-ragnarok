@@ -171,6 +171,7 @@ class HomeController extends Controller
      */
     public function emblem($id)
     {
+        die;
         $guild = $this->guildRepository->get($id, 'guild_id')->emblem_data;
         $ebm = @gzuncompress(pack('H*', $guild));
 

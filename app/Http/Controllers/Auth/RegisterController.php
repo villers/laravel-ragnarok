@@ -54,6 +54,7 @@ class RegisterController extends Controller
             'birthdate' => 'required|date',
             'sex' => 'required|in:M,F',
             'password' => 'required|string|min:6|confirmed',
+            'captcha' => 'required|captcha',
         ]);
     }
 

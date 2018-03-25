@@ -201,7 +201,12 @@ return [
         /*
          * Paypal
          */
-        Srmklive\PayPal\Providers\PayPalServiceProvider::class
+        Srmklive\PayPal\Providers\PayPalServiceProvider::class,
+
+        /*
+         * Captcha
+         */
+        Igoshev\Captcha\Providers\CaptchaServiceProvider::class,
     ],
 
     /*
