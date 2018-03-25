@@ -171,11 +171,10 @@ class HomeController extends Controller
      */
     public function emblem($id)
     {
-        die;
         $guild = $this->guildRepository->get($id, 'guild_id')->emblem_data;
         $ebm = @gzuncompress(pack('H*', $guild));
 
-        $response = Response::make((string)imagepng(Emblem::imagecreatefrombmpstring($ebm)));
+        $response = Response::make((string)imagepng(Emblem::imagecreatefrombmpstring($ebm), null, 0, PNG_ALL_FILTERS));
         $response->header('Content-Type', 'image/png');
 
         return $response;
