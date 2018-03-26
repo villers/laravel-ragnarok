@@ -1,6 +1,6 @@
 <nav id="footer">
 
-    <div class="cmpvst">{{$visit['count']}}</div>
+    <div class="cmpvst">{{$visit['unique_count']}}</div>
 
     <div class="container">
         <div class="pull-left fnav">

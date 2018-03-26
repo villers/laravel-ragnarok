@@ -3,7 +3,9 @@ namespace App\Lib\Ragnarok;
 
 use App\Repositories\CharRepositoryEloquent;
 use App\Repositories\SiteOnlinepeakRepositoryEloquent;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Config;
+use Voerro\Laravel\VisitorTracker\Facades\VisitStats;
 
 class Server
 {
@@ -33,6 +35,13 @@ class Server
         $nbMax = $this->onlinepeakRepository->updateMaxOnline($nbOnline);
 
         return compact('nbOnline', 'nbMax');
+    }
+
+    public function get_unique_online_user() {
+        return VisitStats::query()->visits()
+            ->except(['ajax', 'bots'])
+            ->period(Carbon::now()->subMinutes(5))
+            ->unique()->count();
     }
 
     private function check_server($host, $port)

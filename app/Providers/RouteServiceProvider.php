@@ -4,25 +4,18 @@ namespace App\Providers;
 
 use App\Lib\Ragnarok\Server;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
-use Voerro\Laravel\VisitorTracker\Facades\VisitStats;
 
 class RouteServiceProvider extends ServiceProvider
 {
     private $server;
-    private $visit;
 
     public function __construct($app)
     {
         parent::__construct($app);
 
         $this->server = $app->make(Server::class);
-
-        $this->visit = VisitStats::query()->visits()
-            ->except(['ajax', 'bots'])
-            ->period(Carbon::now()->subMinutes(5));
     }
 
     /**
@@ -48,7 +41,7 @@ class RouteServiceProvider extends ServiceProvider
         ]);
 
         View::share('visit', [
-            'count' => $this->visit->unique()->count(),
+            'unique_count' => $this->server->get_unique_online_user(),
         ]);
 
         parent::boot();
