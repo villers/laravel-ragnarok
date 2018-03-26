@@ -697,7 +697,7 @@ ol.type li a.active { font-weight: 700; }
 }
 #testimonial2:hover {
 	display: block;
-	background-color: rgba(150,250,150,0.1);
+	background-color: ghostwhite;
 	box-shadow: inset rgba(255,255,255,0.4) 0px 1px 0px, inset rgba(255,255,255,0.2) 0px 0px 0px 1px, rgba(0,0,0,0.2) 0px 1px 4px;
 }
 
@@ -1105,7 +1105,7 @@ opacity:0.6;
 }
 
 .btnfc:hover {
-    background-color: #4cd950;
+    background-color: ghostwhite;
     color: white;
 }
 

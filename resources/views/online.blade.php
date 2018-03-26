@@ -37,8 +37,8 @@
                         <td>{{\App\Lib\Ragnarok\Jobs::get($char->class)}}</td>
                         <td>
                             @if($char->guild)
-                                {{$char->guild->name}} &nbsp;
-                                <img src="{{route('emblem', $char->guild->guild_id)}}" alt="{{$char->guild->name}}" />
+                                {{$char->guild->name}}
+                                <img style="margin-right:10px;margin-left:10px;" src="{{route('emblem', $char->guild->guild_id)}}" alt="{{$char->guild->name}}" />
                             @else
                                 -
                             @endif

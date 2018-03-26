@@ -44,7 +44,7 @@
                     <td>
                         @if($char->guild)
                             {{$char->guild->name}} &nbsp;
-                            <img src="{{route('emblem', $char->guild->guild_id)}}" alt="{{$char->guild->name}}" />
+                            <img style="margin-right:10px;margin-left:10px;" src="{{route('emblem', $char->guild->guild_id)}}" alt="{{$char->guild->name}}" />
                         @else
                             -
                         @endif
@@ -64,7 +64,7 @@
                                 <input id="char_id" type="hidden" name="char_id" value="{{ $char->char_id }}">
                             </form>
                         @else
-                            En ligne
+                            <strong style="color:green;">En ligne</strong>
                         @endif
                     </td>
                 </tr>

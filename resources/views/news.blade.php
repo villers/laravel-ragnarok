@@ -174,7 +174,7 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse4">
-                                    <img src="../img/1905.gif" style="width:41px;height:100px;margin-top:-35px;margin-left:15%;">
+                                    <img src="../img/1905.gif" style="width:8%;margin-top:-30px;margin-left:15%;">
                                     <div class="linetitle">
                                         <strong style="margin-right:20%;">LES TERRITOIRES</strong><img src="../img/fleche.png" style="float:right;">
                                         <div class="dline">
@@ -214,7 +214,7 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" href="#collapse5">
-                                    <img src="../img/ship.png" style="width:120px;height:120px;margin-left:5%;margin-top:-40px;">
+                                    <img src="../img/ship.png" style="width:20%;margin-left:5%;margin-top:-30px;">
                                     <div class="linetitle">
                                         <strong style="margin-right:20%;">NAVAL WAR OF EMPERIUM</strong><img src="../img/fleche.png" style="float:right;">
                                         <div class="eline">

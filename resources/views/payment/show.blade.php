@@ -536,6 +536,18 @@
                                                                                                                         <td><strong>x1</strong> <a style="color:blue;">Costume</a> Wind Fan [<a>0</a>]</td>
                                                                                                                         <td><strong>500</strong> CP</td>
                                                                                                                     </tr>
+                                                                                                                    <tr>
+                                                                                                                        <th scope="row"></th>
+                                                                                                                        <td><img src="../img/lowerhat/19553.gif"></td>
+                                                                                                                        <td><strong>x1</strong> <a style="color:blue;">Costume</a> Assassin Mask [<a>0</a>]</td>
+                                                                                                                        <td><strong>600</strong> CP</td>
+                                                                                                                    </tr>
+                                                                                                                    <tr>
+                                                                                                                        <th scope="row"></th>
+                                                                                                                        <td><img src="../img/lowerhat/31055.gif"></td>
+                                                                                                                        <td><strong>x1</strong> <a style="color:blue;">Costume</a> Poring Soap Pipe [<a>0</a>]</td>
+                                                                                                                        <td><strong>650</strong> CP</td>
+                                                                                                                    </tr>
 
 
                                                                                                                     </tbody>
