@@ -64,5 +64,10 @@ Route::middleware(['auth'])->prefix('user')->group(function () {
          */
         Route::resource('category', 'CategoryController');
         Route::get('category/{category}/delete', 'CategoryController@destroy')->name('category.destroy');
+
+        /*
+         * Tracking
+         */
+        VisitStats::routes();
     });
 });

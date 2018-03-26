@@ -84,6 +84,10 @@ class Login extends Authenticatable
         'old_group'
     ];
 
+    public function getId() {
+        return $this->account_id;
+    }
+
     public function setPasswordAttribute($value)
     {
         $this->attributes['user_pass'] = Config::get('ragnarok.server_md5') ? md5($value) : $value;
@@ -96,7 +100,7 @@ class Login extends Authenticatable
 
     public function getAuthIdentifierName()
     {
-        return 'userid';
+        return 'account_id';
     }
 
     public function isAdmin()

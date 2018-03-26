@@ -207,6 +207,11 @@ return [
          * Captcha
          */
         Igoshev\Captcha\Providers\CaptchaServiceProvider::class,
+
+        /*
+         * Tracking
+         */
+        Voerro\Laravel\VisitorTracker\VisitorTrackerServiceProvider::class,
     ],
 
     /*
@@ -260,7 +265,8 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Carbon' => Carbon\Carbon::class,
-        'PayPal' => Srmklive\PayPal\Facades\PayPal::class
+        'PayPal' => Srmklive\PayPal\Facades\PayPal::class,
+        'VisitStats' => Voerro\Laravel\VisitorTracker\Facades\VisitStats::class,
     ],
 
 ];

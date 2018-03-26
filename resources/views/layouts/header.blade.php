@@ -45,6 +45,20 @@
                                 <li>{{link_to_route('admin.index', 'Administration')}}</li>
                                 <li>{{link_to_route('admin.news.index', 'Gestion des News')}}</li>
                                 <li>{{link_to_route('admin.category.index', 'Gestion des Catégories')}}</li>
+                                <li class="divider"></li>
+                                <li>{{link_to_route('admin.visitortracker.summary', 'Stats summary')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.ajax_requests', 'Stats ajax')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.all_requests', 'All requests')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.bots', 'Stats bots')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.browsers', 'Stats browsers')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.countries', 'Stats countries')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.languages', 'Stats languages')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.login_attempts', 'Stats login')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.os', 'Statistiques os')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.unique', 'Statistiques unique')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.urls', 'Statistiques urls')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.users', 'Statistiques users')}}</li>
+                                <li>{{link_to_route('admin.visitortracker.visits', 'Statistiques visits')}}</li>
                             @endif
 
                             <li class="divider"></li>
