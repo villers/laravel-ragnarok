@@ -20,13 +20,18 @@
 
             <div id="team" class="owl-carousel owl-theme row">
                 <div class="item">
-                    <h5 style="color:#986b45">GUIDE COMPLET</h5>
+                    <h5 style="color:#986b45">Actualités</h5>
                     <div class="thumbnail">
                         <br>
+                              <p>Pour plus d'informations, merci de bien vouloir consulter le guide du <a href="https://forum.ro-play.fr/index.php?/topic/7-naval-war-of-emperium/">Forum</a></p>
+                              <br><br>
+                              <p><i>Page en cours de développement...</i></p>
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
         @endsection
 
         @section('script')

@@ -9,7 +9,7 @@
             <div class="section-title center">
                 <div class="bloctitle">
                     <img style="position:absolute;margin-top:-20px;margin-left:-460px;" src="../img/actu.gif">
-                    <h2><strong>Actualité</strong> du Serveur
+                    <h2><strong>Actualités</strong> du Serveur
                         <div class="line">
                             <hr>
                         </div>
@@ -45,7 +45,7 @@
                                 <h2 style="text-decoration:underline;font-style: italic;font-size: 14px;">Horaires :</h2>
                                 <br>
                                 <p>Dimanche / 20h30 &nbsp;&nbsp; <strong>[Durée ~ 1h00]</strong></p>
-                                <p><strong>Début du prochain tournois le:  -- / -- / ----</strong></p>
+                                <p><strong>Début du prochain tournoi le:  -- / -- / ----</strong></p>
                                 <img style="padding-right:10px;" src="../img/coup.png">
                                 <p style="color:#d9ad30;text-align:left;margin-top:20px;text-decoration:underline;"><strong>Champion de la semaine:</strong> </p>
                                 <br>
@@ -207,7 +207,8 @@
 
 
 
-
+    <meta name="viewport" content="width=device-width"/>
+    
                 <div class="panel-group2">
                     <div class="panel panel-default">
 
@@ -231,8 +232,8 @@
 <br>
                                 <strong><a style="text-decoration:underline;font-style: italic;font-size: 14px;" href="https://forum.ro-play.fr/index.php?/topic/7-naval-war-of-emperium/">Guide Forum<a/></strong>
                                 <br><br>
-                                <p><strong>Bateaux disponibles:</strong>7/14</p>
-                                <p><strong>Bateaux actifs:</strong>7</p>
+                                <p><strong>Frégates disponibles:</strong>7/14</p>
+                                <p><strong>Frégates actives:</strong>7</p>
                                 <a href="https://www.ro-play.fr/nwoe" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-40px;float:right;margin-right:20px;"></a>
                             </div>
                         </div>

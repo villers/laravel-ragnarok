@@ -143,6 +143,16 @@ class HomeController extends Controller
         return view('territoire', compact('regions'));
     }
 
+        /**
+     * Show the page mobile.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function mobile()
+    {
+        return view('mobile');
+    }
+
     /**
      * Show the page NwoE.
      *

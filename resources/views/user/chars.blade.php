@@ -20,7 +20,7 @@
             </div>
         @endif
 
-        <div class="alert alert-danger" style="text-align:center;">Pour éffectuer une action sur un personnage, veuillez le déconnecte.</div>
+        <div class="alert alert-danger" style="text-align:center;">Pour effectuer une action sur un personnage, veuillez le déconnecter.</div>
         <table class="table table-striped table-hover">
             <thead>
             <tr>

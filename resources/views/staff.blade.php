@@ -32,8 +32,8 @@
                             <img style="margin-right:50px;float:right;" src="../img/lyrics.png">
                             <br>
                             <div class="staff">
-                                <p>je m'occupe des taches générales.<br>
-                                    Ma particularitée est de créer des Map et inventer des scénarios</p>
+                                <p>Je m'occupe des tâches générales.<br>
+                                    Ma particularité est de créer des Maps et inventer des scénarios</p>
                             </div>
                         </div>
                         <br>
@@ -48,7 +48,7 @@
                             <br>
                             <div class="staff">
                                 <p>Je m'occupe de l'Emulateur & Client.<br>
-                                    Ma particulariter est de scripter !</p>
+                                    Ma particularité est de scripter !</p>
                             </div>
                         </div>
                         <br><br>
@@ -65,7 +65,7 @@
                             <h3 style="float:left;">Yervin</h3>
                             <p style="font-style: italic; text-align:right; margin-right:30px;"><u><strong>Animateur</strong></u></p>
                             <div class="staff">
-                                <p>Je m'occupe des events et j'anime le serveur !</br>Ma particularitée, animateur radio sur MixLor</p>
+                                <p>Je m'occupe des events et j'anime le serveur !</br>Ma particularité, animateur radio sur MixLor</p>
                             </div>
                         </div>
                         <br><br>
@@ -96,17 +96,17 @@
                             <p style="font-style: italic; text-align:right; margin-right:30px;"><u><strong>Guard</strong></u></p>
                             <div class="staff">
                                 <p>Je veille à la stabilité du serveur et je surveille les joueurs !<br>
-                                    J'apporte aussi un maximum de connaissance afin d'aider les joueurs.<br>
-                                    Ma Particularitée, Database sur pattes. </p><br>
+                                    J'apporte aussi un maximum de connaissances afin d'aider les joueurs.<br>
+                                    Ma particularité, database sur pattes. </p><br>
                             </div>
                         </div>
 
 
                         <hr>
 
-                        <img src="{{asset('img/team/void.jpg')}}" alt="..." class="img-circle team-img">
+                        <img src="{{asset('img/team/zeleph.png')}}" alt="..." class="img-circle team-img">
                         <div class="caption">
-                            <h3 style="float:left; color:yellow;">Libre</h3>
+                            <h3 style="float:left;">Zeleph</h3>
                             <p style="font-style: italic; text-align:right; margin-right:30px;"><u><strong>Guard</strong></u><br></p>
                             <div class="staff">
                                 <p>Je veille à la stabilité du serveur et je surveille les joueurs !</p>

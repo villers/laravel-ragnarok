@@ -31,9 +31,9 @@
                         <br>
                         <p style="text-align:center;margin-left:30px;margin-right:30px;"><strong>Ro-Play</strong> est un serveur privé <a href="https://fr.wikipedia.org/wiki/Ragnar%C3%B6k_Online" target=_blank style="color:red;">Ragnarok Online.</a>
                             <br><br>
-                           Totalement <i style="color:#c8964c;">Pré-renewal</i>, notre objectif est de développer ce formidable jeu en ligne, tout en gardant le coté à l'ancienne qui nous à temps fait rêver.
+                           Totalement <i style="color:#c8964c;">Pré-renewal</i>, notre objectif est de développer ce formidable jeu en ligne, tout en gardant le coté à l'ancienne qui nous a tant fait rêver.
                             <br>
-                           Nous créons tous nos évènements de <strong>A à Z</strong> afin d'être <strong>le serveur à part entière.</strong> Contrairement à nos concurrents, nous évitons au maximum de puiser nos ressources sur rAthena, pour la simple et bonne raison que nous voulons être <strong>unique</strong> parmi les centaines de serveurs privé existants.</p>
+                           Nous créons tous nos évènements de <strong>A à Z</strong> afin d'être <strong>le serveur à part entière.</strong> Contrairement à nos concurrents, nous évitons au maximum de puiser nos ressources sur rAthena, pour la simple et bonne raison que nous voulons être <strong>unique</strong> parmi les centaines de serveurs privés existants.</p>
                         <br>
                         <h3 style="background-color: rgba(250,250,250,0.9);text-align:center;margin:20px;padding:10px;box-shadow: inset rgba(255,255,255,0.4) 0px 1px 0px, inset rgba(255,255,255,0.2) 0px 0px 0px 1px, rgba(0,0,0,0.2) 0px 1px 4px;color:orange;font-size:20px;">
                             <strong>INFORMATION DE BASE</strong>
@@ -113,7 +113,7 @@
                         <p style="text-align:center;font-size:18px;"><strong><u>Warpeur</u></strong></p>
                         <p style="text-align:center;font-size:12px;"><i><u>Position</u>: Toutes les villes / Prontera <strong style="color:blue;"> 160 - 187</strong></i></p>
                         <br>
-                        <p style="text-align:center;font-size:14px;">Le warpeur vous permet d'acceder aux villes et donjons <strong>niveau 1</strong> par téléportation.<br> Cependant vous devez les débloquer au préalable.</p>
+                        <p style="text-align:center;font-size:14px;">Le warpeur vous permet d'accéder aux villes et donjons <strong>niveau 1</strong> par téléportation.<br> Cependant, vous devez les débloquer au préalable.</p>
 
                         <br><hr><br>
 
@@ -121,7 +121,7 @@
                         <p style="text-align:center;font-size:18px;"><strong><u>Healeur</u></strong></p>
                         <p style="text-align:center;font-size:12px;"><i><u>Position</u>: Toute les villes</i></p>
                         <br>
-                        <p style="text-align:center;font-size:14px;">Le Healeur est invisible et bénie en permanence les villes de Ro-Play.<br> Vos HP/SP se régénère plus rapidement en ville.</p>
+                        <p style="text-align:center;font-size:14px;">Le Healeur est invisible et béni en permanence les villes de Ro-Play.<br> Vos HP/SP se régénèrent plus rapidement en ville.</p>
 
                         <br><br><br><hr><br>
 
@@ -129,7 +129,7 @@
                         <p style="text-align:center;font-size:18px;"><strong><u>Stylist</u></strong></p>
                         <p style="text-align:center;font-size:12px;"><i><u>Position</u>: Prontera <strong style="color:blue;"> 146 - 169</strong></i></p>
                         <br>
-                        <p style="text-align:center;font-size:14px;">Le Stylist vous propose un large pannel de style: <br> Coiffure: <strong>85</strong> / Couleurs cheveux: <strong>223</strong> / Couleur vêtements: <strong>553</strong></p>
+                        <p style="text-align:center;font-size:14px;">Le Stylist vous propose un large panel de styles: <br> Coiffures: <strong>85</strong> / Couleurs cheveux: <strong>223</strong> / Couleurs vêtements: <strong>553</strong></p>
 
                         <br><hr><br>
 
@@ -137,7 +137,7 @@
                         <p style="text-align:center;font-size:18px;"><strong><u>Reset skill / stats</u></strong></p>
                         <p style="text-align:center;font-size:12px;"><i><u>Position</u>: Palais de Lyrics <strong style="color:blue;"> 151 - 110</strong> Skills &nbsp;-&nbsp; <strong style="color:blue;"> 47 - 111</strong> Stats</i></p>
                         <br>
-                        <p style="text-align:center;font-size:14px;">Votre premier reset skill / stats est gratuit, par la suite vous devrez payer <br><strong>125.000z skill ou stats, 250.000 les deux.</strong></p>
+                        <p style="text-align:center;font-size:14px;">Votre premier reset skill / stats est gratuit, par la suite, vous devrez payer <br><strong>125.000z skill ou stats, 250.000 les deux.</strong></p>
 
                         <br><hr><br>
 
@@ -145,7 +145,7 @@
                         <p style="text-align:center;font-size:18px;"><strong><u>Paramètres</u></strong></p>
                         <p style="text-align:center;font-size:12px;"><i><u>Position</u>: Prontera <strong style="color:blue;"> 165 - 175</strong></i></p>
                         <br>
-                        <p style="text-align:center;font-size:14px;">Le npc paramètre vous permet de save vos config tel que: <br><strong>Auto loot / Show exp / Rates / Show delay / Show zeny / Up time.</strong></p>
+                        <p style="text-align:center;font-size:14px;">Le npc paramètre vous permet de save vos configs tels que: <br><strong>Auto loot / Show exp / Rates / Show delay / Show zeny / Up time.</strong></p>
 
                         <br><hr><br>
 
@@ -153,7 +153,7 @@
                         <p style="text-align:center;font-size:18px;"><strong><u>Team xp</u></strong></p>
                         <p style="text-align:center;font-size:12px;"><i><u>Position</u>: Prontera <strong style="color:blue;"> 118 - 157</strong></i></p>
                         <br>
-                        <p style="text-align:center;font-size:14px;">Le Team Manager vous permet de créer une annonce pour rejoindre une team exp, ou rejoindre la votre.</p>
+                        <p style="text-align:center;font-size:14px;">Le Team Manager vous permet de créer une annonce pour rejoindre une team exp, ou rejoindre la vôtre.</p>
 
                         <br><hr><br>
 
@@ -185,7 +185,7 @@
                         <p style="text-align:center;font-size:18px;"><strong><u>Battle Square</u></strong></p>
                         <p style="text-align:center;font-size:12px;"><i><u>Position</u>: Prontera <strong style="color:blue;"> 163 - 190</strong></i></p>
                         <br>
-                        <p style="text-align:center;font-size:14px;">Ce npc vous permet d'accéder à l'évènement Battle Square, vous y trouverez toute les informations nécéssaires.</p>
+                        <p style="text-align:center;font-size:14px;">Ce npc vous permet d'accéder à l'évènement Battle Square, vous y trouverez toutes les informations nécessaires.</p>
 
                         <br><hr><br><br>
 
@@ -193,7 +193,7 @@
                         <p style="text-align:center;font-size:18px;"><strong><u>Territory Manager</u></strong></p>
                         <p style="text-align:center;font-size:12px;"><i><u>Position</u>: Prontera <strong style="color:blue;"> 156 - 196</strong></i></p>
                         <br>
-                        <p style="text-align:center;font-size:14px;">Le npc Territory Manager vous permet de consulter les territoires en votre possesion <br> et d'avoir une vue globale sur les régions.</p>
+                        <p style="text-align:center;font-size:14px;">Le npc Territory Manager vous permet de consulter les territoires en votre possession <br> et d'avoir une vue globale sur les régions.</p>
                         
                         <br>
                         <h3 style="background-color: rgba(250,250,250,0.9);text-align:center;margin:20px;padding:10px;margin-top:100px;box-shadow: inset rgba(255,255,255,0.4) 0px 1px 0px, inset rgba(255,255,255,0.2) 0px 0px 0px 1px, rgba(0,0,0,0.2) 0px 1px 4px;color:#35b530;font-size:20px;">

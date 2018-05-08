@@ -79,9 +79,10 @@ a:focus{
 
 .logo img{
 
-	float: left;
-	max-width: 70%;
-	height: auto;
+
+	width: 70%;
+    margin-top:-5%;
+
 }
 
 .section-title hr{
@@ -121,7 +122,6 @@ ul, ol{
 	font-size: 22px;
 	color: #fff;
 	font-weight: 900;
-	padding-top: -50px;
 }
 
 #tf-menu.navbar-default .navbar-nav > li > a {
@@ -790,7 +790,7 @@ a.btn.tf-btn.btn-default {
 }
 /* Footer */
 nav#footer{
-	background: #040404e6;
+	background: rgba(0,0,0,0.9); !important;
 	color: #ffffff;
 	width: 100%;
 	bottom: 0px;
@@ -806,6 +806,7 @@ ul.footer-social li{
 nav#footer p{
 	font-size: 12px;
 	margin-top: 10px;
+
 }
 #footer i.fa {
 	height: 30px;
@@ -908,6 +909,7 @@ nav#footer p{
 	opacity: 0.9;
 	font-family: 'Open Sans', sans-serif;
 	margin-right: 10px;
+
 }
 .myButton:hover {
 	background-color:#ffc477;
@@ -937,6 +939,7 @@ nav#footer p{
 	opacity:0.9;
 	font-family: 'Open Sans', sans-serif;
 	margin-right: 10px;
+	 opacity:0.9;
 }
 .myButton2:hover {
 	background-color:#bdd492;
@@ -966,6 +969,7 @@ nav#footer p{
 	opacity: 0.9;
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 20px;
+	 opacity:0.9;
 }
 .myButton3:hover {
 	background-color:#729dc8;
@@ -1037,9 +1041,13 @@ nav#footer p{
 
 .cmpvst {
 
-	opacity: 0.6;
-	margin-left: 13%;
-	margin-top:6px;
+    position:absolute;
+    margin-top:7px;
+    opacity: 0.5;
+    font-size: 12px;
+    display:block;
+    background-color: orange;
+    padding:3px;
 }
 
 /*
@@ -1105,7 +1113,7 @@ opacity:0.6;
 }
 
 .btnfc:hover {
-    background-color: ghostwhite;
+    background-color: #65c869;
     color: white;
 }
 

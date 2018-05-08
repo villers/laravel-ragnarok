@@ -1,17 +1,21 @@
+
 @extends('layouts.app')
 
 @section('content')
     <!-- Home Page
         ==========================================-->
+           <meta name="viewport" content="width=device-width"/>
+
     <div id="tf-home" class="text-center">
         <div class="overlay">
             <div class="content">
+
                 <h1>Bienvenue sur <strong><span class="color">RO-PLAY</span></strong></h1>
                 <p class="lead">Découvrez une expérience <strong>unique</strong> ! </p>
                 <br>
                 <?php
                 $beta = \Carbon\Carbon::parse('2018/04/08 20:00');
-                $ouverture = \Carbon\Carbon::parse('2018/05/01 12:00');
+                $ouverture = \Carbon\Carbon::parse('2018/05/01 20:00');
                 ?>
 
                 @if (!$beta->isPast())
@@ -38,11 +42,11 @@
                     </div>
                 @endif
 
-                <a href="http://forum.ro-play.org/index.php?/register/" class="myButton"><img src="../img/user.png" style="float:left; postition:relative; margin-right:10px; opacity:0.9;">INSCRIPTION FORUM</a>
+                <a href="https://forum.ro-play.fr/index.php?/register/" class="myButton" style=""><img src="../img/user.png">&nbsp;&nbsp;INSCRIPTION FORUM</a>
                 @if (Auth::guest())
-                    <a href="https://www.ro-play.fr/register" class="myButton2"><img src="../img/user.png" style="float:left; postition:relative; margin-right:10px; opacity:0.9;">INSCRIPTION SITE/SERVEUR</a>
+                    <a href="https://www.ro-play.fr/register" class="myButton2"><img src="../img/user.png">&nbsp;&nbsp;INSCRIPTION SITE/SERVEUR</a>
                 @endif
-                <a href="https://www.ro-play.fr/telechargement" class="myButton3"><img src="../img/dl.png" style="float:left; postition:relative; margin-right:10px;">TÉLÉCHARGEMENT</a></br>
+                <a href="https://www.ro-play.fr/telechargement" class="myButton3"><img src="../img/dl.png">&nbsp;&nbsp;TÉLÉCHARGEMENT</a></br>
             </div>
         </div>
     </div>

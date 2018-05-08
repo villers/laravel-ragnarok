@@ -33,7 +33,12 @@
                                                         
                                                             </div>
                                                                     <br>
-                                                                    <p>Vos dons sont totalement <strong>volontaire</strong>, <strong style="color:red;"><i>aucun remboursement ne sera effectué.</i></strong> Les transactions sont <strong>sécurisés</strong>, vous otiendrez une récompense symbolique de <strong>500 Cash Points</strong>.</p>
+                                                                    <p>Les Dons sont une manière <strong>d'auto-rémunérer les coûts qu'engendre le serveur.</strong> Le but n'est pas de gagner de l'argent ou d'en faire un "paye to win".<br>
+                                                                    Vos dons sont totalement <strong>volontaires</strong>, <strong style="color:red;"><i>aucun remboursement ne sera effectué.</i></strong> Les transactions sont <strong>sécurisées.</strong></p> 
+                                                                    <br>
+                                                                    
+                                                                        <p style="text-decoration:underline;color:green;"><i>Toutes les fonctionnalités du serveur sont accessibles <strong>GRATUITEMENT</strong>.</i></p>
+                                                                    <p></p>
                                                                     <br><br>
 
                                                                     <div class="panel-group3">
@@ -536,12 +541,7 @@
                                                                                                                         <td><strong>x1</strong> <a style="color:blue;">Costume</a> Wind Fan [<a>0</a>]</td>
                                                                                                                         <td><strong>500</strong> CP</td>
                                                                                                                     </tr>
-                                                                                                                    <tr>
-                                                                                                                        <th scope="row"></th>
-                                                                                                                        <td><img src="../img/lowerhat/19553.gif"></td>
-                                                                                                                        <td><strong>x1</strong> <a style="color:blue;">Costume</a> Assassin Mask [<a>0</a>]</td>
-                                                                                                                        <td><strong>600</strong> CP</td>
-                                                                                                                    </tr>
+                                                                                                                    
                                                                                                                     <tr>
                                                                                                                         <th scope="row"></th>
                                                                                                                         <td><img src="../img/lowerhat/31055.gif"></td>
@@ -1162,7 +1162,7 @@
                                                                                                     </div>
                                                                                 <br>
                                                                                 <div class="well" style="width:60%; margin-left:20%;">
-                                                                                <p> Un <strong>centime</strong> d'euro est égale à un <strong>CashPoint</strong></p> 
+                                                                                <p> Un <strong>centime</strong> d'euro est égal à un <strong>CashPoint</strong></p> 
                                                                                 </div>
                                                                                 <br>
                                                                                 <h1><img src="../img/1ct.png" style="width:3.5%;margin-left:45%;"> = <img src="../img/1cp.gif" style="width:3.5%;float:right;margin-right:44%;margin-top:-2px;"></h1>
@@ -1235,7 +1235,7 @@
                                                                                 </div>
                                                             <br>
                                                                                 <div class="well" style="width:60%; margin-left:20%;">
-                                                                                <p> Un <strong>code</strong> est égale à <strong>350 </strong>CashPoint</p> 
+                                                                                <p> Un <strong>code</strong> est égal à <strong>350 </strong>CashPoints</p> 
                                                                                 </div>
                                                              <br>
                                                                                             @if($isOnline)

@@ -11,7 +11,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div id="testimonial">
 
-                        <img style="position:absolute;top:8px;right:150px;width:250px;height:309px;" src="../img/connec.png">
+                        <img style="position:absolute;top:15px;right:10%;width:20%;" src="../img/connec.png">
 
                         <div class="section-title center">
                             <h2 style="text-align:center;">Se <strong><span class="color">Connecter</span></strong>

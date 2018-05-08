@@ -37,7 +37,7 @@
                             <br>
                 <ul class="list-unstyled" style="margin-bottom:50px;">
                     @foreach($regions as $region)
-                        <li style="margin-bottom:5px;"><a href="#{{$region['name']}}">{{$region['name']}}</a></li>
+                        <li style="margin-bottom:5px;"><a href="/territoire#{{$region['name']}}">{{$region['name']}}</a></li>
                     @endforeach
                 </ul>
             </div>

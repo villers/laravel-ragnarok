@@ -28,8 +28,8 @@
                                 </div>
                             </h2>
                         </div>
-
-                        <img style="position:absolute;top:30px;right:50px;" src="../img/novice.png">
+                        <br>
+                        <img style="position:absolute;top:10%;right:50px;width:25%;" src="../img/novice.png">
 
 
 

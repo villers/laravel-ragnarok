@@ -20,4 +20,9 @@
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect mobile
+    RewriteCond %{HTTP_USER_AGENT} "ipod|iphone|mobile|android|palm|googlebot-mobile" [NC] 
+    RewriteRule (.*) https://forum.ro-play.fr/ [R=301,L] 
 </IfModule>
+

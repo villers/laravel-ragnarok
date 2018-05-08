@@ -27,6 +27,7 @@ Route::get('/emblem/{id}', 'HomeController@emblem')->name('emblem');
 Route::get('/vendings', 'HomeController@vendings')->name('vendings');
 Route::get('/vendings/{id}', 'HomeController@vendingsItems')->name('vendingsItems');
 Route::get('/callback-vote', 'HomeController@callbackVote')->name('callbackVote');
+Route::get('/mobile', 'HomeController@mobile')->name('mobile');
 
 Route::middleware(['auth'])->prefix('user')->group(function () {
     Route::get('/', 'UserController@index')->name('user.index');

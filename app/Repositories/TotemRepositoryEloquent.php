@@ -49,7 +49,7 @@ class TotemRepositoryEloquent extends BaseRepository implements TotemRepository
             ->count();
 
         $available = $this->model
-            ->where('conquerant_territoire', 'Inoccupé')
+            ->where('conquerant_territoire', '0')
             ->count();
 
         $conquered = $total - $available;

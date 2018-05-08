@@ -1,5 +1,6 @@
 <!-- Navigation
     ==========================================-->
+    <meta name="viewport" content="width=device-width"/>
 <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -11,7 +12,7 @@
                 <span class="icon-bar"></span>
             </button>
             <div class="logo">
-                <a class="navbar-brand" href="{{ url('/') }}" style="margin-top: -15px; position: absolute;"><img src="../img/logo.png"></a>
+                <a class="navbar-brand" href="{{ url('/') }}"><img src="../img/logo.png"></a>
             </div>
         </div>
 
