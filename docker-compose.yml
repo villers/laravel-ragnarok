@@ -4,14 +4,14 @@ services:
   laravel:
     image: hitalos/laravel
     volumes:
-      - .:/var/www
+      - .:/var/www:cached
     ports:
       - 80:80
     links:
       - db:mysql
 
   db:
-    image: mysql
+    image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: RO_Play_DataBase_db
@@ -20,7 +20,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - mysql-heva:/var/lib/mysql
+      - mysql-heva:/var/lib/mysql:cached
       - ./docker/db/dump.sql:/docker-entrypoint-initdb.d/dump.sql
 
   adminer:

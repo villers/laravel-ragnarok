@@ -49,6 +49,7 @@ class CharRepositoryEloquent extends BaseRepository implements CharRepository
     {
         return $this->model->where('online', '>', 0)
             ->with('guild')
+            ->orderBy('guild_id', 'class')
             ->get();
     }
 
