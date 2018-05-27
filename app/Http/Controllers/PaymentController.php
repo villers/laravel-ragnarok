@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Lib\Starpass\Starpass;
 use App\Repositories\AccRegNumRepository;
 use App\Repositories\CharRepository;
+use App\Repositories\ItemCashDbRepository;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
@@ -16,18 +17,24 @@ class PaymentController
     protected $accRegNumRepository;
     protected $charRepository;
     protected $provider;
+    /**
+     * @var ItemCashDbRepository
+     */
+    private $cashDbRepository;
 
     /**
      * PaymentController constructor.
      * @param AccRegNumRepository $accRegNumRepository
      * @param CharRepository $charRepository
+     * @param ItemCashDbRepository $cashDbRepository
      * @throws \Exception
      */
-    public function __construct(AccRegNumRepository $accRegNumRepository, CharRepository $charRepository)
+    public function __construct(AccRegNumRepository $accRegNumRepository, CharRepository $charRepository, ItemCashDbRepository $cashDbRepository)
     {
         $this->accRegNumRepository = $accRegNumRepository;
         $this->charRepository = $charRepository;
         $this->provider = new ExpressCheckout();
+        $this->cashDbRepository = $cashDbRepository;
     }
 
     /**
@@ -42,7 +49,9 @@ class PaymentController
         $isOnline = $this->charRepository->isOnline($auth->user()->account_id);
         $starpass_idd = Config::get('ragnarok.starpass_idd');
 
-        return view('payment.show', compact('cashPoint', 'starpass_idd', 'isOnline'));
+        $itemCashDb = $this->cashDbRepository->getItemByTab();
+
+        return view('payment.show', compact('cashPoint', 'starpass_idd', 'isOnline', 'itemCashDb'));
     }
 
     /**

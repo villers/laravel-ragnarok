@@ -12,6 +12,8 @@ use App\Repositories\CharRepository;
 use App\Repositories\CharRepositoryEloquent;
 use App\Repositories\GuildRepository;
 use App\Repositories\GuildRepositoryEloquent;
+use App\Repositories\ItemCashDbRepositoryEloquent;
+use App\Repositories\ItemCashDbRepository;
 use App\Repositories\LoginRepository;
 use App\Repositories\LoginRepositoryEloquent;
 use App\Repositories\NewsRepository;
@@ -59,6 +61,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(VoteRepository::class, VoteRepositoryEloquent::class);
         $this->app->bind(LoginRepository::class, LoginRepositoryEloquent::class);
         $this->app->bind(TotemRepository::class, TotemRepositoryEloquent::class);
+        $this->app->bind(ItemCashDbRepository::class, ItemCashDbRepositoryEloquent::class);
         //:end-bindings:
     }
 }
