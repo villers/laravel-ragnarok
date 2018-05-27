@@ -14,24 +14,13 @@
                 <p class="lead">Découvrez une expérience <strong>unique</strong> ! </p>
                 <br>
                 <?php
-                $beta = \Carbon\Carbon::parse('2018/04/08 20:00');
-                $ouverture = \Carbon\Carbon::parse('2018/05/01 20:00');
+                $ouverture = \Carbon\Carbon::parse('2018/05/04 20:00');
                 ?>
 
-                @if (!$beta->isPast())
-                    <strong style="color:#b79958; text-shadow: 1px 1px black, -1px -1px #444; font-size:16px;">BÊTA</strong>
-                    <div class="box">
-                        <div class="lead" id="counter2" data-date="{{$beta}}">
-                            <span class="bubble beta days"></span> <i>jours</i>
-                            <span class="bubble beta hours"></span> <i>heures</i>
-                            <span class="bubble beta min"></span> <i>minutes</i>
-                            <span class="bubble beta sec"></span> <i>secondes</i>
-                        </div>
-                    </div>
-                @endif
+
 
                 @if (!$ouverture->isPast())
-                    <strong style="color:#ff9958; text-shadow: 1px 1px black, -1px -1px #444; font-size:16px;">OUVERTURE</strong>
+                    <strong style="color:#e3af28; text-shadow: 1px 1px black, -1px -1px #444; font-size:16px;">OUVERTURE</strong>
                     <div class="box">
                         <div class="lead" id="counter" data-date="{{$ouverture}}">
                             <span class="bubble days"></span> <i>jours</i>
@@ -42,11 +31,17 @@
                     </div>
                 @endif
 
+ <p style="color:green; font-size:20px; text-decoration:underline;text-shadow: 1px 1px black;"><i>SERVEUR DISPONIBLE</i></p>
+ <a href="https://static.ro-play.fr/Ro-Play%20Client.rar" style="color:white;">Cliquez ici pour télécharger le nouveau Full Client.</a> <br>
+
+
                 <a href="https://forum.ro-play.fr/index.php?/register/" class="myButton" style=""><img src="../img/user.png">&nbsp;&nbsp;INSCRIPTION FORUM</a>
                 @if (Auth::guest())
                     <a href="https://www.ro-play.fr/register" class="myButton2"><img src="../img/user.png">&nbsp;&nbsp;INSCRIPTION SITE/SERVEUR</a>
                 @endif
                 <a href="https://www.ro-play.fr/telechargement" class="myButton3"><img src="../img/dl.png">&nbsp;&nbsp;TÉLÉCHARGEMENT</a></br>
+<br>
+               
             </div>
         </div>
     </div>

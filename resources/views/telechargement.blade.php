@@ -43,14 +43,14 @@
                                                            <div class="panel-body2">
                                                   
                                                               <br>
-                                                              <p style="color:red;text-decoration:underline;"><i>Les liens de téléchargements seront disponibles <strong>1 jour</strong> avant la Bêta teste.</i></p>
+                                                              <p style="color:green;text-decoration:underline;"><i>Le lien de téléchargement est disponible. [.rar]<strong> Merci pour votre patience.</strong></i></p>
                                                               <br>
                                                               <p>Bienvenue dans le guide d'installation et de téléchargement, prévu pour le système d'exploitation Windows.<br>
                                                                  Deux choix s'offrent à vous, l'<strong>archive</strong> ou l'<strong>installeur.</strong>
                                                               </p>
 
                                                              <br>
-                                                              <a href="" class="btnfc"><img src="../img/dl.png" style="float:left; postition:relative; margin-right:10px; opacity:0.9;">Full Client v1.0 &nbsp;&nbsp;[zip]</a>
+                                                              <a href="https://static.ro-play.fr/Ro-Play%20Client.rar" class="btnfc"><img src="../img/dl.png" style="float:left; postition:relative; margin-right:10px; opacity:0.9;">Full Client v1.0 &nbsp;&nbsp;[zip]</a>
                                                               <a href="" class="btnfc2"><img src="../img/dl.png" style="float:left; postition:relative; margin-right:10px; opacity:0.9;">Full Client v1.0 &nbsp;&nbsp;[exe]</a>
                                                             <br>
                                                           
@@ -63,10 +63,10 @@
                                                              <p>Rien de plus simple, il vous suffit <strong>d'exécuter l'exe</strong> et de suivre le programme d'installation. <br>
                                                               Vous avez la possibilité de choisir l'emplacement du client. Un raccourci sera créé automatiquement sur votre bureau </p>
                                                              <br>
-                                                             <h3>2. L'archive &nbsp;[<i style="color:#4caf50;">zip</i>]:</h3>
+                                                             <h3>2. L'archive &nbsp;[<i style="color:#4caf50;">rar</i>]:</h3>
                                                              <img src="../img/archfc.png" style="width:7%; margin-left:45%;">
                                                              <br><br><br><br>
-                                                             <p>Pour cette méthode, vous devez utiliser un <strong>logiciel de décompression</strong>, disponible <a href="http://www.winzip.com/win/fr/landing/download-winzip.html?target=nb&gclid=EAIaIQobChMI5LCn0OGM2gIVQhMbCh1IHwm9EAAYASAAEgIYTfD_BwE" target=_blank style="color:red;">ici</a>.<br><br>
+                                                             <p>Pour cette méthode, vous devez utiliser un <strong>logiciel de décompression</strong>, disponible <a href="http://7zip.fr/" target=_blank style="color:red;">ici</a>.<br><br>
                                                               Une fois installé, placez l'archive du Client complet à l'endroit désiré.<br>
                                                               Il ne vous reste plus qu'à l'extraire d'un simple clique droit.</p>
                                                              

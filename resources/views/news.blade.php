@@ -232,8 +232,8 @@
 <br>
                                 <strong><a style="text-decoration:underline;font-style: italic;font-size: 14px;" href="https://forum.ro-play.fr/index.php?/topic/7-naval-war-of-emperium/">Guide Forum<a/></strong>
                                 <br><br>
-                                <p><strong>Frégates disponibles:</strong>7/14</p>
-                                <p><strong>Frégates actives:</strong>7</p>
+                                <p><strong>Frégates disponibles:</strong> [<strong style="color:green;">1</strong>] / [<strong style="color:black;">12</strong>]</p>
+                                <p><strong>Frégates actives:</strong> [<strong style="color:red;">11</strong>]</p>
                                 <a href="https://www.ro-play.fr/nwoe" ><img src="../img/info.png" style="width:40px;height:40px;margin-top:-40px;float:right;margin-right:20px;"></a>
                             </div>
                         </div>

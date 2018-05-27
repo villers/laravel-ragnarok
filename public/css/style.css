@@ -75,6 +75,7 @@ a:focus{
 	transition:all 0.7s;
 	text-decoration: underline;
 	color: #b7b8b8;
+	cursor: url("../img/pointer.cur"), pointer;
 }
 
 .logo img{
@@ -899,7 +900,7 @@ nav#footer p{
 	border-radius:2px;
 	border:0px solid #eeb44f;
 	display:inline-block;
-	cursor: url("../img/cursor.cur"), pointer;
+	cursor: url("../img/pointer.cur"), pointer;
 	color:#ffffff;
 	font-size:18px;
 	font-weight:bold;
@@ -929,7 +930,7 @@ nav#footer p{
 	border-radius:2px;
 	border:0px solid #d6efc4;
 	display:inline-block;
-	cursor: url("../img/cursor.cur"), pointer;
+	cursor: url("../img/pointer.cur"), pointer;
 	color:#ffffff;
 	font-size:18px;
 	font-weight:bold;
@@ -959,7 +960,7 @@ nav#footer p{
 	border-radius:2px;
 	border:0px solid #a4cffa;
 	display:inline-block;
-	cursor: url("../img/cursor.cur"), pointer;
+	cursor: url("../img/pointer.cur"), pointer;
 	color:#ffffff;
 	font-size:18px;
 	font-weight:bold;
@@ -1067,7 +1068,7 @@ nav#footer p{
 }
 
 #counter .bubble, #counter2 .bubble {
-	background:#ff9958;
+	background:#e3af28;
 	color: white;
 	border-radius: 2px;
 	box-shadow: inset rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.2) 0 0 0 1px, rgba(0,0,0,0.2) 0 1px 4px;
@@ -1149,5 +1150,11 @@ opacity:0.6;
 	float:right;
 	margin-right:20px;
 	margin-top:-2px;
+}
+.discord {
+
+
+	text-align:center;
+
 }
 

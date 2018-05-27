@@ -47,13 +47,15 @@
                 @endforeach
                 </tbody>
             </table>
-
+            <br>
+            <div class="discord">
+<iframe src="https://discordapp.com/widget?id=432880730054328342&theme=dark
+" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+</div>
         </div>
 
     </div>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
+
 @endsection
 
 @section('script')

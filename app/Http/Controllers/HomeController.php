@@ -206,16 +206,16 @@ class HomeController extends Controller
 
     public function callbackVote(Request $request)
     {
-        $login = $request->input('pseudo');
+	$login = $request->input('pseudo');
         $action = $request->input('action');
         $key = $request->input('key');
-        $success = false;
+	$success = false;
 
-        if ($login && $action === 'vote' && Config::get('ragnarok.rotop_private_key') === $key) {
+
+	if ($login && $action === 'vote' && Config::get('ragnarok.rotop_private_key') === $key) {
             $account = $this->loginRepository->get($login, 'userid');
-
             if ($account) {
-                $this->voteRepository->incrementOrCreate([
+		$this->voteRepository->incrementOrCreate([
                     'account_id' => $account->account_id,
                 ], [
                     'vote' => DB::raw('vote+'. 1),

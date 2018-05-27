@@ -49,7 +49,7 @@
                             <ul class="about-list">
                                 <li>
                                     <span class="fa fa-dot-circle-o"></span>
-                                    <strong>3 / 3 / Custom</strong> - <em><u>Drop</u>: Mob: <strong>x3</strong>  -  <u>MVP & Mini-boss card</u>: <strong>x1</strong></em>
+                                    <strong>15/15/10<strong> - <em><u>Drop</u>: Mob: <strong>x10</strong>  -  <u>MVP & Mini-boss => 3 et card</u>: <strong>x1</strong></em>
                                 </li>
                                 <li>
                                     <span class="fa fa-dot-circle-o"></span>
@@ -81,7 +81,7 @@
                                 </li>
                                 <li>
                                     <span class="fa fa-dot-circle-o"></span>
-                                    <strong>Battleground</strong> - <em style="color:red;">Inactif</em>
+                                    <strong>Battleground</strong> - <em style="color:red;">En revue</em>
                                 </li>
                                 <li>
                                     <span class="fa fa-dot-circle-o"></span>
@@ -89,7 +89,7 @@
                                 </li>
                                 <li>
                                     <span class="fa fa-dot-circle-o"></span>
-                                    <strong>Quêtes répétable</strong> - <em>Rate x1</em>
+                                    <strong>Quêtes EXP</strong> - <em>Rate x1</em>
                                 </li>
                                 <li>
                                     <span class="fa fa-dot-circle-o"></span>

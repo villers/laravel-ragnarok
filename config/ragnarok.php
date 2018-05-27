@@ -50,7 +50,7 @@ return [
     | This value is the number of increments of the account's cashpoints.
     */
 
-    'server_nb_add_cashpoint' => env('RAGNAROK_SERVER_NB_ADD_CASHPOINT', '500'),
+    'server_nb_add_cashpoint' => env('RAGNAROK_SERVER_NB_ADD_CASHPOINT', '250'),
 
     /*
     |--------------------------------------------------------------------------
@@ -60,7 +60,7 @@ return [
     | This value is the number of increments of the account's cashpoints when voted.
     */
 
-    'server_nb_vote_add_cashpoint' => env('RAGNAROK_SERVER_NB_VOTE_ADD_CASHPOINT', '10'),
+    'server_nb_vote_add_cashpoint' => env('RAGNAROK_SERVER_NB_VOTE_ADD_CASHPOINT', '5'),
 
 
     /*

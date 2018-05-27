@@ -91,6 +91,42 @@
                                                                                                         <table class="table table-striped table-hover">
                                                                                                             <tbody>
 
+
+
+
+                                                                                                            <tr>
+                                                                                                                <th scope="row"></th>
+                                                                                                                <td><img src="../img/costume/20499.gif"></td>
+                                                                                                                <td><strong>x1 </strong><a style="color:blue;">Costume</a> Cat Ears Hat [<a>0</a>]</td>
+                                                                                                                <td><strong>850</strong> CP</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <th scope="row"></th>
+                                                                                                                <td><img src="../img/costume/20263.gif"></td>
+                                                                                                                <td><strong>x1 </strong><a style="color:blue;">Costume</a> Sleeping Cat Hat J [<a>0</a>]</td>
+                                                                                                                <td><strong>850</strong> CP</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <th scope="row"></th>
+                                                                                                                <td><img src="../img/costume/19976.gif"></td>
+                                                                                                                <td><strong>x1 </strong><a style="color:blue;">Costume</a> Cat Santa Hat [<a>0</a>]</td>
+                                                                                                                <td><strong>850</strong> CP</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <th scope="row"></th>
+                                                                                                                <td><img src="../img/costume/19976.gif"></td>
+                                                                                                                <td><strong>x1 </strong><a style="color:blue;">Costume</a> Cat Santa Hat [<a>0</a>]</td>
+                                                                                                                <td><strong>850</strong> CP</td>
+                                                                                                            </tr>
+                                                                                                            <tr>
+                                                                                                                <th scope="row"></th>
+                                                                                                                <td><img src="../img/costume/19976.gif"></td>
+                                                                                                                <td><strong>x1 </strong><a style="color:blue;">Costume</a> Cat Santa Hat [<a>0</a>]</td>
+                                                                                                                <td><strong>850</strong> CP</td>
+                                                                                                            </tr>
+
+
+
                                                                                                             <tr>
                                                                                                                 <th scope="row"></th>
                                                                                                                 <td><img src="../img/costume/19976.gif"></td>
@@ -1044,36 +1080,45 @@
                                                                                                         <tr>
                                                                                                             <th scope="row"></th>
                                                                                                             <td><img src="../img/14532.gif"></td>
-                                                                                                            <td><strong>x1</strong> Field Manual 25%</td>
-                                                                                                            <td><strong>125</strong> CP</td>
+                                                                                                            <td><strong>x1</strong> Field Manual 100%</td>
+                                                                                                            <td><strong>100</strong> CP</td>
                                                                                                         </tr>
-
+                                                                                                         <tr>
+                                                                                                            <th scope="row"></th>
+                                                                                                            <td><img src="../img/14532.gif"></td>
+                                                                                                            <td><strong>x1</strong> Job Manual 150%</td>
+                                                                                                            <td><strong>100</strong> CP</td>
+                                                                                                        </tr>
                                                                                                         <tr>
                                                                                                             <th scope="row"></th>
                                                                                                             <td><img src="../img/12210.gif"></td>
-                                                                                                            <td><strong>x1</strong> Bubble Gum</td>
-                                                                                                            <td><strong>150</strong> CP</td>
+                                                                                                            <td><strong>x1</strong> Bubble Gum 100%</td>
+                                                                                                            <td><strong>100</strong> CP</td>
                                                                                                         </tr>
-
                                                                                                         <tr>
                                                                                                             <th scope="row"></th>
                                                                                                             <td><img src="../img/12902.gif"></td>
-                                                                                                            <td><strong>x1</strong> Field Manual Box [<i style="color:blue;">x10</i>]</td>
-                                                                                                            <td><strong>1000</strong> CP</td>
+                                                                                                            <td><strong>x1</strong> Field Manual Box 100% [<i style="color:blue;">x10</i>]</td>
+                                                                                                            <td><strong>850</strong> CP</td>
                                                                                                         </tr>
-
                                                                                                         <tr>
                                                                                                             <th scope="row"></th>
                                                                                                             <td><img src="../img/12902.gif"></td>
-                                                                                                            <td><strong>x1</strong> Bubble Gum Box [<i style="color:blue;">x10</i>]</td>
-                                                                                                            <td><strong>1250</strong> CP</td>
+                                                                                                            <td><strong>x1</strong> Job Manual Box 100% [<i style="color:blue;">x10</i>]</td>
+                                                                                                            <td><strong>850</strong> CP</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <th scope="row"></th>
+                                                                                                            <td><img src="../img/12902.gif"></td>
+                                                                                                            <td><strong>x1</strong> Bubble Gum Box 100% [<i style="color:blue;">x10</i>]</td>
+                                                                                                            <td><strong>850</strong> CP</td>
                                                                                                         </tr>
 
                                                                                                         <tr>
                                                                                                             <th scope="row"></th>
                                                                                                             <td><img src="../img/12187.gif"></td>
                                                                                                             <td><strong>x1</strong> Old Green Box</td>
-                                                                                                            <td><strong>90</strong> CP</td>
+                                                                                                            <td><strong>50</strong> CP</td>
                                                                                                         </tr>
 
                                                                                                         </tbody>
@@ -1106,23 +1151,37 @@
                                                                                                     </tr>
                                                                                                     <tr>
                                                                                                         <th scope="row"></th>
+                                                                                                        <td><img src="../img/12212.gif"></td>
+                                                                                                        <td><strong>x1</strong> Giant Fly Wing</td>
+                                                                                                        <td><strong>12</strong> CP</td>
+
+                                                                                                    </tr>
+                                                                                                     <tr>
+                                                                                                        <th scope="row"></th>
+                                                                                                        <td><img src="../img/13571.gif"></td>
+                                                                                                        <td><strong>x1</strong> Giant Fly Wing 100 Box</td>
+                                                                                                        <td><strong>1000</strong> CP</td>
+
+                                                                                                    </tr>                                                                                                     
+                                                                                                    <tr>
+                                                                                                        <th scope="row"></th>
                                                                                                         <td><img src="../img/604.gif"></td>
                                                                                                         <td><strong>x1</strong> Dead Branch</td>
-                                                                                                        <td><strong>20</strong> CP</td>
+                                                                                                        <td><strong>10</strong> CP</td>
 
                                                                                                     </tr>
                                                                                                     <tr>
                                                                                                         <th scope="row"></th>
                                                                                                         <td><img src="../img/14234.gif"></td>
                                                                                                         <td><strong>x1</strong> Dead Branch Box [<i style="color:blue;">x25</i>]</td>
-                                                                                                        <td><strong>375</strong> CP</td>
+                                                                                                        <td><strong>200</strong> CP</td>
 
                                                                                                     </tr>                                                                                               
                                                                                                     <tr>
                                                                                                         <th scope="row"></th>
                                                                                                         <td><img src="../img/12103.gif"></td>
                                                                                                         <td><strong>x1</strong> Bloody Branch</td>
-                                                                                                        <td><strong>1000</strong> CP</td>
+                                                                                                        <td><strong>400</strong> CP</td>
 
                                                                                                     </tr>
 
@@ -1143,9 +1202,57 @@
             <br><br><br><br><br>
 
 
+                                                                          <div class="text-center">
+                                                                    
+                                                                                <div class="row">
+                                                                                    <div class="col-md-8 col-md-offset-2">
+                                                                                        <div id="testimonial" style=";">
+                                                                                             <div class="section-title center">
+                                                                                          
+                                                                                                        <div id="testimonial" style="padding:-20px;margin-top:-20px;margin-bottom:-20px;margin-left:15px;margin-right:15px;">
 
+                                                                                            <h2>STAR<strong>PASS</strong>
+                                                                                                <div class="line">
+                                                                                                    <hr>
+                                                                                                </div>
+                                                                                            </h2>
+                                                                                    
+                                                                                    </div>
+                                                                                </div>
+                                                            <br>
+                                                                                <div class="well" style="width:60%; margin-left:20%;">
+                                                                                <p> Un <strong>code</strong> est égal à <strong>250 </strong>CashPoints</p> 
+                                                                                </div>
+                                                             <br>
+                                                                                            @if($isOnline)
+                                                                                                <div class="alert alert-danger">Vous devez être déconnecté du serveur</div>
+                                                                                                <button id="refresh" class="btn btn-primary">Rafraichir</button>
+                                                                                            @else
+                                                                                                @if(session('message'))
+                                                                                                    <div class="alert alert-info">{!! session('message') !!}</div>
+                                                                                                @endif
 
-                                                              
+                                                                                                @if(session('error'))
+                                                                                                    <div class="alert alert-danger">{{ session('error') }}</div>
+                                                                                                @endif
+
+                                                                                                <div id="starpass_{{$starpass_idd}}"></div>
+                                                                                                <script type="text/javascript" src="https://script.starpass.fr/script.php?idd={{$starpass_idd}}&amp;verif_en_php=1"></script>
+                                                                                                <noscript>
+                                                                                                    Veuillez activer le Javascript de votre navigateur s'il vous pla&icirc;t.<br />
+                                                                                                    <a href="https://www.starpass.fr/">Micro Paiement StarPass</a>
+                                                                                                </noscript>
+                                                                                            @endif
+                                                                                            <br>
+                                                                                          <img src="../img/starpass.png" style="width:20%; float:right; opacity:0.7; margin-top:-25px; margin-right:-35px;">
+                                                                                          <br>
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                              <br><br>
                                                                         <div class="text-center">
                                                                              <div class="row">
                                                                                  <div class="col-md-8 col-md-offset-2">
@@ -1216,7 +1323,10 @@
 
            <br><br>
 
-                                                                        <div class="text-center">
+
+
+
+                                                                            <div class="text-center">
                                                                     
                                                                                 <div class="row">
                                                                                     <div class="col-md-8 col-md-offset-2">
@@ -1225,7 +1335,7 @@
                                                                                           
                                                                                                         <div id="testimonial" style="padding:-20px;margin-top:-20px;margin-bottom:-20px;margin-left:15px;margin-right:15px;">
 
-                                                                                            <h2>STAR<strong>PASS</strong>
+                                                                                            <h2>COIN<strong>BASE</strong>
                                                                                                 <div class="line">
                                                                                                     <hr>
                                                                                                 </div>
@@ -1233,38 +1343,33 @@
                                                                                     
                                                                                     </div>
                                                                                 </div>
-                                                            <br>
+                                                                           <br>
                                                                                 <div class="well" style="width:60%; margin-left:20%;">
-                                                                                <p> Un <strong>code</strong> est égal à <strong>350 </strong>CashPoints</p> 
+                                                                                <p>En développement...</p> 
                                                                                 </div>
-                                                             <br>
-                                                                                            @if($isOnline)
-                                                                                                <div class="alert alert-danger">Vous devez être déconnecté du serveur</div>
-                                                                                                <button id="refresh" class="btn btn-primary">Rafraichir</button>
-                                                                                            @else
-                                                                                                @if(session('message'))
-                                                                                                    <div class="alert alert-info">{!! session('message') !!}</div>
-                                                                                                @endif
-
-                                                                                                @if(session('error'))
-                                                                                                    <div class="alert alert-danger">{{ session('error') }}</div>
-                                                                                                @endif
-
-                                                                                                <div id="starpass_{{$starpass_idd}}"></div>
-                                                                                                <script type="text/javascript" src="https://script.starpass.fr/script.php?idd={{$starpass_idd}}&amp;verif_en_php=1"></script>
-                                                                                                <noscript>
-                                                                                                    Veuillez activer le Javascript de votre navigateur s'il vous pla&icirc;t.<br />
-                                                                                                    <a href="https://www.starpass.fr/">Micro Paiement StarPass</a>
-                                                                                                </noscript>
-                                                                                            @endif
+                                                                               <br>
+                                                                                            
                                                                                             <br>
-                                                                                          <img src="../img/starpass.png" style="width:20%; float:right; opacity:0.7; margin-top:-25px; margin-right:-35px;">
+                                                                                          <img src="../img/coinbase.png" style="width:10%; float:right; opacity:0.7; margin-top:-15px; margin-right:1px;">
                                                                                           <br>
                                                                                         </div>
 
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+
+                                                                
+
+
+
+
+
+            <br><br>
+
+
+
+
+                                                                       
                                                             
 
 </div>
